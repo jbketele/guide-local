@@ -122,11 +122,10 @@ header nav a {
 
 
 /* =========================
-   DESKTOP
+   DESKTOP NAV
 ========================= */
 
 @media (min-width: 768px) {
-
     .burger {
         display: none;
     }
@@ -325,4 +324,636 @@ header nav a {
     border-radius: 5px;
     padding: 10px 20px;
     margin: 30px auto 0;
+}
+
+@media (min-width: 768px) {
+    .favorites {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+
+    .favorite-card {
+        flex: 1 1 calc(50% - 25px);
+    }
+}
+
+/* =========================
+   CATÉGORIES
+   MOBILE
+========================= */
+
+#categories {
+    padding: 50px 20px;
+    background-color: #F5F0E7;
+}
+
+#categories .section-title {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#categories .section-title>p {
+    margin-bottom: 5px;
+
+    color: #C9A66B;
+
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#categories .section-title h2 {
+    font-family: "Raleway", sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+
+/* =========================
+   CARTES
+========================= */
+
+.categories {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.category-card {
+    position: relative;
+    overflow: hidden;
+    min-height: 180px;
+    border-radius: 8px;
+    color: white;
+}
+
+.category-card img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(55%);
+}
+
+.category-content {
+    position: relative;
+    z-index: 1;
+    min-height: 180px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.category-content h3 {
+    margin-bottom: 5px;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.category-content p {
+    max-width: 300px;
+    font-family: "Manrope", sans-serif;
+    font-size: 0.85rem;
+    line-height: 1.5;
+}
+
+/* =========================
+   CATÉGORIES RESPONSIVE
+========================= */
+
+@media (min-width: 768px) {
+    #categories {
+        padding: 70px 40px;
+    }
+
+    .categories {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+
+    .category-card {
+        flex: 1 1 calc(50% - 25px);
+        min-height: 220px;
+    }
+
+    .category-content {
+        min-height: 220px;
+    }
+}
+
+/* =========================
+   CARTE
+   MOBILE
+========================= */
+
+#carte {
+    padding: 50px 20px;
+    background-color: #FAF9F6;
+}
+
+#carte .section-title {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#carte .section-title>p {
+    margin-bottom: 5px;
+
+    color: #C9A66B;
+
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#carte .section-title h2 {
+    margin-bottom: 10px;
+
+    font-family: "Raleway", sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+#carte .section-title span {
+    display: block;
+
+    max-width: 500px;
+    margin: auto;
+
+    color: #666;
+
+    font-family: "Manrope", sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+
+/* =========================
+   APERÇU CARTE
+========================= */
+
+.map-preview {
+    width: 100%;
+    height: 350px;
+
+    overflow: hidden;
+
+    border-radius: 8px;
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* =========================
+   BOUTON
+========================= */
+
+#carte>.btn {
+    display: block;
+    width: fit-content;
+    margin: 30px auto 0;
+    background-color: #123F73;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+@media (min-width: 768px) {
+    #carte {
+        padding: 70px 40px;
+    }
+
+    .map-preview {
+        max-width: 1000px;
+        height: 450px;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 1200px) {
+    #carte {
+        padding: 90px 60px;
+    }
+
+    .map-preview {
+        max-width: 1200px;
+        height: 500px;
+    }
+}
+
+/* =========================
+   À PROXIMITÉ
+   MOBILE
+========================= */
+
+#proximite {
+    padding: 50px 20px;
+    background-color: #F5F0E7;
+}
+
+#proximite .section-title {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#proximite .section-title>p {
+    margin-bottom: 5px;
+
+    color: #C9A66B;
+
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#proximite .section-title h2 {
+    margin-bottom: 10px;
+
+    font-family: "Raleway", sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+#proximite .section-title span {
+    display: block;
+
+    max-width: 500px;
+    margin: auto;
+
+    color: #666;
+
+    font-family: "Manrope", sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+
+/* =========================
+   LISTE
+========================= */
+
+.nearby-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.nearby-card {
+    display: flex;
+    align-items: center;
+
+    padding: 15px;
+
+    background-color: #FAF9F6;
+
+    border-radius: 8px;
+}
+
+.nearby-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 45px;
+    height: 45px;
+
+    margin-right: 15px;
+
+    background-color: #F5F0E7;
+
+    border-radius: 50%;
+
+    font-size: 1.2rem;
+}
+
+.nearby-content {
+    flex: 1;
+}
+
+.nearby-content h3 {
+    margin-bottom: 2px;
+
+    font-family: "Raleway", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.nearby-content p {
+    color: #666;
+
+    font-family: "Manrope", sans-serif;
+    font-size: 0.8rem;
+}
+
+.nearby-arrow {
+    margin-left: 10px;
+
+    color: #123F73;
+
+    font-size: 1.2rem;
+}
+
+
+/* =========================
+   BOUTON
+========================= */
+
+#proximite>.btn {
+    display: block;
+    width: fit-content;
+    margin: 30px auto 0;
+    background-color: #123F73;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+@media (min-width: 768px) {
+    #proximite {
+        padding: 70px 40px;
+    }
+
+    .nearby-list {
+        max-width: 800px;
+        margin: 0 auto;
+        gap: 15px;
+    }
+
+    .nearby-card {
+        padding: 18px 20px;
+    }
+}
+
+/* =========================
+   DESTINATIONS
+   MOBILE
+========================= */
+
+#destinations {
+    padding: 50px 20px;
+    background-color: #FAF9F6;
+}
+
+#destinations .section-title {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#destinations .section-title>p {
+    margin-bottom: 5px;
+
+    color: #C9A66B;
+
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#destinations .section-title h2 {
+    margin-bottom: 10px;
+
+    font-family: "Raleway", sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+#destinations .section-title span {
+    display: block;
+
+    max-width: 500px;
+    margin: auto;
+
+    color: #666;
+
+    font-family: "Manrope", sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+
+/* =========================
+   CARTES
+========================= */
+
+.destinations-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.destination-card {
+    position: relative;
+    height: 160px;
+    width: calc(50% - 7.5px);
+    overflow: hidden;
+    border-radius: 8px;
+    color: white;
+}
+
+.destination-card img {
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    filter: brightness(60%);
+
+    transition: transform 0.4s ease;
+}
+
+.destination-content {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    padding: 15px;
+}
+
+.destination-content h3 {
+    font-family: "Raleway", sans-serif;
+    font-size: 1.15rem;
+    font-weight: 500;
+}
+
+@media (min-width: 768px) {
+    #destinations {
+        padding: 70px 40px;
+    }
+
+    .destinations-list {
+        max-width: 1000px;
+        margin: 0 auto;
+
+        gap: 20px;
+    }
+
+    .destination-card {
+        width: calc(33.333% - 13.333px);
+        height: 200px;
+    }
+
+    .destination-content {
+        padding: 20px;
+    }
+
+    .destination-content h3 {
+        font-size: 1.3rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    #destinations {
+        padding: 90px 60px;
+    }
+
+    .destinations-list {
+        max-width: 1200px;
+
+        gap: 25px;
+    }
+
+    .destination-card {
+        width: calc(25% - 18.75px);
+        height: 220px;
+    }
+}
+
+/* =========================
+   FOOTER
+   MOBILE
+========================= */
+
+footer {
+    background-color: #345C72;
+    color: white;
+}
+
+
+/* =========================
+   CONTENU
+========================= */
+
+.footer-content {
+    padding: 50px 20px;
+}
+
+.footer-brand {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.footer-brand img {
+    width: 140px;
+    margin: 0 auto 15px;
+}
+
+.footer-brand p {
+    max-width: 280px;
+    margin: 0 auto;
+
+    font-family: "Manrope", sans-serif;
+    font-size: 0.85rem;
+    line-height: 1.5;
+}
+
+
+/* =========================
+   LIENS
+========================= */
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.footer-links>div {
+    text-align: center;
+}
+
+.footer-links h3 {
+    margin-bottom: 12px;
+
+    color: #C9A66B;
+
+    font-family: "Raleway", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.footer-links a {
+    display: block;
+
+    padding: 5px 0;
+
+    font-family: "Manrope", sans-serif;
+    font-size: 0.85rem;
+}
+
+/* =========================
+   FOOTER TABLETTE
+========================= */
+
+@media (min-width: 768px) {
+    .footer-content {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 60px 40px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer-brand {
+        margin-bottom: 0;
+        text-align: left;
+        flex: 1;
+        max-width: 500px;
+    }
+
+    .footer-brand img {
+        margin-left: 0;
+    }
+
+    .footer-brand p {
+        max-width: none;
+        white-space: nowrap;
+    }
+
+    .footer-links {
+        flex-direction: row;
+        gap: 70px;
+    }
+
+    .footer-links>div {
+        text-align: left;
+    }
+}
+
+/* =========================
+   FOOTER PC
+========================= */
+
+@media (min-width: 1200px) {
+    .footer-content {
+        max-width: 1200px;
+        padding: 70px 60px;
+    }
+
+    .footer-links {
+        gap: 100px;
+    }
 }

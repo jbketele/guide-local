@@ -11,6 +11,7 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <link rel="icon" type="image/x-icon" href="./images/icon-guide.png">
 </head>
 
@@ -120,7 +121,241 @@
         <a href="" class="btn">Voir tous les coups de cœur</a>
     </section>
 
+    <section id="categories">
+
+        <div class="section-title">
+            <p>Explorez le guide</p>
+            <h2>Que recherchez-vous ?</h2>
+        </div>
+
+        <div class="categories">
+
+            <a href="" class="category-card">
+                <img src="./images/plage-fleurie.webp" alt="Plages et balades">
+                <div class="category-content">
+                    <h3>Plages & balades</h3>
+                    <p>Profiter du littoral et découvrir les plus beaux paysages.</p>
+                </div>
+            </a>
+
+            <a href="" class="category-card">
+                <img src="./images/restaurant-fleurie.webp" alt="Restaurants">
+                <div class="category-content">
+                    <h3>Restaurants</h3>
+                    <p>Nos bonnes adresses pour manger et se retrouver.</p>
+                </div>
+            </a>
+
+            <a href="" class="category-card">
+                <img src="./images/Voyage-a-velo-Normandie-Dune_Cabourg-Normandie-Rando.jpg" alt="Activités">
+                <div class="category-content">
+                    <h3>Activités</h3>
+                    <p>Sport, loisirs et expériences pour tous.</p>
+                </div>
+            </a>
+
+            <a href="" class="category-card">
+                <img src="./images/cote-fleurie-honfleur.jpg" alt="Découvrir la Côte Fleurie">
+                <div class="category-content">
+                    <h3>Découvrir</h3>
+                    <p>Explorer les villes et villages de la Côte Fleurie.</p>
+                </div>
+            </a>
+
+            <a href="" class="category-card">
+                <img src="./images/cidre-et-pommes-adobe-stock-philipimage-1920x1080-f50_50.webp"
+                    alt="Saveurs et marchés">
+                <div class="category-content">
+                    <h3>Saveurs & marchés</h3>
+                    <p>Produits locaux, marchés et spécialités normandes.</p>
+                </div>
+            </a>
+
+            <a href="" class="category-card">
+                <img src="./images/TrouvillestreetNormandyjpg_63b40aa49e7030.65667822.jpg" alt="Informations pratiques">
+                <div class="category-content">
+                    <h3>Pratique</h3>
+                    <p>Tout ce qu'il faut savoir pour votre séjour.</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section id="carte">
+
+        <div class="section-title">
+            <p>Explorez la Côte Fleurie</p>
+            <h2>Tout autour de vous</h2>
+            <span>
+                Retrouvez nos plages, restaurants, activités et bonnes adresses
+                directement sur la carte.
+            </span>
+        </div>
+
+        <div class="map-preview">
+            <!-- La carte interactive viendra ici -->
+            <div id="map"></div>
+        </div>
+
+        <a href="" class="btn">Explorer la carte</a>
+
+    </section>
+
+    <section id="proximite">
+
+        <div class="section-title">
+            <p>Autour de vous</p>
+            <h2>À proximité</h2>
+            <span>
+                Découvrez les lieux et bonnes adresses autour de vous.
+            </span>
+        </div>
+
+        <div class="nearby-list">
+            <a href="" class="nearby-card">
+                <div class="nearby-icon">🏖️</div>
+                <div class="nearby-content">
+                    <h3>Plage de Cabourg</h3>
+                    <p>5 min · Plage</p>
+                </div>
+                <span class="nearby-arrow">→</span>
+            </a>
+
+            <a href="" class="nearby-card">
+                <div class="nearby-icon">🍽️</div>
+                <div class="nearby-content">
+                    <h3>Notre restaurant</h3>
+                    <p>8 min · Restaurant</p>
+                </div>
+                <span class="nearby-arrow">→</span>
+            </a>
+
+            <a href="" class="nearby-card">
+                <div class="nearby-icon">🚲</div>
+                <div class="nearby-content">
+                    <h3>Balade du littoral</h3>
+                    <p>10 min · Balade</p>
+                </div>
+                <span class="nearby-arrow">→</span>
+            </a>
+        </div>
+        <a href="" class="btn">Voir tous les lieux</a>
+    </section>
+
+    <section id="destinations">
+
+        <div class="section-title">
+            <p>La Côte Fleurie</p>
+            <h2>Découvrez nos destinations</h2>
+            <span>
+                Explorez les villes et villages qui font le charme de la Côte Fleurie.
+            </span>
+        </div>
+
+        <div class="destinations-list">
+
+            <a href="" class="destination-card">
+                <img src="./images/merville-franceville.jpg" alt="Merville-Franceville">
+                <div class="destination-content">
+                    <h3>Merville-Franceville</h3>
+                </div>
+            </a>
+
+            <a href="" class="destination-card">
+                <img src="./images/grand-hotel-et-casino-studio-911-28022-1600x900-c-1920x1080-f50_50.webp"
+                    alt="Cabourg">
+                <div class="destination-content">
+                    <h3>Cabourg</h3>
+                </div>
+            </a>
+
+            <a href="" class="destination-card">
+                <img src="./images/que-faire-dives-sur-mer-visiter-incontournable.jpg" alt="Dives-sur-Mer">
+                <div class="destination-content">
+                    <h3>Dives-sur-Mer</h3>
+                </div>
+            </a>
+
+            <a href="" class="destination-card">
+                <img src="./images/houlgate.jpeg" alt="Houlgate">
+                <div class="destination-content">
+                    <h3>Houlgate</h3>
+                </div>
+            </a>
+
+            <a href="" class="destination-card">
+                <img src="./images/flaner-a-villers-sur-mer-1.jpg" alt="Villers-sur-Mer">
+                <div class="destination-content">
+                    <h3>Villers-sur-Mer</h3>
+                </div>
+            </a>
+
+            <a href="" class="destination-card">
+                <img src="./images/deauville.webp" alt="Deauville">
+                <div class="destination-content">
+                    <h3>Deauville</h3>
+                </div>
+            </a>
+
+            <a href="" class="destination-card">
+                <img src="./images/depositphotos_40401073-stock-photo-france-picturesque-city-of-trouville.jpg"
+                    alt="Trouville-sur-Mer">
+                <div class="destination-content">
+                    <h3>Trouville-sur-Mer</h3>
+                </div>
+            </a>
+
+            <a href="" class="destination-card">
+                <img src="./images/honfleur03-1920x1281-1.jpg" alt="Honfleur">
+                <div class="destination-content">
+                    <h3>Honfleur</h3>
+                </div>
+            </a>
+
+        </div>
+    </section>
+
+    <footer>
+
+        <div class="footer-content">
+
+            <div class="footer-brand">
+                <img src="./images/logo-fonce-trans.png" alt="Logo du guide local de la Côte Fleurie">
+
+                <p>
+                    Votre guide local pour découvrir
+                    la Côte Fleurie.
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <div>
+                    <h3>Explorer</h3>
+
+                    <a href="">Accueil</a>
+                    <a href="">Découvrir</a>
+                    <a href="">Expériences</a>
+                    <a href="">Saveurs</a>
+                    <a href="">Pratique</a>
+                    <a href="">Carte</a>
+                </div>
+
+                <div>
+                    <h3>Informations</h3>
+
+                    <a href="">À propos</a>
+                    <a href="">Contact</a>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+
     <script src="./js/burger.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
+    </script>
+    <script src="./js/map.js"></script>
 </body>
 
 </html>
