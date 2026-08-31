@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -7,6 +11,10 @@ a {
 header {
     position: relative;
     z-index: 1000;
+}
+
+body {
+    margin: 0;
 }
 
 /* =========================
@@ -103,6 +111,57 @@ header nav a {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+.nav-dropdown {
+    width: 100%;
+}
+
+.dropdown-toggle {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px 0;
+
+    background: none;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+    color: #333;
+
+    font-family: "Manrope", sans-serif;
+    font-size: 16px;
+
+    text-align: left;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    display: none;
+    flex-direction: column;
+
+    padding-left: 20px;
+}
+
+.dropdown-menu.active {
+    display: flex;
+}
+
+.dropdown-menu a {
+    padding: 12px 0;
+
+    font-size: 15px;
+}
+
+.dropdown-toggle span {
+    transition: transform 0.3s ease;
+}
+
+.dropdown-toggle[aria-expanded="true"] span {
+    transform: rotate(180deg);
+}
+
 
 /* =========================
    BURGER → CROIX
@@ -141,6 +200,60 @@ header nav a {
         border: none;
 
         font-size: 16px;
+    }
+
+    .nav-dropdown {
+
+        position: relative;
+
+        width: auto;
+
+    }
+
+    .dropdown-toggle {
+
+        width: auto;
+
+        padding: 0;
+
+        border: none;
+
+        font-size: 16px;
+
+    }
+
+    .dropdown-menu {
+
+        position: absolute;
+
+        top: calc(100% + 15px);
+
+        left: 50%;
+
+        transform: translateX(-50%);
+
+        min-width: 190px;
+
+        padding: 10px;
+
+        background-color: #F5F0E7;
+
+        border-radius: 5px;
+
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+
+    }
+
+    .nav-dropdown:hover .dropdown-menu {
+
+        display: flex;
+
+    }
+
+    .dropdown-menu a {
+
+        padding: 10px;
+
     }
 }
 
