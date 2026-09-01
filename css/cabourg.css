@@ -118,7 +118,7 @@
 ========================= */
 
 #restaurants {
-    padding: 50px 20px;
+    padding: 30px 20px;
     background-color: #FAF9F6;
 }
 
@@ -192,7 +192,6 @@
 
 .restaurant-content .category {
     color: #345C72;
-
     font-family: "Manrope", sans-serif;
     font-size: 0.75rem;
     text-transform: uppercase;
@@ -223,4 +222,405 @@
     font-family: "Manrope", sans-serif;
     font-size: 0.85rem;
     font-weight: 600;
+}
+
+/* =========================
+   ACTIVITÉS
+   MOBILE
+========================= */
+
+#activites {
+    padding: 30px 20px;
+    background-color: #F5F0E7;
+}
+
+#activites .section-title {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#activites .section-title>p {
+    margin-bottom: 5px;
+
+    color: #C9A66B;
+
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#activites .section-title h2 {
+    margin-bottom: 10px;
+
+    font-family: "Raleway", sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+#activites .section-title span {
+    display: block;
+
+    max-width: 500px;
+    margin: auto;
+
+    color: #666;
+
+    font-family: "Manrope", sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+
+/* =========================
+   CARDS
+========================= */
+
+.activites-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.activite-card {
+    overflow: hidden;
+
+    background-color: #FAF9F6;
+
+    border-radius: 8px;
+}
+
+.activite-card img {
+    display: block;
+
+    width: 100%;
+    height: 210px;
+
+    object-fit: cover;
+}
+
+.activite-content {
+    padding: 18px;
+}
+
+.activite-content .category {
+    color: #345C72;
+
+    font-family: "Manrope", sans-serif;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.activite-content h3 {
+    margin: 6px 0;
+
+    font-family: "Raleway", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.activite-content p {
+    margin: 0;
+
+    color: #666;
+
+    font-family: "Manrope", sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* =========================
+   COUPS DE CŒUR
+   MOBILE
+========================= */
+
+#coups-de-coeur {
+    padding: 30px 20px;
+    background-color: #FAF9F6;
+}
+
+#coups-de-coeur .section-title {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#coups-de-coeur .section-title>p {
+    margin-bottom: 5px;
+
+    color: #C9A66B;
+
+    font-family: "Manrope", sans-serif;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#coups-de-coeur .section-title h2 {
+    margin-bottom: 10px;
+
+    font-family: "Raleway", sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+#coups-de-coeur .section-title span {
+    display: block;
+
+    max-width: 500px;
+    margin: auto;
+
+    color: #666;
+
+    font-family: "Manrope", sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+
+/* =========================
+   CARDS
+========================= */
+
+.favorites {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.favorite-card {
+    overflow: hidden;
+
+    background-color: #F5F0E7;
+
+    border-radius: 8px;
+}
+
+.favorite-card img {
+    display: block;
+
+    width: 100%;
+    height: 220px;
+
+    object-fit: cover;
+}
+
+.favorite-content {
+    padding: 18px;
+}
+
+.favorite-content .category {
+    color: #345C72;
+
+    font-family: "Manrope", sans-serif;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.favorite-content h3 {
+    margin: 6px 0;
+
+    font-family: "Raleway", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.favorite-content p {
+    margin: 0;
+
+    color: #666;
+
+    font-family: "Manrope", sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* =========================
+   CARTE
+   MOBILE
+========================= */
+
+#carte {
+    padding: 30px 20px;
+    background-color: #F5F0E7;
+}
+
+/* =========================
+   RESPONSIVE TABLETTE
+========================= */
+
+@media (min-width: 768px) {
+
+    /* INCONTOURNABLES */
+
+    #incontournables {
+        padding: 30px 40px;
+    }
+
+    .incontournables-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 25px;
+
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .incontournable-card {
+        flex: 0 0 calc(50% - 12.5px);
+    }
+
+
+    /* RESTAURANTS */
+
+    #restaurants {
+        padding: 30px 40px;
+    }
+
+    .restaurants-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 25px;
+
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .restaurant-card {
+        flex: 0 0 calc(50% - 12.5px);
+    }
+
+
+    /* ACTIVITÉS */
+
+    #activites {
+        padding: 30px 40px;
+    }
+
+    .activites-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 25px;
+
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .activite-card {
+        flex: 0 0 calc(50% - 12.5px);
+    }
+
+
+    /* COUPS DE CŒUR */
+
+    #coups-de-coeur {
+        padding: 30px 40px;
+    }
+
+    .favorites {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 25px;
+
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .favorite-card {
+        flex: 0 0 calc(50% - 12.5px);
+    }
+
+
+    /* CARTE */
+
+    #carte {
+        padding: 30px 40px;
+    }
+
+    .map-preview {
+        max-width: 1000px;
+        height: 450px;
+        margin: 0 auto;
+    }
+
+}
+
+
+/* =========================
+   RESPONSIVE PC
+========================= */
+
+@media (min-width: 1200px) {
+
+    /* INCONTOURNABLES */
+
+    #incontournables {
+        padding: 30px 60px;
+    }
+
+    .incontournables-list {
+        max-width: 1200px;
+    }
+
+    .incontournable-card {
+        flex: 0 0 calc(33.333% - 16.667px);
+    }
+
+
+    /* RESTAURANTS */
+
+    #restaurants {
+        padding: 30px 60px;
+    }
+
+    .restaurants-list {
+        max-width: 1200px;
+    }
+
+    .restaurant-card {
+        flex: 0 0 calc(33.333% - 16.667px);
+    }
+
+
+    /* ACTIVITÉS */
+
+    #activites {
+        padding: 30px 60px;
+    }
+
+    .activites-list {
+        max-width: 1200px;
+    }
+
+    .activite-card {
+        flex: 0 0 calc(33.333% - 16.667px);
+    }
+
+
+    /* COUPS DE CŒUR */
+
+    #coups-de-coeur {
+        padding: 30px 60px;
+    }
+
+    .favorites {
+        max-width: 1200px;
+    }
+
+    .favorite-card {
+        flex: 0 0 calc(33.333% - 16.667px);
+    }
+
+
+    /* CARTE */
+
+    #carte {
+        padding: 30px 60px;
+    }
+
+    .map-preview {
+        max-width: 1200px;
+        height: 500px;
+    }
+
 }

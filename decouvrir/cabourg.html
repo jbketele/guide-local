@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/cabourg.css">
     <link rel="icon" type="image/x-icon" href="../images/icon-guide.png">
@@ -90,7 +91,7 @@
     <section id="restaurants">
 
         <div class="section-title">
-            <p>Gourmandises</p>
+            <p>Saveurs</p>
             <h2>Où manger à Cabourg ?</h2>
             <span>
                 Découvrez quelques bonnes adresses pour manger à Cabourg.
@@ -100,81 +101,176 @@
         <div class="restaurants-list">
 
             <article class="restaurant-card">
-
-                <img src="./images/restaurant-cabourg.jpg" alt="Restaurant à Cabourg">
-
+                <img src="../images/encas-cabourg.webp" alt="Restaurant à Cabourg">
                 <div class="restaurant-content">
-
-                    <span class="category">🍽️ Restaurant</span>
-
-                    <h3>Nom du restaurant</h3>
-
-                    <p>
-                        Une adresse agréable pour découvrir la cuisine
-                        locale dans une ambiance conviviale.
-                    </p>
-
-                    <a href="" class="restaurant-link">
-                        Découvrir l'adresse →
-                    </a>
-
-                </div>
-
-            </article>
-
-
-            <article class="restaurant-card">
-
-                <img src="./images/brasserie-cabourg.jpg" alt="Brasserie à Cabourg">
-
-                <div class="restaurant-content">
-
                     <span class="category">🍴 Brasserie</span>
-
-                    <h3>Nom de la brasserie</h3>
-
-                    <p>
-                        Une adresse idéale pour déjeuner ou profiter
-                        d'un repas face à la mer.
-                    </p>
-
-                    <a href="" class="restaurant-link">
-                        Découvrir l'adresse →
-                    </a>
-
+                    <h3>L'Encas</h3>
+                    <p>Une brasserie conviviale face à la mer, idéale pour profiter d’un repas avec vue sur la Promenade
+                        Marcel Proust.</p>
+                    <a href="" class="restaurant-link">Découvrir l'adresse </a>
                 </div>
+            </article>
 
+            <article class="restaurant-card">
+                <img src="../images/le-balligan-cabourg.jpg" alt="Restaurant de fruits de mer à Cabourg">
+                <div class="restaurant-content">
+                    <span class="category">🦪 Fruits de mer</span>
+                    <h3>Le Balligan</h3>
+                    <p>Une adresse incontournable pour savourer poissons, coquillages et fruits de mer dans une ambiance
+                        chaleureuse.</p>
+                    <a href="" class="restaurant-link">Découvrir l'adresse →</a>
+                </div>
+            </article>
+
+            <article class="restaurant-card">
+                <img src="../images/latelier-cabourg.webp" alt="Brasserie à Cabourg">
+                <div class="restaurant-content">
+                    <span class="category">🍽️ Restaurant</span>
+                    <h3>L'Atelier</h3>
+                    <p>Une table conviviale proposant une cuisine française soignée au cœur de Cabourg.</p>
+                    <a href="" class="restaurant-link">Découvrir l'adresse →</a>
+                </div>
+            </article>
+
+            <article class="restaurant-card">
+                <img src="../images/lolivier-cabourg.webp" alt="Restaurant à Cabourg">
+                <div class="restaurant-content">
+                    <span class="category">🍕 Pizzeria</span>
+                    <h3>L'Olivier</h3>
+                    <p>Une adresse appréciée pour ses pizzas et sa cuisine italienne, parfaite pour un repas
+                        décontracté.</p>
+                    <a href="" class="restaurant-link">Découvrir l'adresse </a>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <section id="activites">
+
+        <div class="section-title">
+            <p>À faire</p>
+            <h2>Que faire à Cabourg ?</h2>
+            <span>
+                Sport, loisirs et expériences pour profiter pleinement de Cabourg.
+            </span>
+        </div>
+
+        <div class="activites-list">
+
+            <article class="activite-card">
+                <img src="../images/nautique-cabourg.jpg" alt="Activité nautique à Cabourg">
+                <div class="activite-content">
+                    <span class="category">🌊 Nautique</span>
+                    <h3>Activités nautiques</h3>
+                    <p>Voile, char à voile, paddle et autres activités pour profiter pleinement du littoral.</p>
+                </div>
             </article>
 
 
-            <article class="restaurant-card">
-
-                <img src="./images/restaurant-cabourg-2.jpg" alt="Restaurant de fruits de mer à Cabourg">
-
-                <div class="restaurant-content">
-
-                    <span class="category">🦪 Fruits de mer</span>
-
-                    <h3>Nom du restaurant</h3>
-
+            <article class="activite-card">
+                <img src="../images/velo-cabourg.webp" alt="Vélo à Cabourg">
+                <div class="activite-content">
+                    <span class="category">🚲 Vélo</span>
+                    <h3>À vélo</h3>
                     <p>
-                        Une adresse pour profiter des produits de la mer
-                        et des spécialités normandes.
+                        Parcourez le littoral et les environs de Cabourg
+                        à vélo.
                     </p>
-
-                    <a href="" class="restaurant-link">
-                        Découvrir l'adresse →
-                    </a>
-
                 </div>
+            </article>
 
+
+            <article class="activite-card">
+                <img src="../images/golf-public-cabourg.jpg" alt="Golf à Cabourg">
+                <div class="activite-content">
+                    <span class="category">⛳ Golf</span>
+                    <h3>Golf</h3>
+                    <p>Profitez d'une partie de golf dans un cadre naturel entre terre et mer.</p>
+                </div>
+            </article>
+
+
+            <article class="activite-card">
+                <img src="../images/sulky-cabourg.jpg" alt="Équitation à Cabourg">
+                <div class="activite-content">
+                    <span class="category">🐎 Activité équestre</span>
+                    <h3>Équitation</h3>
+                    <p>
+                        Découvrez l'univers équestre de Cabourg, entre balades cheval et courses hippiques.</p>
+                </div>
             </article>
 
         </div>
 
     </section>
 
+    <section id="coups-de-coeur">
+
+        <div class="section-title">
+            <p>Coups de cœur</p>
+            <h2>Nos coups de cœur à Cabourg</h2>
+            <span>
+                Découvrez nos coups de cœur pour profiter pleinement de Cabourg.
+            </span>
+        </div>
+
+        <div class="favorites">
+
+            <article class="favorite-card">
+                <img src="../images/facade-villa-l-annonciade-camille-plichard-ncpa-tourisme-34729-1920px-1920x1080-f50_50.webp"
+                    alt="Villas Belle Époque à Cabourg">
+                <div class="favorite-content">
+                    <span class="category">🏛️ Patrimoine</span>
+                    <h3>Villas Belle Époque</h3>
+                    <p>Découvrez l'architecture unique des villas Belle Époque qui font le charme de Cabourg.</p>
+                </div>
+            </article>
+
+            <article class="favorite-card">
+                <img src="../images/jardins-casino-cabourg.png" alt="Jardin botanique à Cabourg">
+                <div class="favorite-content">
+                    <span class="category">🌳 Nature</span>
+                    <h3>Jardins du Casino</h3>
+                    <p> Un agréable écrin de verdure face à la mer, idéal pour une pause au cœur de Cabourg.je </p>
+                </div>
+            </article>
+
+            <article class="favorite-card">
+                <img src="../images/villa-temps-retrouve.webp" alt="Villa du Temps retrouvé à Cabourg">
+                <div class="favorite-content">
+                    <span class="category">🏛️ Patrimoine</span>
+                    <h3>Villa du Temps retrouvé</h3>
+                    <p>Profitez de la vie nocturne de Cabourg, entre bars, concerts et animations estivales.</p>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <section id="carte">
+
+        <div class="section-title">
+            <p>Explorez Cabourg</p>
+            <h2>Les lieux sur la carte</h2>
+            <span>
+                Retrouvez les principaux lieux présentés dans notre guide.
+            </span>
+        </div>
+
+        <div class="map-preview">
+            <div id="map"></div>
+        </div>
+
+    </section>
+
+    <footer id="footer"></footer>
+
     <script src="../js/header.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
+    </script>
+    <script src="../js/cabourg.js"></script>
+    <script src="../js/footer.js"></script>
 </body>
 
 </html>
