@@ -1,0 +1,121 @@
+{
+  "ville": "Houlgate",
+  "lieux": [
+    {
+      "name": "L'Ancien Grand Hôtel",
+      "category": "Patrimoine",
+      "description": "Un édifice emblématique de la Belle Époque, reconnaissable à sa rotonde.",
+      "address": "Rue Baumier, 14510 Houlgate",
+      "lat": 49.30429,
+      "lng": -0.07415
+    },
+    {
+      "name": "La Promenade Roland Garros",
+      "category": "Bord de mer",
+      "description": "Une agréable promenade le long de la plage, bordée de cabines et de villas.",
+      "address": "Promenade Roland Garros, 14510 Houlgate",
+      "lat": 49.30274,
+      "lng": -0.08045
+    },
+    {
+      "name": "Falaises des Vaches Noires",
+      "category": "Nature",
+      "description": "Un site naturel spectaculaire aux formations géologiques remarquables.",
+      "address": "Site des Vaches Noires, 14510 Houlgate",
+      "lat": 49.3052,
+      "lng": -0.0627
+    },
+    {
+      "name": "L'escalier des 100 Marches",
+      "category": "Panorama",
+      "description": "Gravissez ses marches pour profiter d’un beau point de vue sur Houlgate et la mer.",
+      "address": "Escalier des 100 Marches, 14510 Houlgate",
+      "lat": 49.30521199535824,
+      "lng": -0.07097434907134437
+    },
+    {
+      "name": "Plage de Houlgate",
+      "category": "Plage",
+      "description": "Une longue plage de sable bordée de villas, idéale pour profiter du littoral.",
+      "address": "Plage de Houlgate, 14510 Houlgate",
+      "lat": 49.30256652832031,
+      "lng": -0.08189299702644348
+    },
+    {
+      "name": "Table d'orientation",
+      "category": "Panorama",
+      "description": "Un point de vue remarquable sur Houlgate, la mer et la Côte Fleurie.",
+      "address": "Rue de la Corniche, 14510 Houlgate",
+      "lat": 49.304850893625506,
+      "lng": -0.06765862756438645
+    },
+    {
+      "name": "La Butte de Houlgate",
+      "category": "Nature",
+      "description": "Une colline boisée qui offre un autre visage de la station, loin de l’animation du front de mer.",
+      "address": "La Butte de Houlgate, 14510 Houlgate",
+      "lat": 49.302303314208984,
+      "lng": -0.06159599870443344
+    },
+    {
+      "name": "Villa La Brise",
+      "category": "Patrimoine",
+      "description": "Une élégante villa balnéaire qui témoigne du charme Belle Époque de Houlgate.",
+      "address": "Houlgate, 14510",
+      "lat": 49.3025,
+      "lng": -0.0765
+    }
+  ],
+  "restaurants": [
+    {
+      "name": "L'Arbre à Pin",
+      "category": "Brasserie",
+      "description": "Une brasserie conviviale au cœur de Houlgate.",
+      "address": "70 rue des Bains, 14510 Houlgate",
+      "lat": 49.302818298339844,
+      "lng": -0.07938220351934433
+    },
+    {
+      "name": "L'Eden d'Houlgate",
+      "category": "Restaurant",
+      "description": "Une adresse élégante pour profiter d’une cuisine soignée.",
+      "address": "7 rue Henri Fouchard, 14510 Houlgate",
+      "lat": 49.30245590209961,
+      "lng": -0.07759889960289001
+    },
+    {
+      "name": "Les Passantes",
+      "category": "Restaurant",
+      "description": "Une table chaleureuse au cœur de la rue des Bains.",
+      "address": "41 rue des Bains, 14510 Houlgate",
+      "lat": 49.30353927612305,
+      "lng": -0.07634910196065903
+    },
+    {
+      "name": "La Maison du Coquillage",
+      "category": "Fruits de mer",
+      "description": "Une adresse incontournable pour les amateurs de produits de la mer.",
+      "address": "37 rue des Bains, 14510 Houlgate",
+      "lat": 49.30362319946289,
+      "lng": -0.07607729732990265
+    }
+  ],
+  "activites": [
+    {
+      "name": "Circuit des villas",
+      "category": "Patrimoine",
+      "description": "Partez à la découverte des nombreuses villas qui témoignent de l’âge d’or de la station.",
+      "address": "Centre-ville de Houlgate, 14510 Houlgate",
+      "lat": 49.3008653,
+      "lng": -0.0751662
+    },
+    {
+      "name": "Casino de Houlgate",
+      "category": "Casino",
+      "description": "Profitez des jeux de hasard et de l'ambiance animée du casino de Houlgate.",
+      "address": "41 rue Henri Dobert, 14510 Houlgate",
+      "lat": 49.30496597290039,
+      "lng": -0.07443670183420181
+    }
+  ]
+}

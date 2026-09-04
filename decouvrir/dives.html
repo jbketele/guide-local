@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guide local - Cabourg</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/villes.css">
+    <link rel="icon" type="image/x-icon" href="../images/icon-guide.png">
+</head>
+
+<style>
+    #hero::before {
+        background-image: url('../images/dives-sur-mer.jpg');
+    }
+</style>
+
+<body>
+    <header id="header"></header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Dives-sur-mer</h1>
+            <p>Entre patrimoine médiéval et esprit portuaire</p>
+        </div>
+    </section>
+
+    <section id="presentation">
+        <div class="section-title">
+            <p>Présentation</p>
+        </div>
+        <div class="presentation-title">
+            <h2>Dives-sur-mer, une ville <br>chargée d'histoire</h2>
+        </div>
+
+        <p>Entre les halles médiévales, le port et les ruelles du centre historique, Dives-sur-Mer possède un charme
+            bien particulier sur la Côte Fleurie. </p>
+    </section>
+
+    <section id="incontournables">
+        <div class="section-title">
+            <p>À ne pas manquer</p>
+            <h2>Les incontournables</h2>
+        </div>
+
+        <div class="incontournables-list">
+            <article class="incontournable-card">
+                <img src="../images/Dives-sur-Mer_Halle_7534.jpeg" alt="Les halles médiévales de Dives-sur-mer">
+                <div class="incontournable-content">
+                    <span class="category">🏛️ Patrimoine</span>
+                    <h3>Les halles médiévales</h3>
+                    <p>Un monument emblématique du centre-ville, qui accueille encore aujourd’hui le marché.</p>
+                </div>
+            </article>
+
+            <article class="incontournable-card">
+                <img src="../images/village-d-art-pendant-medievales-de-guillaume-eyes-of-gd-ncpa-toutrisme-41593-1920px-1024x767.webp"
+                    alt="Le Village d'art Guillaume le Conquérant">
+                <div class="incontournable-content">
+                    <span class="category">🎨 Artisanat et culture</span>
+                    <h3>Le Village d'art Guillaume le Conquérant</h3>
+                    <p>Un ensemble de cours, jardins et boutiques d’artisans installé dans un décor aux influences
+                        médiévales et Renaissance. </p>
+                </div>
+            </article>
+
+            <article class="incontournable-card">
+                <img src="../images/Église_Notre-Dame_de_Dives_octobre_2020_1.jpg"
+                    alt="Église Notre-Dame de Dives-sur-Mer">
+                <div class="incontournable-content">
+                    <span class="category">🏛️ Patrimoine</span>
+                    <h3>Église Notre-Dame</h3>
+                    <p>Une église remarquable où se trouve notamment la célèbre liste des 475 compagnons de Guillaume le
+                        Conquérant.</p>
+                </div>
+            </article>
+
+            <article class="incontournable-card">
+                <img src="../images/maison-bleue-dives.webp" alt="Maison bleue à Dives-sur-Mer">
+                <div class="incontournable-content">
+                    <span class="category">🏛️ Patrimoine</span>
+                    <h3>La Maison bleue</h3>
+                    <p>Une étonnante maison entièrement recouverte de mosaïques, créée par l’artiste portugais Euclides
+                        Da Costa Ferreira.</p>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <section id="restaurants">
+
+        <div class="section-title">
+            <p>Saveurs</p>
+            <h2>Où manger à Dives-sur-Mer ?</h2>
+            <span>
+                Découvrez quelques bonnes adresses pour manger à Dives-sur-Mer.
+            </span>
+        </div>
+
+        <div class="restaurants-list">
+
+            <article class="restaurant-card">
+                <img src="../images/hydromel-dives.jpg" alt="Restaurant à Dives-sur-Mer">
+                <div class="restaurant-content">
+                    <span class="category">🍽️ Restaurant</span>
+                    <h3>L'Hydromel</h3>
+                    <p>Une table gastronomique et raffinée.</p>
+                    <a href="" class="restaurant-link">Découvrir l'adresse </a>
+                </div>
+            </article>
+
+            <article class="restaurant-card">
+                <img src="../images/bougnat-dives.jpg" alt="Brasserie à Dives-sur-Mer">
+                <div class="restaurant-content">
+                    <span class="category">🍴 Brasserie</span>
+                    <h3>Chez le Bougnat</h3>
+                    <p>Une adresse conviviale au cœur de Dives-sur-Mer.</p>
+                    <a href="" class="restaurant-link">Découvrir l'adresse →</a>
+                </div>
+            </article>
+
+            <article class="restaurant-card">
+                <img src="../images/restaurant-a-l-intuition.jpg" alt="Restaurant à Dives-sur-Mer">
+                <div class="restaurant-content">
+                    <span class="category">🍽️ Restaurant</span>
+                    <h3>À l'Intuition</h3>
+                    <p>Une cuisine soignée dans une ambiance chaleureuse.</p>
+                    <a href="" class="restaurant-link">Découvrir l'adresse →</a>
+                </div>
+            </article>
+
+            <article class="restaurant-card">
+                <img src="../images/le-billig-s.jpg" alt="Crêperie à Dives-sur-Mer">
+                <div class="restaurant-content">
+                    <span class="category">🥞 Crêperie</span>
+                    <h3>Le Billig's</h3>
+                    <p>Galettes et crêpes dans le Village Guillaume le Conquérant.</p>
+                    <a href="" class="restaurant-link">Découvrir l'adresse </a>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <section id="activites">
+
+        <div class="section-title">
+            <p>À faire</p>
+            <h2>Que faire à Dives-sur-Mer ?</h2>
+            <span>
+                Entre patrimoine, port et bord de mer, Dives-sur-Mer se découvre aussi au fil de ses balades et de ses
+                marchés.
+            </span>
+        </div>
+
+        <div class="activites-list">
+
+            <article class="activite-card">
+                <img src="../images/port-guillaume-eyes-of-gd-ncpa-toutrisme-41426-1920px-1920x1080-f50_50.webp"
+                    alt="Port Guillaume à Dives-sur-Mer">
+                <div class="activite-content">
+                    <span class="category">⚓️ Port et plaisance</span>
+                    <h3>Port Guillaume</h3>
+                    <p>Une agréable promenade entre port de plaisance, bateaux et halle aux poissons.</p>
+                </div>
+            </article>
+
+            <article class="activite-card">
+                <img src="../images/centre-historique-dives.jpg" alt="Centre historique de Dives-sur-Mer">
+                <div class="activite-content">
+                    <span class="category">🏛️ Patrimoine</span>
+                    <h3>Centre historique</h3>
+                    <p>Parcourez les ruelles anciennes à la découverte des maisons à colombages et du patrimoine de
+                        Dives.</p>
+                </div>
+            </article>
+
+
+            <article class="activite-card">
+                <img src="../images/le-marche-des-halles-eric-larrayadieu-18798-1200px-1024x972.webp"
+                    alt="Marché des Halles de Dives-sur-Mer">
+                <div class="activite-content">
+                    <span class="category">🥕 Produits locaux</span>
+                    <h3>Marché des Halles</h3>
+                    <p>Rendez-vous sous les halles médiévales pour découvrir les produits du terroir, notamment le
+                        samedi matin.</p>
+                </div>
+            </article>
+
+        </div>
+
+    </section>
+
+    <section id="coups-de-coeur">
+
+        <div class="section-title">
+            <p>Coups de cœur</p>
+            <h2>Nos coups de cœur à Dives-sur-Mer</h2>
+            <span>
+                Découvrez nos coups de cœur pour profiter pleinement de Dives-sur-Mer.
+            </span>
+        </div>
+
+        <div class="favorites">
+
+            <article class="favorite-card">
+                <img src="../images/Dives-sur-Mer,_villa_Les_Bossettes.jpeg" alt="Villa Les Bossettes à Dives-sur-Mer">
+                <div class="favorite-content">
+                    <span class="category">🏛️ Patrimoine</span>
+                    <h3>Villa Les Bossettes</h3>
+                    <p>Une élégante villa balnéaire construite entre 1903 et 1908, reconnaissable à son architecture
+                        éclectique.</p>
+                </div>
+            </article>
+
+            <article class="favorite-card">
+                <img src="../images/manoir-dives.jpeg" alt="Manoir du Bois-Hibout à Dives">
+                <div class="favorite-content">
+                    <span class="category">🌳 Nature</span>
+                    <h3>Manoir du Bois-Hibout</h3>
+                    <p>Une imposante demeure en pierre de Caen datant du XVIIᵉ siècle, qui domine la place de la
+                        République.</p>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <section id="carte">
+
+        <div class="section-title">
+            <p>Explorez Cabourg</p>
+            <h2>Les lieux sur la carte</h2>
+            <span>
+                Retrouvez les principaux lieux présentés dans notre guide.
+            </span>
+        </div>
+
+        <div class="map-preview">
+            <div id="map"></div>
+        </div>
+
+    </section>
+
+    <footer id="footer"></footer>
+
+    <script src="../js/header.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
+    </script>
+    <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+    <script src="../js/dives.js"></script>
+    <script src="../js/footer.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,108 @@
+{
+  "ville": "Merville-Franceville",
+  "lieux": [
+    {
+      "name": "Plage de Merville-Franceville",
+      "category": "Plage",
+      "description": "Une immense plage de sable idéale pour profiter du littoral.",
+      "address": "Boulevard Wattier, 14810 Merville-Franceville-Plage",
+      "lat": 49.28632736206055,
+      "lng": -0.20204900205135345
+    },
+    {
+      "name": "La Baie de l'Orne",
+      "category": "Nature",
+      "description": "Un espace naturel préservé à découvrir à pied ou à vélo.",
+      "address": "Baie de l'Orne, 14810 Merville-Franceville-Plage",
+      "lat": 49.282,
+      "lng": -0.218
+    },
+    {
+      "name": "La batterie de Merville",
+      "category": "Patrimoine",
+      "description": "Un site historique majeur du Débarquement en Normandie.",
+      "address": "Place du 9e Bataillon, 14810 Merville-Franceville-Plage",
+      "lat": 49.26421,
+      "lng": -0.18731
+    },
+    {
+      "name": "Dunes de Merville-Franceville",
+      "category": "Nature",
+      "description": "Profitez de la beauté naturelle des dunes qui bordent la côte normande.",
+      "address": "Dunes de Merville-Franceville-Plage",
+      "lat": 49.28622359129485,
+      "lng": -0.20538634408177048
+    },
+    {
+      "name": "Réserve ornithologique du Gros-Banc",
+      "category": "Nature",
+      "description": "Un endroit paisible pour observer les oiseaux au cœur de l’estuaire de l’Orne.",
+      "address": "Estuaire de l'Orne, 14810 Merville-Franceville-Plage",
+      "lat": 49.276065826416016,
+      "lng": 0.2187844067811966
+    },
+    {
+      "name": "La Redoute de Merville",
+      "category": "Patrimoine",
+      "description": "Une étonnante petite forteresse en forme de fer à cheval, héritée des anciennes défenses de l’estuaire.",
+      "address": "La Redoute, 14810 Merville-Franceville-Plage",
+      "lat": 49.282346,
+      "lng": -0.218706
+    }
+  ],
+  "restaurants": [
+    {
+      "name": "Santa Fe",
+      "category": "Pizzeria",
+      "description": "Une adresse conviviale à deux pas de la plage, entre pizzas, galettes, crêpes et moules-frites.",
+      "address": "2 avenue Houdard, 14810 Merville-Franceville-Plage",
+      "lat": 49.2852985,
+      "lng": -0.2027724
+    },
+    {
+      "name": "La Réserve Péché Iodé",
+      "category": "Fruits de mer",
+      "description": "Une adresse emblématique au bord de la baie, dans un cadre naturel exceptionnel.",
+      "address": "Chemin de la Baie, Base nautique, 14810 Merville-Franceville-Plage",
+      "lat": 49.2798,
+      "lng": -0.2233
+    },
+    {
+      "name": "L'Atrium",
+      "category": "Restaurant",
+      "description": "Une table mettant à l’honneur une cuisine locale et de saison.",
+      "address": "42 avenue de Paris, 14810 Merville-Franceville-Plage",
+      "lat": 49.28401184082031,
+      "lng": -0.20230449736118317
+    },
+    {
+      "name": "Crêpit'roll",
+      "category": "Crêperie",
+      "description": "Une option décontractée face à la mer, parfaite pour une pause gourmande.",
+      "address": "Boulevard Wattier, 14810 Merville-Franceville-Plage",
+      "lat": 49.28532791137695,
+      "lng": -0.20306649804115295
+    }
+  ],
+  "activites": [
+    {
+      "name": "La Vélomaritime",
+      "category": "Balades",
+      "description": "Une belle façon d'explorer Merville-Franceville et ses environs à vélo."
+    },
+    {
+      "name": "Spot de kitesurf",
+      "category": "Nautique",
+      "description": "Profitez d’un spot réputé pour les sports de glisse sur la grande plage.",
+      "lat": 49.28486251831055,
+      "lng": -0.21179239451885223
+    },
+    {
+      "name": "Club Voile et pagaie",
+      "category": "Nautique",
+      "description": "Kayak, paddle et activités nautiques pour découvrir la baie autrement.",
+      "lat": 49.281,
+      "lng": -0.219
+    }
+  ]
+}

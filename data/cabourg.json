@@ -1,0 +1,119 @@
+{
+  "ville": "Cabourg",
+  "lieux": [
+    {
+      "name": "Promenade Marcel Proust",
+      "category": "Balade",
+      "description": "Une promenade emblématique le long du front de mer de Cabourg.",
+      "address": "Promenade Marcel Proust, 14390 Cabourg",
+      "lat": 49.2933,
+      "lng": -0.119
+    },
+    {
+      "name": "Grand Hôtel de Cabourg",
+      "category": "Patrimoine",
+      "description": "Un édifice emblématique de la station balnéaire et de son histoire.",
+      "address": "Les Jardins du Casino, 14390 Cabourg",
+      "lat": 49.293813,
+      "lng": -0.115614
+    },
+    {
+      "name": "Le casino historique",
+      "category": "Patrimoine",
+      "description": "Face à la mer, cet édifice emblématique de Cabourg témoigne de l'histoire balnéaire de la ville.",
+      "address": "Promenade Marcel Proust, 14390 Cabourg",
+      "lat": 49.29357,
+      "lng": -0.11643
+    },
+    {
+      "name": "Plage de Cabourg",
+      "category": "Plage",
+      "description": "Une longue plage de sable idéale pour profiter du bord de mer.",
+      "address": "Promenade Marcel Proust, 14390 Cabourg",
+      "lat": 49.28782,
+      "lng": -0.1566
+    },
+    {
+      "name": "Villas Belle Époque",
+      "category": "Patrimoine",
+      "description": "Découvrez l'architecture unique des villas Belle Époque qui font le charme de Cabourg.",
+      "address": "Centre-ville de Cabourg",
+      "lat": 49.293,
+      "lng": -0.1158
+    },
+    {
+      "name": "Jardins du Casino",
+      "category": "Nature",
+      "description": "Un agréable écrin de verdure face à la mer, idéal pour une pause au cœur de Cabourg.",
+      "address": "Promenade Marcel Proust, 14390 Cabourg",
+      "lat": 49.29307,
+      "lng": -0.1155
+    },
+    {
+      "name": "Villa du Temps retrouvé",
+      "category": "Patrimoine",
+      "description": "Un musée consacré à l'atmosphère et à l'art de vivre de la Belle Époque.",
+      "address": "15 avenue du Président Raymond Poincaré, 14390 Cabourg",
+      "lat": 49.294,
+      "lng": -0.118
+    }
+  ],
+  "restaurants": [
+    {
+      "name": "L'Encas",
+      "category": "Brasserie",
+      "description": "Une brasserie conviviale face à la mer, idéale pour profiter d’un repas avec vue sur la Promenade Marcel Proust.",
+      "address": "4 Promenade Marcel Proust, 14390 Cabourg",
+      "lat": 49.29315,
+      "lng": -0.11595
+    },
+    {
+      "name": "Le Balligan",
+      "category": "Fruits de mer",
+      "description": "Une adresse incontournable pour savourer poissons, coquillages et fruits de mer dans une ambiance chaleureuse.",
+      "address": "Cabourg",
+      "lat": 49.2928,
+      "lng": -0.1165
+    },
+    {
+      "name": "L'Atelier",
+      "category": "Restaurant",
+      "description": "Une table conviviale proposant une cuisine française soignée au cœur de Cabourg.",
+      "address": "37 avenue de la Mer, 14390 Cabourg",
+      "lat": 49.2922,
+      "lng": -0.1172
+    },
+    {
+      "name": "L'Olivier",
+      "category": "Pizzeria",
+      "description": "Une adresse appréciée pour ses pizzas et sa cuisine italienne, parfaite pour un repas décontracté.",
+      "address": "46 avenue de la Mer, 14390 Cabourg",
+      "lat": 49.2918,
+      "lng": -0.117
+    }
+  ],
+  "activites": [
+    {
+      "name": "Activités nautiques",
+      "category": "Nautique",
+      "description": "Voile, char à voile, paddle et autres activités pour profiter pleinement du littoral."
+    },
+    {
+      "name": "À vélo",
+      "category": "Vélo",
+      "description": "Parcourez le littoral et les environs de Cabourg à vélo."
+    },
+    {
+      "name": "Golf",
+      "category": "Golf",
+      "description": "Profitez d'une partie de golf dans un cadre naturel entre terre et mer.",
+      "lat": 49.293,
+      "lng": -0.157
+    },
+    {
+      "name": "Équitation",
+      "category": "Activité équestre",
+      "description": "Découvrez l'univers équestre de Cabourg, entre balades à cheval et courses hippiques."
+    }
+  ]
+}

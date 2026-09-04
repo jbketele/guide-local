@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guide local - Merville-Franceville</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/villes.css">
+    <link rel="icon" type="image/x-icon" href="../images/icon-guide.png">
+</head>
+
+<style>
+    #hero::before {
+        background-image: url('../images/vue-merville.jpeg');
+    }
+</style>
+
+<body>
+    <header id="header"></header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Merville-Franceville-Plage</h1>
+            <p>Entre mer, nature et histoire</p>
+        </div>
+    </section>
+
+    <section id="presentation">
+        <div class="section-title">
+            <p>Présentation</p>
+        </div>
+        <div class="presentation-title">
+            <h2>Merville-Franceville, une station entre terre et mer</h2>
+        </div>
+
+        <p>Située à l’embouchure de l’Orne, Merville-Franceville-Plage séduit par son immense plage de sable, ses
+            espaces naturels et son patrimoine historique. Entre balades en bord de mer, activités nautiques et
+            découverte des sites du Débarquement, la station offre un cadre agréable pour profiter de la Côte Fleurie.
+        </p>
+    </section>
+
+    <section id="incontournables">
+        <div class="section-title">
+            <p>À ne pas manquer</p>
+            <h2>Les incontournables</h2>
+        </div>
+
+        <div class="incontournables-list">
+            <article class="incontournable-card">
+                <img src="../images/plage-merville.jpg" alt="Plage de Merville-Franceville">
+                <div class="incontournable-content">
+                    <span class="category">Plage</span>
+                    <h3>Plage de Merville-Franceville</h3>
+                    <p>Une immense plage de sable idéale pour profiter du littoral.</p>
+                </div>
+            </article>
+
+            <article class="incontournable-card">
+                <img src="../images/port-de-plaisance-de-merville-thomas-boivin-1920x1280-1-1920x1080-f50_50.webp"
+                    alt="Port de plaisance de Merville-Franceville">
+                <div class="incontournable-content">
+                    <span class="category">Nature</span>
+                    <h3>La Baie de l'Orne</h3>
+                    <p>Un espace naturel préservé à découvrir à pied ou à vélo.</p>
+                </div>
+            </article>
+
+            <article class="incontournable-card">
+                <img src="../images/batterie-merville.jpg" alt="Batterie de Merville-Franceville">
+                <div class="incontournable-content">
+                    <span class="category">Patrimoine</span>
+                    <h3>La batterie de Merville</h3>
+                    <p>Un site historique majeur du Débarquement en Normandie.</p>
+                </div>
+            </article>
+        </div>
+        </article>
+
+        </div>
+    </section>
+
+    <section id="restaurants">
+
+        <div class="section-title">
+            <p>Saveurs</p>
+            <h2>Où manger à Merville-Franceville ?</h2>
+            <span>
+                Découvrez quelques bonnes adresses pour manger à Merville-Franceville.
+            </span>
+        </div>
+
+        <div class="restaurants-list">
+
+            <article class="restaurant-card">
+                <img src="../images/santa-fe-merville.webp" alt="Restaurant à Merville-Franceville">
+                <div class="restaurant-content">
+                    <span class="category">🍕 Pizzeria</span>
+                    <h3>Santa Fe</h3>
+                    <p> Une adresse conviviale à deux pas de la plage, entre pizzas, galettes, crêpes et moules-frites.
+                    </p>
+                    <a href="" class="restaurant-link">Découvrir l'adresse </a>
+                </div>
+            </article>
+
+            <article class="restaurant-card">
+                <img src="../images/la-reserve-merville.webp" alt="Restaurant de fruits de mer à Merville-Franceville">
+                <div class="restaurant-content">
+                    <span class="category">🦪 Fruits de mer</span>
+                    <h3>La Réserve Péché Iodé</h3>
+                    <p> Une adresse emblématique, avec un cadre particulièrement intéressant au bord de la baie. Elle
+                        ressort régulièrement parmi les adresses les plus populaires de la commune.</p>
+                    <a href="" class="restaurant-link">Découvrir l'adresse </a>
+                </div>
+            </article>
+
+            <article class="restaurant-card">
+                <img src="../images/l-atrium-franceville.jpg" alt="Restaurant à Merville-Franceville">
+                <div class="restaurant-content">
+                    <span class="category">🍽️ Restaurant</span>
+                    <h3>L'Atrium</h3>
+                    <p>Pour représenter une cuisine plus gastronomique et locale.</p>
+                    <a href="" class="restaurant-link">Découvrir l'adresse →</a>
+                </div>
+            </article>
+
+            <article class="restaurant-card">
+                <img src="../images/crepitroll-merville.webp" alt="Crêperie à Merville-Franceville">
+                <div class="restaurant-content">
+                    <span class="category">🥞 Crêperie</span>
+                    <h3>Crêpit'roll</h3>
+                    <p>Une option plus décontractée, face à la mer, qui apporte une vraie touche « station balnéaire
+                    </p>
+                    <a href="" class="restaurant-link">Découvrir l'adresse →</a>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <section id="activites">
+
+        <div class="section-title">
+            <p>À faire</p>
+            <h2>Que faire à Merville-Franceville ?</h2>
+            <span>
+                Entre mer et nature, Merville-Franceville offre de nombreuses activités pour profiter pleinement de la
+                Côte Fleurie.
+            </span>
+        </div>
+
+        <div class="activites-list">
+
+            <article class="activite-card">
+                <img src="../images/sur-la-velomaritime-de-merville-franceville-a-cabourg.webp"
+                    alt="Vélomaritime de Merville-Franceville à Cabourg">
+                <div class="activite-content">
+                    <span class="category">Balades</span>
+                    <h3>La Vélomaritime</h3>
+                    <p>Une belle façon d'explorer Merville-Franceville et ses environs à vélo.</p>
+                </div>
+            </article>
+
+
+            <article class="activite-card">
+                <img src="../images/spot-kite-franceville.jpg" alt="Spot de kitesurf à Merville-Franceville">
+                <div class="activite-content">
+                    <span class="category">⛵ Nautique</span>
+                    <h3>Spot de kitesurf</h3>
+                    <p>Profitez d’un spot réputé pour les sports de glisse sur la grande plage.</p>
+                </div>
+            </article>
+
+
+            <article class="activite-card">
+                <img src="../images/voile-pagaie-merville.avif" alt="Club Voile et pagaie à Merville-Franceville">
+                <div class="activite-content">
+                    <span class="category">⛵ Nautique</span>
+                    <h3>Club Voile et pagaie</h3>
+                    <p>Kayak, paddle et activités nautiques pour découvrir la baie autrement.</p>
+                </div>
+            </article>
+
+        </div>
+
+    </section>
+
+    <section id="coups-de-coeur">
+
+        <div class="section-title">
+            <p>Coups de cœur</p>
+            <h2>Nos coups de cœur à Merville-Franceville</h2>
+            <span>
+                Découvrez nos coups de cœur pour profiter pleinement de Merville-Franceville.
+            </span>
+        </div>
+
+        <div class="favorites">
+
+            <article class="favorite-card">
+                <img src="../images/dunes-merville.webp" alt="Dunes de Merville-Franceville">
+                <div class="favorite-content">
+                    <span class="category">🌳 Nature</span>
+                    <h3>Dunes de Merville-Franceville</h3>
+                    <p>Profitez de la beauté naturelle des dunes qui bordent la côte normande.</p>
+                </div>
+            </article>
+
+            <article class="favorite-card">
+                <img src="../images/reserve-gros-banc.webp" alt="Réserve ornithologique du Gros-Banc">
+                <div class="favorite-content">
+                    <span class="category">🌳 Nature</span>
+                    <h3>Réserve ornithologique du Gros-Banc</h3>
+                    <p> Un endroit paisible pour observer les oiseaux au cœur de l’estuaire de l’Orne</p>
+                </div>
+            </article>
+
+            <article class="favorite-card">
+                <img src="../images/la-redoute-de-merville-eyes-of-gd-ncpa-toutrisme-41477-1920px-1920x1080-f50_50.webp"
+                    alt="Villa du Temps retrouvé à Cabourg">
+                <div class="favorite-content">
+                    <span class="category">🏛️ Patrimoine</span>
+                    <h3>La Redoute de Merville</h3>
+                    <p>Une étonnante petite forteresse en forme de fer à cheval, héritée des anciennes défenses de
+                        l’estuaire.</p>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <section id="carte">
+
+        <div class="section-title">
+            <p>Explorez Cabourg</p>
+            <h2>Les lieux sur la carte</h2>
+            <span>
+                Retrouvez les principaux lieux présentés dans notre guide.
+            </span>
+        </div>
+
+        <div class="map-preview">
+            <div id="map"></div>
+        </div>
+
+    </section>
+
+    <footer id="footer"></footer>
+
+    <script src="../js/header.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
+    </script>
+    <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+    <script src="../js/merville.js"></script>
+    <script src="../js/footer.js"></script>
+</body>
+
+</html>

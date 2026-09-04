@@ -2,10 +2,10 @@ let mapCenter;
 let mapZoom;
 
 if (window.innerWidth < 768) {
-    mapCenter = [49.2934373, -0.1155085];
-    mapZoom = 15;
+    mapCenter = [49.301234903946245, -0.0703207103834691];
+    mapZoom = 14;
 } else {
-    mapCenter = [49.2934373, -0.1155085];
+    mapCenter = [49.301234903946245, -0.0703207103834691];
     mapZoom = 15;
 }
 
@@ -25,9 +25,9 @@ const markers = L.markerClusterGroup({
     maxClusterRadius: 50
 });
 
-// Chargement des données de Cabourg
+// Chargement des données de Houlgate
 
-fetch("../data/cabourg.json")
+fetch("../data/houlgate.json")
 
     .then(response => response.json())
     .then(data => {

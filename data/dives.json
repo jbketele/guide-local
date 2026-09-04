@@ -1,0 +1,113 @@
+{
+  "ville": "Dives-sur-Mer",
+  "lieux": [
+    {
+      "name": "Les halles médiévales",
+      "category": "Patrimoine",
+      "description": "Un monument emblématique du centre-ville, qui accueille encore aujourd’hui le marché.",
+      "address": "Place de la République, 14160 Dives-sur-Mer",
+      "lat": 49.286559,
+      "lng": -0.096826
+    },
+    {
+      "name": "Le Village d'art Guillaume le Conquérant",
+      "category": "Artisanat et culture",
+      "description": "Un ensemble de cours, jardins et boutiques d’artisans installé dans un décor aux influences médiévales et Renaissance.",
+      "address": "Place de la République, 14160 Dives-sur-Mer",
+      "lat": 49.286958,
+      "lng": -0.098658
+    },
+    {
+      "name": "Église Notre-Dame",
+      "category": "Patrimoine",
+      "description": "Une église remarquable où se trouve notamment la célèbre liste des 475 compagnons de Guillaume le Conquérant.",
+      "address": "Place de l'Église, 14160 Dives-sur-Mer",
+      "lat": 49.28528,
+      "lng": -0.09682
+    },
+    {
+      "name": "La Maison bleue",
+      "category": "Patrimoine",
+      "description": "Une étonnante maison entièrement recouverte de mosaïques, créée par l’artiste portugais Euclides Da Costa Ferreira.",
+      "address": "13 rue du Port, 14160 Dives-sur-Mer",
+      "lat": 49.291983,
+      "lng": -0.098632
+    },
+    {
+      "name": "Villa Les Bossettes",
+      "category": "Patrimoine",
+      "description": "Une élégante villa balnéaire construite entre 1903 et 1908, reconnaissable à son architecture éclectique.",
+      "address": "Dives-sur-Mer",
+      "lat": 49.29166,
+      "lng": -0.0922
+    },
+    {
+      "name": "Manoir du Bois-Hibout",
+      "category": "Patrimoine",
+      "description": "Une imposante demeure en pierre de Caen datant du XVIIe siècle, qui domine la place de la République.",
+      "address": "Place de la République, 14160 Dives-sur-Mer",
+      "lat": 49.286748,
+      "lng": -0.097067
+    }
+  ],
+  "restaurants": [
+    {
+      "name": "L'Hydromel",
+      "category": "Restaurant",
+      "description": "Une table gastronomique et raffinée.",
+      "address": "96 rue du Général de Gaulle, 14160 Dives-sur-Mer",
+      "lat": 49.28525924682617,
+      "lng": -0.10798820108175278
+    },
+    {
+      "name": "Chez le Bougnat",
+      "category": "Brasserie",
+      "description": "Une adresse conviviale au cœur de Dives-sur-Mer.",
+      "address": "27 rue Gaston Manneville, 14160 Dives-sur-Mer",
+      "lat": 49.286,
+      "lng": -0.098
+    },
+    {
+      "name": "À l'Intuition",
+      "category": "Restaurant",
+      "description": "Une cuisine soignée dans une ambiance chaleureuse.",
+      "address": "64 rue du Général de Gaulle, 14160 Dives-sur-Mer",
+      "lat": 49.285316467285156,
+      "lng": -0.10527680069208145
+    },
+    {
+      "name": "Le Billig's",
+      "category": "Crêperie",
+      "description": "Galettes et crêpes dans le Village Guillaume le Conquérant.",
+      "address": "Village Guillaume le Conquérant, 14160 Dives-sur-Mer",
+      "lat": 49.2869,
+      "lng": -0.0985
+    }
+  ],
+  "activites": [
+    {
+      "name": "Port Guillaume",
+      "category": "Port et plaisance",
+      "description": "Une agréable promenade entre port de plaisance, bateaux et halle aux poissons.",
+      "address": "Port Guillaume, 14160 Dives-sur-Mer",
+      "lat": 49.294513,
+      "lng": -0.09333
+    },
+    {
+      "name": "Centre historique",
+      "category": "Patrimoine",
+      "description": "Parcourez les ruelles anciennes à la découverte des maisons à colombages et du patrimoine de Dives.",
+      "address": "Centre-ville, 14160 Dives-sur-Mer",
+      "lat": 49.2865,
+      "lng": -0.0975
+    },
+    {
+      "name": "Marché des Halles",
+      "category": "Produits locaux",
+      "description": "Rendez-vous sous les halles médiévales pour découvrir les produits du terroir, notamment le samedi matin.",
+      "address": "Les Halles, Place de la République, 14160 Dives-sur-Mer",
+      "lat": 49.286559,
+      "lng": -0.096826
+    }
+  ]
+}

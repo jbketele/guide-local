@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guide local - Cabourg</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/villes.css">
+    <link rel="icon" type="image/x-icon" href="../images/icon-guide.png">
+</head>
+
+<style>
+    #hero::before {
+        background-image: url("../images/houlgate.jpeg");
+    }
+</style>
+
+<body>
+    <header id="header"></header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Houlgate</h1>
+            <p>La station Belle Époque face à la mer</p>
+        </div>
+    </section>
+
+    <section id="presentation">
+        <div class="section-title">
+            <p>Présentation</p>
+        </div>
+        <div class="presentation-title">
+            <h2>Houlgate, <br>élégante et préservée</h2>
+        </div>
+
+        <p>Entre villas Belle Époque, plage de sable et falaises des Vaches Noires, Houlgate possède un charme unique
+            sur la Côte Fleurie. La station invite à flâner dans ses rues, admirer son patrimoine architectural et
+            profiter de son littoral, le temps d’une balade ou d’une journée en bord de mer.</p>
+    </section>
+
+    <section id="incontournables">
+        <div class="section-title">
+            <p>À ne pas manquer</p>
+            <h2>Les incontournables</h2>
+        </div>
+
+        <div class="incontournables-list">
+            <article class="incontournable-card">
+                <img src="../images/grand-hotel-houlgate.jpg" alt="Ancien Grand Hôtel de Houlgate">
+                <div class="incontournable-content">
+                    <span class="category">🏛️ Patrimoine</span>
+                    <h3>L'Ancien Grand Hôtel</h3>
+                    <p>Un édifice emblématique de la Belle Époque, reconnaissable à sa rotonde.</p>
+                </div>
+            </article>
+
+            <article class="incontournable-card">
+                <img src="../images//promenade-roland-garros-eric-larrayadieu-18430-1.webp"
+                    alt="Promenade Roland Garros à Houlgate">
+                <div class="incontournable-content">
+                    <span class="category">🌊 Bord de mer</span>
+                    <h3>La Promenade Roland Garros</h3>
+                    <p>Une agréable promenade le long de la plage, bordée de cabines et de villas.</p>
+                </div>
+            </article>
+
+            <article class="incontournable-card">
+                <img src="../images/falaises-vaches-noires.jpeg" alt="Falaises des Vaches Noires">
+                <div class="incontournable-content">
+                    <span class="category">🌿 Nature</span>
+                    <h3>Falaises des Vaches Noires</h3>
+                    <p>Un site naturel spectaculaire aux formations géologiques remarquables.</p>
+                </div>
+            </article>
+
+            <article class="incontournable-card">
+                <img src="../images/cent-marches-houlgate.jpeg" alt="Les Cent Marches à Houlgate">
+                <div class="incontournable-content">
+                    <span class="category">🌅 Panorama</span>
+                    <h3>L'escalier des 100 Marches</h3>
+                    <p>Gravissez ses marches pour profiter d’un beau point de vue sur Houlgate et la mer.</p>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <section id="restaurants">
+
+        <div class="section-title">
+            <p>Saveurs</p>
+            <h2>Où manger à Houlgate ?</h2>
+            <span>
+                Découvrez quelques bonnes adresses pour manger à Houlgate.
+            </span>
+        </div>
+
+        <div class="restaurants-list">
+
+            <article class="restaurant-card">
+                <img src="../images/arbre-a-pin-houlgate.webp" alt="Restaurant à Houlgate">
+                <div class="restaurant-content">
+                    <span class="category">🍴 Brasserie</span>
+                    <h3>L'Arbre à Pin</h3>
+                    <p>Une brasserie conviviale au cœur de Houlgate.</p>
+                    <a href="" class="restaurant-link">Découvrir l'adresse </a>
+                </div>
+            </article>
+
+            <article class="restaurant-card">
+                <img src="../images/eden-houlgate.jpg" alt="Restaurant à Houlgate">
+                <div class="restaurant-content">
+                    <span class="category">🍽️ Restaurant</span>
+                    <h3>L'Eden d'Houlgate</h3>
+                    <p>Une adresse élégante pour profiter d’une cuisine soignée.</p>
+                    <a href="" class="restaurant-link">Découvrir l'adresse →</a>
+                </div>
+            </article>
+
+            <article class="restaurant-card">
+                <img src="../images/les-passantes-houlgate.jpg" alt="Restaurant à Houlgate">
+                <div class="restaurant-content">
+                    <span class="category">🍽️ Restaurant</span>
+                    <h3>Les Passantes</h3>
+                    <p>Une table chaleureuse au cœur de la rue des Bains.</p>
+                    <a href="" class="restaurant-link">Découvrir l'adresse →</a>
+                </div>
+            </article>
+
+            <article class="restaurant-card">
+                <img src="../images/maison-coquillage-houlgate.jpg" alt="Restaurant de fruits de mer à Houlgate">
+                <div class="restaurant-content">
+                    <span class="category">🦪 Fruits de mer</span>
+                    <h3>La Maison du Coquillage</h3>
+                    <p>Une adresse incontournable pour les amateurs de produits de la mer.</p>
+                    <a href="" class="restaurant-link">Découvrir l'adresse </a>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <section id="activites">
+
+        <div class="section-title">
+            <p>À faire</p>
+            <h2>Que faire à Houlgate ?</h2>
+            <span>
+                Sport, loisirs et expériences pour profiter pleinement de Houlgate.
+            </span>
+        </div>
+
+        <div class="activites-list">
+
+            <article class="activite-card">
+                <img src="../images/circuit-villas-houlgate.jpg" alt="Circuit des villas à Houlgate">
+                <div class="activite-content">
+                    <span class="category">🏛️ Patrimoine</span>
+                    <h3>Circuit des villas</h3>
+                    <p>Partez à la découverte des nombreuses villas qui témoignent de l’âge d’or de la station. Houlgate
+                        possède un patrimoine architectural particulièrement riche, avec près de 500 villas
+                        remarquables. </p>
+                </div>
+            </article>
+
+            <article class="activite-card">
+                <img src="../images/plage-houlgate.avif" alt="Plage de Houlgate">
+                <div class="activite-content">
+                    <span class="category">🏖️ Plage</span>
+                    <h3>Plage</h3>
+                    <p>Profitez de la longue plage de sable pour vous baigner, vous promener ou simplement admirer le
+                        coucher de soleil.</p>
+                </div>
+            </article>
+
+            <article class="activite-card">
+                <img src="../images/casino-houlgate.jpg" alt="Casino de Houlgate">
+                <div class="activite-content">
+                    <span class="category">🎰 Casino</span>
+                    <h3>Casino</h3>
+                    <p>Profitez des jeux de hasard et de l'ambiance animée du casino de Houlgate.</p>
+                </div>
+            </article>
+
+        </div>
+
+    </section>
+
+    <section id="coups-de-coeur">
+
+        <div class="section-title">
+            <p>Coups de cœur</p>
+            <h2>Nos coups de cœur à Houlgate</h2>
+            <span>
+                Découvrez nos coups de cœur pour profiter pleinement de Houlgate.
+            </span>
+        </div>
+
+        <div class="favorites">
+
+            <article class="favorite-card">
+                <img src="../images/butte-houlgate.webp" alt="Butte de Houlgate">
+                <div class="favorite-content">
+                    <span class="category">🌿 Nature</span>
+                    <h3>La Butte de Houlgate</h3>
+                    <p>Une colline boisée qui offre un autre visage de la station, loin de l’animation du front de mer.
+                    </p>
+                </div>
+            </article>
+
+            <article class="favorite-card">
+                <img src="../images/table-d-orientation-a-houlgate-eyes-of-gd-normandie-pays-d-auge-41437-1200px-600x400-f50_50.webp"
+                    alt="Table d'orientation de Houlgate">
+                <div class="favorite-content">
+                    <span class="category">🌅 Panorama</span>
+                    <h3>La Table d'Orientation</h3>
+                    <p> Un agréable écrin de verdure face à la mer, idéal pour une pause au cœur de Cabourg.je </p>
+                </div>e
+            </article>
+
+            <article class="favorite-card">
+                <img src="../images/villa-la-brise.jpg" alt="Villa La Brise à Houlgate">
+                <div class="favorite-content">
+                    <span class="category">🏛️ Patrimoine</span>
+                    <h3>Villa La Brise</h3>
+                    <p>Une élégante villa balnéaire qui témoigne du charme Belle Époque de Houlgate.</p>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <section id="carte">
+
+        <div class="section-title">
+            <p>Explorez Cabourg</p>
+            <h2>Les lieux sur la carte</h2>
+            <span>
+                Retrouvez les principaux lieux présentés dans notre guide.
+            </span>
+        </div>
+
+        <div class="map-preview">
+            <div id="map"></div>
+        </div>
+
+    </section>
+
+    <footer id="footer"></footer>
+
+    <script src="../js/header.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
+    </script>
+    <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+    <script src="../js/houlgate.js"></script>
+    <script src="../js/footer.js"></script>
+</body>
+
+</html>
