@@ -1,0 +1,97 @@
+{
+  "ville": "Villers-sur-Mer",
+  "lieux": [
+    {
+      "name": "Paléospace",
+      "category": "Découverte",
+      "description": "Un musée unique dédié à la paléontologie et à l'histoire du Jurassique en Normandie.",
+      "address": "Avenue Jean Moulin, 14640 Villers-sur-Mer",
+      "lat": 49.327884674072266,
+      "lng": 0.013260800391435623
+    },
+    {
+      "name": "Plage de Villers sur Mer",
+      "category": "Plage",
+      "description": "Profitez de la grande plage de sable et de son agréable front de mer.",
+      "address": "Front de mer, 14640 Villers-sur-Mer",
+      "lat": 49.324474,
+      "lng": -0.005044
+    },
+    {
+      "name": "Marais de Blonville-Villers",
+      "category": "Nature",
+      "description": "Découvrez un espace naturel préservé entre prairies humides et petits canaux.",
+      "address": "Marais de Blonville-Villers, 14640 Villers-sur-Mer",
+      "lat": 49.325531005859375,
+      "lng": 0.013219400309026241
+    },
+    {
+      "name": "L'église de Villers sur Mer",
+      "category": "Patrimoine",
+      "description": "Admirez cette belle église néo-gothique, l’un des édifices remarquables de la station.",
+      "address": "Place de l'Église, 14640 Villers-sur-Mer",
+      "lat": 49.3207,
+      "lng": -0.0063
+    }
+  ],
+  "restaurants": [
+    {
+      "name": "Bistrot 19",
+      "category": "Brasserie",
+      "description": "Une adresse conviviale pour découvrir une cuisine française soignée dans une ambiance de bistrot.",
+      "address": "19 rue du Maréchal Leclerc, 14640 Villers-sur-Mer",
+      "lat": 49.32212448120117,
+      "lng": -0.00526819983497262
+    },
+    {
+      "name": "La Digue de Villers",
+      "category": "Fruits de mer",
+      "description": "Profitez d’une cuisine tournée vers les produits de la mer dans un cadre agréable près du front de mer.",
+      "address": "Avenue de la République, 14640 Villers-sur-Mer",
+      "lat": 49.32992172241211,
+      "lng": 0.009456999599933624
+    },
+    {
+      "name": "L'Aigue Marine",
+      "category": "Fruits de mer",
+      "description": "Une bonne adresse pour les amateurs de poissons et de fruits de mer.",
+      "address": "21 rue Michel d'Ornano, 14640 Villers-sur-Mer",
+      "lat": 49.32221603393555,
+      "lng": -0.006297599989920855
+    },
+    {
+      "name": "Gani",
+      "category": "Restaurant",
+      "description": "Une adresse plus gastronomique, idéale pour une expérience culinaire originale et raffinée.",
+      "address": "1 Avenue de la Brigade Piron, 14640 Villers-sur-Mer",
+      "lat": 49.32172393798828,
+      "lng": -0.0034586999099701643
+    }
+  ],
+  "activites": [
+    {
+      "name": "Pôle nautique Villers-Blonville",
+      "category": "Nautique",
+      "description": "Partagez une activité ludique et conviviale à quelques pas de la plage.",
+      "address": "Rue Alfred Feine, 14640 Villers-sur-Mer",
+      "lat": 49.3217515,
+      "lng": -0.0115882
+    },
+    {
+      "name": "Mini-golf de Villers sur Mer",
+      "category": "Loisirs",
+      "description": "Partagez une activité ludique et conviviale à quelques pas de la plage.",
+      "address": "14640 Villers-sur-Mer",
+      "lat": 49.32411,
+      "lng": -0.00232
+    },
+    {
+      "name": "Casino de Villers sur Mer",
+      "category": "Casino",
+      "description": "Profitez d’une soirée divertissante dans ce lieu emblématique de la station.",
+      "address": "14640 Villers-sur-Mer",
+      "lat": 49.32485,
+      "lng": -0.00152
+    }
+  ]
+}
