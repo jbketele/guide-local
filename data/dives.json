@@ -83,31 +83,5 @@
       "lat": 49.2869,
       "lng": -0.0985
     }
-  ],
-  "activites": [
-    {
-      "name": "Port Guillaume",
-      "category": "Port et plaisance",
-      "description": "Une agréable promenade entre port de plaisance, bateaux et halle aux poissons.",
-      "address": "Port Guillaume, 14160 Dives-sur-Mer",
-      "lat": 49.294513,
-      "lng": -0.09333
-    },
-    {
-      "name": "Centre historique",
-      "category": "Patrimoine",
-      "description": "Parcourez les ruelles anciennes à la découverte des maisons à colombages et du patrimoine de Dives.",
-      "address": "Centre-ville, 14160 Dives-sur-Mer",
-      "lat": 49.2865,
-      "lng": -0.0975
-    },
-    {
-      "name": "Marché des Halles",
-      "category": "Produits locaux",
-      "description": "Rendez-vous sous les halles médiévales pour découvrir les produits du terroir, notamment le samedi matin.",
-      "address": "Les Halles, Place de la République, 14160 Dives-sur-Mer",
-      "lat": 49.286559,
-      "lng": -0.096826
-    }
   ]
 }

@@ -99,23 +99,5 @@
       "lat": 49.30362319946289,
       "lng": -0.07607729732990265
     }
-  ],
-  "activites": [
-    {
-      "name": "Circuit des villas",
-      "category": "Patrimoine",
-      "description": "Partez à la découverte des nombreuses villas qui témoignent de l’âge d’or de la station.",
-      "address": "Centre-ville de Houlgate, 14510 Houlgate",
-      "lat": 49.3008653,
-      "lng": -0.0751662
-    },
-    {
-      "name": "Casino de Houlgate",
-      "category": "Casino",
-      "description": "Profitez des jeux de hasard et de l'ambiance animée du casino de Houlgate.",
-      "address": "41 rue Henri Dobert, 14510 Houlgate",
-      "lat": 49.30496597290039,
-      "lng": -0.07443670183420181
-    }
   ]
 }

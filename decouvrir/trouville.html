@@ -4,25 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guide local - Cabourg</title>
+    <title>Guide local - Trouville sur Mer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/villes.css">
     <link rel="icon" type="image/x-icon" href="../images/icon-guide.png">
 </head>
+
+<style>
+    #hero::before {
+        background-image: url('../images/trouville-scaled.jpeg');
+    }
+</style>
 
 <body>
     <header id="header"></header>
 
     <section id="hero">
         <div class="hero-content">
-            <h1>Cabourg</h1>
-            <p>Entre plage, villas Belle Époque et promenade Marcel Proust</p>
+            <h1>Trouville sur Mer</h1>
+            <p>Entre plage, port et authenticité, découvrez le charme de la Côte Fleurie.</p>
         </div>
     </section>
 
@@ -31,12 +39,12 @@
             <p>Présentation</p>
         </div>
         <div class="presentation-title">
-            <h2>Cabourg, l'élégance <br>au bord de la mer</h2>
+            <h2>Trouville, l'authenticité <br>de la Côte Fleurie</h2>
         </div>
 
-        <p>Station balnéaire emblématique de la Côte Fleurie, Cabourg séduit par sa longue plage de sable, ses villas
-            Belle Époque et son atmosphère paisible. Entre promenade en bord de mer, centre-ville et patrimoine, la
-            ville se découvre facilement à pied.</p>
+        <p>Face à Deauville, Trouville-sur-Mer séduit par son ambiance chaleureuse et son caractère maritime. Entre les
+            quais, la grande plage, les villas et le célèbre marché aux poissons, profitez d’une escapade pleine de
+            charme et de gourmandise.</p>
     </section>
 
     <section id="incontournables">
@@ -47,41 +55,40 @@
 
         <div class="incontournables-list">
             <article class="incontournable-card">
-                <img src="../images/couple-sur-la-promenade-marcel-proust-adobe-stock-28093-e1639668825862-600x400-f50_50.webp"
-                    alt="Promenade Marcel Proust à Cabourg">
+                <img src="../images/Marche-au-poissons-trouville.webp" alt="Marché aux poissons de Trouville">
                 <div class="incontournable-content">
-                    <span class="category">Balade</span>
-                    <h3>Promenade Marcel Proust</h3>
-                    <p>Une promenade emblématique le long du front de mer de Cabourg.</p>
+                    <span class="category">Marché</span>
+                    <h3>Marché aux poissons</h3>
+                    <p>Un lieu emblématique pour découvrir l’animation du port et les produits de la mer.</p>
                 </div>
             </article>
 
             <article class="incontournable-card">
-                <img src="../images/Grand_Hotel_-_Cabourg.jpeg" alt="Grand Hôtel de Cabourg">
+                <img src="../images/Promenade_des_planches,_near_the_tennis_club,_Trouville-sur-Mer,_2024.jpg"
+                    alt="Promenade des Planches à Trouville">
                 <div class="incontournable-content">
-                    <span class="category">Patrimoine</span>
-                    <h3>Grand Hôtel de Cabourg</h3>
-                    <p>Un édifice emblématique de la station balnéaire et de son histoire.</p>
+                    <span class="category">Promenade</span>
+                    <h3>Promenade des Planches</h3>
+                    <p>Une balade emblématique le long de la plage, entre cabines, mer et villas.</p>
                 </div>
             </article>
 
             <article class="incontournable-card">
-                <img src="../images/Casino_Cabourg.JPG" alt="Casino de Cabourg">
+                <img src="../images/villa-montebello.webp" alt="Villa Montebello à Trouville">
                 <div class="incontournable-content">
                     <span class="category">Patrimoine</span>
-                    <h3>Le casino historique</h3>
-                    <p> Face à la mer, cet édifice emblématique de Cabourg témoigne de l'histoire balnéaire de la ville.
+                    <h3>La Villa Montebello</h3>
+                    <p>Une élégante villa du XIXe siècle qui abrite aujourd’hui le musée de Trouville.
                     </p>
                 </div>
             </article>
 
             <article class="incontournable-card">
-                <img src="../images/parasols-et-cabines-camille-plichard-ncpa-tourisme-42024-1920px-1920x1080-f50_50.webp"
-                    alt="Plage de Cabourg">
+                <img src="../images/rue-des-bains.jpg" alt="Rue des Bains à Trouville">
                 <div class="incontournable-content">
-                    <span class="category">Plage</span>
-                    <h3>Plage de Cabourg</h3>
-                    <p>Une longue plage de sable idéale pour profiter du bord de mer.</p>
+                    <span class="category">Shopping</span>
+                    <h3>La Rue des Bains</h3>
+                    <p>Une rue animée et colorée où se mêlent boutiques, restaurants et jolies façades.</p>
                 </div>
             </article>
 
@@ -92,156 +99,95 @@
 
         <div class="section-title">
             <p>Saveurs</p>
-            <h2>Où manger à Cabourg ?</h2>
+            <h2>Où manger à Trouville ?</h2>
             <span>
-                Découvrez quelques bonnes adresses pour manger à Cabourg.
+                Découvrez quelques bonnes adresses pour manger à Trouville.
             </span>
         </div>
 
         <div class="restaurants-list">
 
             <article class="restaurant-card">
-                <img src="../images/encas-cabourg.webp" alt="Restaurant à Cabourg">
+                <img src="../images/les-vapeurs.jpg" alt="Brasserie à Trouville sur Mer">
                 <div class="restaurant-content">
                     <span class="category">🍴 Brasserie</span>
-                    <h3>L'Encas</h3>
-                    <p>Une brasserie conviviale face à la mer, idéale pour profiter d’un repas avec vue sur la Promenade
-                        Marcel Proust.</p>
+                    <h3>Les Vapeurs</h3>
+                    <p>Une institution trouvi­llaise pour profiter d’une cuisine traditionnelle dans une ambiance
+                        animée.</p>
                     <a href="" class="restaurant-link">Découvrir l'adresse </a>
                 </div>
             </article>
 
             <article class="restaurant-card">
-                <img src="../images/le-balligan-cabourg.jpg" alt="Restaurant de fruits de mer à Cabourg">
+                <img src="../images/le-noroit.webp" alt="Restaurant de fruits de mer à Trouville sur Mer">
                 <div class="restaurant-content">
                     <span class="category">🦪 Fruits de mer</span>
-                    <h3>Le Balligan</h3>
-                    <p>Une adresse incontournable pour savourer poissons, coquillages et fruits de mer dans une ambiance
-                        chaleureuse.</p>
+                    <h3>Le Noroit</h3>
+                    <p>Une adresse tournée vers les produits de la mer dans une ambiance conviviale.</p>
                     <a href="" class="restaurant-link">Découvrir l'adresse →</a>
                 </div>
             </article>
 
             <article class="restaurant-card">
-                <img src="../images/latelier-cabourg.webp" alt="Brasserie à Cabourg">
+                <img src="../images/vieux-normand.jpeg" alt="Crêperie à Trouville sur Mer">
                 <div class="restaurant-content">
-                    <span class="category">🍽️ Restaurant</span>
-                    <h3>L'Atelier</h3>
-                    <p>Une table conviviale proposant une cuisine française soignée au cœur de Cabourg.</p>
+                    <span class="category">Crêperie</span>
+                    <h3>Le Vieux Normand</h3>
+                    <p>Une adresse conviviale pour savourer galettes et crêpes dans une ambiance chaleureuse.</p>
                     <a href="" class="restaurant-link">Découvrir l'adresse →</a>
                 </div>
             </article>
 
             <article class="restaurant-card">
-                <img src="../images/lolivier-cabourg.webp" alt="Restaurant à Cabourg">
+                <img src="../images/il-parasole.jpg" alt="Restaurant italien à Trouville sur Mer">
                 <div class="restaurant-content">
                     <span class="category">🍕 Pizzeria</span>
-                    <h3>L'Olivier</h3>
-                    <p>Une adresse appréciée pour ses pizzas et sa cuisine italienne, parfaite pour un repas
-                        décontracté.</p>
+                    <h3>Il Parasole</h3>
+                    <p>Une adresse italienne appréciée pour ses pizzas et ses spécialités gourmandes.</p>
                     <a href="" class="restaurant-link">Découvrir l'adresse </a>
                 </div>
             </article>
 
         </div>
-    </section>
-
-    <section id="activites">
-
-        <div class="section-title">
-            <p>À faire</p>
-            <h2>Que faire à Cabourg ?</h2>
-            <span>
-                Sport, loisirs et expériences pour profiter pleinement de Cabourg.
-            </span>
-        </div>
-
-        <div class="activites-list">
-
-            <article class="activite-card">
-                <img src="../images/nautique-cabourg.jpg" alt="Activité nautique à Cabourg">
-                <div class="activite-content">
-                    <span class="category">🌊 Nautique</span>
-                    <h3>Activités nautiques</h3>
-                    <p>Voile, char à voile, paddle et autres activités pour profiter pleinement du littoral.</p>
-                </div>
-            </article>
-
-
-            <article class="activite-card">
-                <img src="../images/velo-cabourg.webp" alt="Vélo à Cabourg">
-                <div class="activite-content">
-                    <span class="category">🚲 Vélo</span>
-                    <h3>À vélo</h3>
-                    <p>
-                        Parcourez le littoral et les environs de Cabourg
-                        à vélo.
-                    </p>
-                </div>
-            </article>
-
-
-            <article class="activite-card">
-                <img src="../images/golf-public-cabourg.jpg" alt="Golf à Cabourg">
-                <div class="activite-content">
-                    <span class="category">⛳ Golf</span>
-                    <h3>Golf</h3>
-                    <p>Profitez d'une partie de golf dans un cadre naturel entre terre et mer.</p>
-                </div>
-            </article>
-
-
-            <article class="activite-card">
-                <img src="../images/sulky-cabourg.jpg" alt="Équitation à Cabourg">
-                <div class="activite-content">
-                    <span class="category">🐎 Activité équestre</span>
-                    <h3>Équitation</h3>
-                    <p>
-                        Découvrez l'univers équestre de Cabourg, entre balades cheval et courses hippiques.</p>
-                </div>
-            </article>
-
-        </div>
-
     </section>
 
     <section id="coups-de-coeur">
 
         <div class="section-title">
             <p>Coups de cœur</p>
-            <h2>Nos coups de cœur à Cabourg</h2>
+            <h2>Nos coups de cœur à Trouville</h2>
             <span>
-                Découvrez nos coups de cœur pour profiter pleinement de Cabourg.
+                Découvrez nos coups de cœur pour profiter pleinement de Trouville.
             </span>
         </div>
 
         <div class="favorites">
 
             <article class="favorite-card">
-                <img src="../images/facade-villa-l-annonciade-camille-plichard-ncpa-tourisme-34729-1920px-1920x1080-f50_50.webp"
-                    alt="Villas Belle Époque à Cabourg">
+                <img src="../images/casino-trouville.jpg" alt="Casino de Trouville sur Mer">
                 <div class="favorite-content">
                     <span class="category">🏛️ Patrimoine</span>
-                    <h3>Villas Belle Époque</h3>
-                    <p>Découvrez l'architecture unique des villas Belle Époque qui font le charme de Cabourg.</p>
+                    <h3>Casino Barrière</h3>
+                    <p>Un bâtiment emblématique du front de mer, reconnaissable à son architecture originale.</p>
                 </div>
             </article>
 
             <article class="favorite-card">
-                <img src="../images/jardins-casino-cabourg.png" alt="Jardin botanique à Cabourg">
+                <img src="../images/cures-marines.jpg" alt="Les Cures Marines de Trouville sur Mer">
                 <div class="favorite-content">
-                    <span class="category">🌳 Nature</span>
-                    <h3>Jardins du Casino</h3>
-                    <p> Un agréable écrin de verdure face à la mer, idéal pour une pause au cœur de Cabourg.je </p>
+                    <span class="category">Hotel et spa</span>
+                    <h3>Les Cures Marines</h3>
+                    <p>Un lieu historique face à la mer, remarquable pour son architecture et son élégante façade. </p>
                 </div>
             </article>
 
             <article class="favorite-card">
-                <img src="../images/villa-temps-retrouve.webp" alt="Villa du Temps retrouvé à Cabourg">
+                <img src="../images/Trouville-sur-Mer_mairie.jpg" alt="Hôtel de Ville de Trouville sur Mer">
                 <div class="favorite-content">
                     <span class="category">🏛️ Patrimoine</span>
-                    <h3>Villa du Temps retrouvé</h3>
-                    <p>Profitez de la vie nocturne de Cabourg, entre bars, concerts et animations estivales.</p>
+                    <h3>Hôtel de Ville</h3>
+                    <p>Un édifice remarquable au cœur de Trouville, témoin de l’élégance architecturale de la station.
+                    </p>
                 </div>
             </article>
 
@@ -251,7 +197,7 @@
     <section id="carte">
 
         <div class="section-title">
-            <p>Explorez Cabourg</p>
+            <p>Explorez Trouville</p>
             <h2>Les lieux sur la carte</h2>
             <span>
                 Retrouvez les principaux lieux présentés dans notre guide.
@@ -269,7 +215,8 @@
     <script src="../js/header.js"></script>
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
     </script>
-    <script src="../js/cabourg.js"></script>
+    <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+    <script src="../js/trouville.js"></script>
     <script src="../js/footer.js"></script>
 </body>
 

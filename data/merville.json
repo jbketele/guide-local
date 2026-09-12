@@ -3,6 +3,7 @@
   "lieux": [
     {
       "name": "Plage de Merville-Franceville",
+      "type": "incontournables",
       "category": "Plage",
       "description": "Une immense plage de sable idéale pour profiter du littoral.",
       "address": "Boulevard Wattier, 14810 Merville-Franceville-Plage",
@@ -11,6 +12,7 @@
     },
     {
       "name": "La Baie de l'Orne",
+      "type": "incontournables",
       "category": "Nature",
       "description": "Un espace naturel préservé à découvrir à pied ou à vélo.",
       "address": "Baie de l'Orne, 14810 Merville-Franceville-Plage",
@@ -19,6 +21,7 @@
     },
     {
       "name": "La batterie de Merville",
+      "type": "incontournables",
       "category": "Patrimoine",
       "description": "Un site historique majeur du Débarquement en Normandie.",
       "address": "Place du 9e Bataillon, 14810 Merville-Franceville-Plage",
@@ -27,6 +30,7 @@
     },
     {
       "name": "Dunes de Merville-Franceville",
+      "type": "coups de cœur",
       "category": "Nature",
       "description": "Profitez de la beauté naturelle des dunes qui bordent la côte normande.",
       "address": "Dunes de Merville-Franceville-Plage",
@@ -35,6 +39,7 @@
     },
     {
       "name": "Réserve ornithologique du Gros-Banc",
+      "type": "coups de cœur",
       "category": "Nature",
       "description": "Un endroit paisible pour observer les oiseaux au cœur de l’estuaire de l’Orne.",
       "address": "Estuaire de l'Orne, 14810 Merville-Franceville-Plage",
@@ -43,6 +48,7 @@
     },
     {
       "name": "La Redoute de Merville",
+      "type": "coups de cœur",
       "category": "Patrimoine",
       "description": "Une étonnante petite forteresse en forme de fer à cheval, héritée des anciennes défenses de l’estuaire.",
       "address": "La Redoute, 14810 Merville-Franceville-Plage",
@@ -98,7 +104,7 @@
       "lng": -0.21179239451885223
     },
     {
-      "name": "Club Voile et pagaie",
+      "name": "Voile et pagaie",
       "category": "Nautique",
       "description": "Kayak, paddle et activités nautiques pour découvrir la baie autrement.",
       "lat": 49.281,

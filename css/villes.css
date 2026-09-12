@@ -158,6 +158,25 @@
     line-height: 1.5;
 }
 
+.restaurant-hidden {
+    display: none;
+}
+
+.btn-see-more {
+    display: block;
+    margin: 2rem auto 0;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 6px;
+    background-color: #1B3A57;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+}
+
+.btn-see-more:hover {
+    opacity: 0.9;
+}
 
 /* =========================
    CARDS
@@ -336,7 +355,7 @@
 
 #coups-de-coeur {
     padding: 30px 20px;
-    background-color: #FAF9F6;
+    background-color: #F5F0E7;
 }
 
 #coups-de-coeur .section-title {
@@ -390,7 +409,7 @@
 .favorite-card {
     overflow: hidden;
 
-    background-color: #F5F0E7;
+    background-color: #FAF9F6;
 
     border-radius: 8px;
 }
@@ -442,7 +461,7 @@
 
 #carte {
     padding: 30px 20px;
-    background-color: #F5F0E7;
+    background-color: #FAF9F6;
 }
 
 /* =========================

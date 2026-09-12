@@ -1,0 +1,102 @@
+{
+  "ville": "Trouville-sur-Mer",
+  "lieux": [
+    {
+      "name": "Marché aux poissons",
+      "type": "incontournables",
+      "category": "Marché",
+      "description": "Un lieu emblématique pour découvrir l’animation du port et les produits de la mer.",
+      "address": "Boulevard Fernand Moureaux, 14360 Trouville-sur-Mer",
+      "lat": 49.364925384521484,
+      "lng": 0.08175399899482727
+    },
+    {
+      "name": "Promenade des Planches",
+      "type": "incontournables",
+      "category": "Promenade",
+      "description": "Une balade emblématique le long de la plage, entre cabines, mer et villas.",
+      "address": "Promenade des Planches, 14360 Trouville-sur-Mer",
+      "lat": 49.367958068847656,
+      "lng": 0.07874900102615356
+    },
+    {
+      "name": "La Villa Montebello",
+      "type": "incontournables",
+      "category": "Patrimoine",
+      "description": "Une élégante villa du XIXe siècle qui abrite aujourd’hui le musée de Trouville.",
+      "address": "64 Rue du Général Leclerc, 14360 Trouville-sur-Mer",
+      "lat": 49.37139892578125,
+      "lng": 0.08422040194272995
+    },
+    {
+      "name": "La Rue des Bains",
+      "type": "incontournables",
+      "category": "Shopping",
+      "description": "Une rue animée et colorée où se mêlent boutiques, restaurants et jolies façades.",
+      "address": "Rue des Bains, 14360 Trouville-sur-Mer",
+      "lat": 49.366580963134766,
+      "lng": 0.08197770267724991
+    },
+    {
+      "name": "Casino Barrière",
+      "type": "coups de cœur",
+      "category": "Patrimoine",
+      "description": "Un bâtiment emblématique du front de mer, reconnaissable à son architecture originale.",
+      "address": "Place Foch, 14360 Trouville-sur-Mer",
+      "lat": 49.365901947021484,
+      "lng": 0.0783097967505455
+    },
+    {
+      "name": "Les Cures Marines",
+      "type": "coups de cœur",
+      "category": "Hotel et spa",
+      "description": "Un lieu historique face à la mer, remarquable pour son architecture et son élégante façade.",
+      "address": "Boulevard de la Cahotte, 14360 Trouville-sur-Mer",
+      "lat": 49.36561965942383,
+      "lng": 0.07801409810781479
+    },
+    {
+      "name": "Hôtel de Ville",
+      "type": "coups de cœur",
+      "category": "Patrimoine",
+      "description": "Un édifice remarquable au cœur de Trouville, témoin de l’élégance architecturale de la station.",
+      "address": "164 Boulevard Fernand Moureaux, 14360 Trouville-sur-Mer",
+      "lat": 49.3659,
+      "lng": 0.08125200122594833
+    }
+  ],
+  "restaurants": [
+    {
+      "name": "Les Vapeurs",
+      "category": "Brasserie",
+      "description": "Une institution trouvillaise pour profiter d’une cuisine traditionnelle dans une ambiance animée.",
+      "address": "160 Boulevard Fernand Moureaux, 14360 Trouville-sur-Mer",
+      "lat": 49.3653435,
+      "lng": 0.0818762
+    },
+    {
+      "name": "Le Noroit",
+      "category": "Fruits de mer",
+      "description": "Une adresse tournée vers les produits de la mer dans une ambiance conviviale.",
+      "address": "Trouville-sur-Mer, 14360 Trouville-sur-Mer",
+      "lat": 49.36425454306841,
+      "lng": 0.08299955798483971
+    },
+    {
+      "name": "Le Vieux Normand",
+      "category": "Crêperie",
+      "description": "Une adresse conviviale pour savourer galettes et crêpes dans une ambiance chaleureuse.",
+      "address": "Trouville-sur-Mer, 14360 Trouville-sur-Mer",
+      "lat": 49.36441469412038,
+      "lng": 0.08300039617515687
+    },
+    {
+      "name": "Il Parasole",
+      "category": "Pizzeria",
+      "description": "Une adresse italienne appréciée pour ses pizzas et ses spécialités gourmandes.",
+      "address": "Trouville-sur-Mer, 14360 Trouville-sur-Mer",
+      "lat": 49.3614853,
+      "lng": 0.0866649
+    }
+  ]
+}

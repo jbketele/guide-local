@@ -1,0 +1,127 @@
+{
+  "ville": "Deauville",
+  "lieux": [
+    {
+      "name": "Les Planches",
+      "type": "incontournables",
+      "category": "Bord de mer",
+      "description": "Promenez-vous sur la célèbre promenade en bois de Deauville, bordée de cabines portant les noms de grandes figures du cinéma.",
+      "address": "Les Planches, 14800 Deauville",
+      "lat": 49.3600959777832,
+      "lng": 0.06533289700746536
+    },
+    {
+      "name": "Les Franciscaines",
+      "type": "incontournables",
+      "category": "Patrimoine",
+      "description": "Découvrez ce lieu culturel installé dans un ancien couvent, entre expositions, musée, médiathèque et histoire de Deauville.",
+      "address": "145B avenue de la République, 14800 Deauville",
+      "lat": 49.35393524169922,
+      "lng": 0.06811639666557312
+    },
+    {
+      "name": "Casino Barrière Deauville",
+      "type": "incontournables",
+      "category": "Patrimoine",
+      "description": "Admirez l’emblématique casino de Deauville et son architecture, au cœur de la station balnéaire.",
+      "address": "2 rue Edmond Blanc, 14800 Deauville",
+      "lat": 49.3582,
+      "lng": 0.0689
+    },
+    {
+      "name": "Hôtel Le Normandy",
+      "type": "incontournables",
+      "category": "Patrimoine",
+      "description": "Découvrez l’un des hôtels les plus emblématiques de Deauville, reconnaissable à ses façades à colombages et son style anglo-normand.",
+      "address": "38 rue Jean Mermoz, 14800 Deauville",
+      "lat": 49.36001205444336,
+      "lng": 0.0713132992386818
+    },
+    {
+      "name": "Place de Morny",
+      "type": "coups de cœur",
+      "category": "Centre-ville",
+      "description": "Flânez sur cette place centrale entourée de commerces, véritable point de rencontre au cœur de Deauville.",
+      "address": "Place de Morny, 14800 Deauville",
+      "lat": 49.357903,
+      "lng": 0.077345
+    },
+    {
+      "name": "Bassin Morny",
+      "type": "coups de cœur",
+      "category": "Balade",
+      "description": "Flânez autour du bassin Morny et profitez de l’ambiance maritime au cœur de Deauville.",
+      "address": "Bassin Morny, 14800 Deauville",
+      "lat": 49.3609619140625,
+      "lng": 0.0810059979557991
+    },
+    {
+      "name": "Bains Poméiens",
+      "type": "coups de cœur",
+      "category": "Patrimoine",
+      "description": "Profitez de ces installations aquatiques pour vous rafraîchir au cœur de Deauville.",
+      "address": "Les Planches, 14800 Deauville",
+      "lat": 49.36032868985317,
+      "lng": 0.06627147906442143
+    },
+    {
+      "name": "Hippodrome de Deauville-La Touques",
+      "type": "incontournables",
+      "category": "Courses hippiques",
+      "description": "Découvrez l’univers des courses hippiques dans cet hippodrome historique situé au cœur de Deauville.",
+      "address": "45 avenue Hocquart de Turtot, 14800 Deauville",
+      "lat": 49.35325622558594,
+      "lng": 0.07344959676265717
+    }
+  ],
+  "restaurants": [
+    {
+      "name": "L'Essentiel",
+      "category": "Gastronomique",
+      "description": "Une table raffinée qui propose une cuisine créative autour de produits de saison.",
+      "address": "29 rue Mirabeau, 14800 Deauville",
+      "lat": 49.362579345703125,
+      "lng": 0.07760805636644363
+    },
+    {
+      "name": "L'Étoile des Mers",
+      "category": "Fruits de mer",
+      "description": "Une adresse tournée vers les produits de la mer, parfaite pour découvrir huîtres, poissons et autres spécialités normandes.",
+      "address": "74 rue Gambetta, 14800 Deauville",
+      "lat": 49.35892868041992,
+      "lng": 0.07666260004043579
+    },
+    {
+      "name": "Mamma Mia",
+      "category": "Italien",
+      "description": "Une table conviviale proposant une cuisine française soignée au cœur de Deauville.",
+      "address": "Deauville",
+      "lat": 49.36152267456055,
+      "lng": 0.0820280984044075
+    },
+    {
+      "name": "Le Hibouville",
+      "category": "Brasserie",
+      "description": "Une adresse animée sur la place de Morny, idéale pour manger ou prendre un verre au cœur de Deauville.",
+      "address": "Place de Morny, 14800 Deauville",
+      "lat": 49.36003494262695,
+      "lng": 0.07726100087165833
+    },
+    {
+      "name": "Le Drakkar",
+      "category": "Fruits de mer",
+      "description": "Une adresse incontournable pour les amateurs de fruits de mer, avec une vue imprenable sur la mer.",
+      "address": "77 rue Eugène Colas, 14800 Deauville",
+      "lat": 49.359405517578125,
+      "lng": 0.07337450236082077
+    },
+    {
+      "name": "L'Étage",
+      "category": "Restaurant",
+      "description": "Une table conviviale située face au port, proposant une cuisine française dans un cadre agréable.",
+      "address": "Deauville",
+      "lat": 49.3611946105957,
+      "lng": 0.07240539789199829
+    }
+  ]
+}

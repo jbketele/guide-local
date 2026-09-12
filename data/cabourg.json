@@ -3,6 +3,7 @@
   "lieux": [
     {
       "name": "Promenade Marcel Proust",
+      "type": "incontournables",
       "category": "Balade",
       "description": "Une promenade emblématique le long du front de mer de Cabourg.",
       "address": "Promenade Marcel Proust, 14390 Cabourg",
@@ -11,6 +12,7 @@
     },
     {
       "name": "Grand Hôtel de Cabourg",
+      "type": "incontournables",
       "category": "Patrimoine",
       "description": "Un édifice emblématique de la station balnéaire et de son histoire.",
       "address": "Les Jardins du Casino, 14390 Cabourg",
@@ -19,6 +21,7 @@
     },
     {
       "name": "Le casino historique",
+      "type": "incontournables",
       "category": "Patrimoine",
       "description": "Face à la mer, cet édifice emblématique de Cabourg témoigne de l'histoire balnéaire de la ville.",
       "address": "Promenade Marcel Proust, 14390 Cabourg",
@@ -27,6 +30,7 @@
     },
     {
       "name": "Plage de Cabourg",
+      "type": "incontournables",
       "category": "Plage",
       "description": "Une longue plage de sable idéale pour profiter du bord de mer.",
       "address": "Promenade Marcel Proust, 14390 Cabourg",
@@ -35,14 +39,16 @@
     },
     {
       "name": "Villas Belle Époque",
+      "type": "coups de cœur",
       "category": "Patrimoine",
-      "description": "Découvrez l'architecture unique des villas Belle Époque qui font le charme de Cabourg.",
+      "description": "Promenez-vous dans les rues de Cabourg à la découverte de ses élégantes villas et de leurs façades chargées d’histoire.",
       "address": "Centre-ville de Cabourg",
       "lat": 49.293,
       "lng": -0.1158
     },
     {
       "name": "Jardins du Casino",
+      "type": "coups de cœur",
       "category": "Nature",
       "description": "Un agréable écrin de verdure face à la mer, idéal pour une pause au cœur de Cabourg.",
       "address": "Promenade Marcel Proust, 14390 Cabourg",
@@ -51,8 +57,9 @@
     },
     {
       "name": "Villa du Temps retrouvé",
+      "type": "coups de cœur",
       "category": "Patrimoine",
-      "description": "Un musée consacré à l'atmosphère et à l'art de vivre de la Belle Époque.",
+      "description": "Une immersion originale dans l’univers de la Belle Époque et l’art de vivre des grandes stations balnéaires normandes.",
       "address": "15 avenue du Président Raymond Poincaré, 14390 Cabourg",
       "lat": 49.294,
       "lng": -0.118

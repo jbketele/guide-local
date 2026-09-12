@@ -2,10 +2,10 @@ let mapCenter;
 let mapZoom;
 
 if (window.innerWidth < 768) {
-    mapCenter = [49.301234903946245, -0.0703207103834691];
-    mapZoom = 14;
+    mapCenter = [49.36576539607871, 0.08221368011477992];
+    mapZoom = 15;
 } else {
-    mapCenter = [49.301234903946245, -0.0703207103834691];
+    mapCenter = [49.36576539607871, 0.08221368011477992];
     mapZoom = 15;
 }
 
@@ -25,9 +25,9 @@ const markers = L.markerClusterGroup({
     maxClusterRadius: 50
 });
 
-// Chargement des données de Houlgate
+// Chargement des données de Dives
 
-fetch("../data/houlgate.json")
+fetch("../data/trouville.json")
 
     .then(response => response.json())
     .then(data => {
@@ -69,3 +69,37 @@ fetch("../data/houlgate.json")
             error
         );
     });
+
+const seeMoreButton = document.getElementById("seeMoreRestaurants");
+const hiddenRestaurants = document.querySelectorAll(".restaurant-hidden");
+
+if (seeMoreButton) {
+    seeMoreButton.addEventListener("click", () => {
+        const isExpanded = seeMoreButton.classList.contains("expanded");
+
+        if (isExpanded) {
+            // On referme la liste
+            hiddenRestaurants.forEach((restaurant) => {
+                restaurant.classList.add("restaurant-hidden");
+            });
+
+            seeMoreButton.classList.remove("expanded");
+            seeMoreButton.textContent = "Voir plus de restaurants";
+
+            // Retour au niveau du bouton
+            seeMoreButton.scrollIntoView({
+                behavior: "smooth",
+                block: "center"
+            });
+
+        } else {
+            // On affiche les restaurants supplémentaires
+            hiddenRestaurants.forEach((restaurant) => {
+                restaurant.classList.remove("restaurant-hidden");
+            });
+
+            seeMoreButton.classList.add("expanded");
+            seeMoreButton.textContent = "Voir moins de restaurants";
+        }
+    });
+}

@@ -32,8 +32,7 @@ fetch("../data/merville.json")
     .then(data => {
         const elements = [
             ...data.lieux,
-            ...data.restaurants,
-            ...data.activites
+            ...data.restaurants
         ];
 
         elements.forEach(element => {
