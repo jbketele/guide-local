@@ -43,8 +43,8 @@
       "category": "Patrimoine",
       "description": "Un bâtiment emblématique du front de mer, reconnaissable à son architecture originale.",
       "address": "Place Foch, 14360 Trouville-sur-Mer",
-      "lat": 49.365901947021484,
-      "lng": 0.0783097967505455
+      "lat": 49.3656784,
+      "lng": 0.0782041
     },
     {
       "name": "Les Cures Marines",
@@ -52,8 +52,8 @@
       "category": "Hotel et spa",
       "description": "Un lieu historique face à la mer, remarquable pour son architecture et son élégante façade.",
       "address": "Boulevard de la Cahotte, 14360 Trouville-sur-Mer",
-      "lat": 49.36561965942383,
-      "lng": 0.07801409810781479
+      "lat": 49.36608123779297,
+      "lng": 0.07784619927406311
     },
     {
       "name": "Hôtel de Ville",

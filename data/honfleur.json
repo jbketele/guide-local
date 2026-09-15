@@ -1,0 +1,84 @@
+{
+  "ville": "Honfleur",
+  "lieux": [
+    {
+      "name": "Le Vieux Bassin",
+      "category": "Patrimoine",
+      "type": "incontournable",
+      "lat": 49.41960525512695,
+      "lng": 0.2327589988708496
+    },
+    {
+      "name": "Église Sainte-Catherine",
+      "category": "Patrimoine",
+      "type": "incontournable",
+      "lat": 49.4211540222168,
+      "lng": 0.23255430161952972
+    },
+    {
+      "name": "La Lieutenance",
+      "category": "Patrimoine",
+      "type": "incontournable",
+      "lat": 49.42099380493164,
+      "lng": 0.2335444986820221
+    },
+    {
+      "name": "Les Greniers à Sel",
+      "category": "Patrimoine",
+      "type": "incontournable",
+      "lat": 49.4193229675293,
+      "lng": 0.23485420644283295
+    },
+    {
+      "name": "Musée Eugène Boudin",
+      "category": "Culture",
+      "type": "incontournable",
+      "lat": 49.422096252441406,
+      "lng": 0.23042860627174377
+    },
+    {
+      "name": "Le Jardin des Personnalités",
+      "category": "Nature",
+      "type": "coup-de-coeur",
+      "lat": 49.426049080369225,
+      "lng": 0.22766050696372986
+    },
+    {
+      "name": "Le Mont Joli",
+      "category": "Point de vue",
+      "type": "coup-de-coeur",
+      "lat": 49.42025375366211,
+      "lng": 0.22857530601324338
+    }
+  ],
+  "restaurants": [
+    {
+      "name": "La Cidrerie",
+      "category": "Crêperie",
+      "lat": 49.42148208618164,
+      "lng": 0.23293399810791016,
+      "url": ""
+    },
+    {
+      "name": "Le Corsaire",
+      "category": "Restaurant",
+      "lat": 49.421573638916016,
+      "lng": 0.23206430673599243,
+      "url": ""
+    },
+    {
+      "name": "L'Escale",
+      "category": "Fruits de mer",
+      "lat": 49.41969299316406,
+      "lng": 0.23506340384483337,
+      "url": ""
+    },
+    {
+      "name": "La Fleur de Sel",
+      "category": "Restaurant",
+      "lat": 49.4220016,
+      "lng": 0.2324344,
+      "url": ""
+    }
+  ]
+}
