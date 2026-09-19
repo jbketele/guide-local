@@ -17,7 +17,12 @@
 
 #presentation p {
     font-family: "Manrope", sans-serif;
-    margin-left: 1rem;
+    margin-inline: 1rem;
+    text-align: justify;
+}
+
+#presentation .section-title p {
+    text-align: center;
 }
 
 /* =========================

@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <link rel="icon" type="image/x-icon" href="./images/icon-guide.png">
@@ -162,7 +163,7 @@
 
         <div class="section-title">
             <p>Explorez la Côte Fleurie</p>
-            <h2>Tout autour de vous</h2>
+            <h2>La carte</h2>
             <span>
                 Retrouvez nos plages, restaurants, activités et bonnes adresses
                 directement sur la carte.
@@ -178,47 +179,64 @@
 
     </section>
 
-    <section id="proximite">
+    <section id="explorer">
 
         <div class="section-title">
-            <p>Autour de vous</p>
-            <h2>À proximité</h2>
+            <p>La Côte Fleurie</p>
+            <h2>Explorez la Côte Fleurie</h2>
             <span>
-                Découvrez les lieux et bonnes adresses autour de vous.
+                Découvrez les lieux qui vous entourent ou choisissez directement votre destination.
             </span>
         </div>
 
-        <div class="nearby-list">
-            <a href="" class="nearby-card">
-                <div class="nearby-icon">🏖️</div>
-                <div class="nearby-content">
-                    <h3>Plage de Cabourg</h3>
-                    <p>5 min · Plage</p>
-                </div>
-                <span class="nearby-arrow">→</span>
-            </a>
+        <div class="explore-options">
 
-            <a href="" class="nearby-card">
-                <div class="nearby-icon">🍽️</div>
-                <div class="nearby-content">
-                    <h3>Notre restaurant</h3>
-                    <p>8 min · Restaurant</p>
-                </div>
-                <span class="nearby-arrow">→</span>
-            </a>
+            <article class="explore-card">
+                <div class="explore-card-content">
 
-            <a href="" class="nearby-card">
-                <div class="nearby-icon">🚲</div>
-                <div class="nearby-content">
-                    <h3>Balade du littoral</h3>
-                    <p>10 min · Balade</p>
+                    <span class="explore-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </span>
+
+                    <h3>Autour de moi</h3>
+
+                    <p>
+                        Découvrez les lieux et bonnes adresses
+                        à proximité de votre position.
+                    </p>
+
+                    <button id="locate-me" class="btn">
+                        📍 Me localiser
+                    </button>
+
+                    <p id="location-status"></p>
+
                 </div>
-                <span class="nearby-arrow">→</span>
-            </a>
+            </article>
+
+
+            <article class="explore-card">
+                <div class="explore-card-content">
+
+                    <span class="explore-icon">🏙️</span>
+
+                    <h3>Choisir une ville</h3>
+
+                    <p>
+                        Retrouvez nos destinations et explorez
+                        directement le guide de votre choix.
+                    </p>
+
+                    <span class="explore-down">↓</span>
+
+                </div>
+            </article>
+
         </div>
-        <a href="" class="btn">Voir tous les lieux</a>
-    </section>
 
+        <div id="nearby-list" class="nearby-list"></div>
+
+    </section>
     <section id="destinations">
 
         <div class="section-title">
@@ -298,6 +316,7 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
     </script>
     <script src="./js/map.js"></script>
+    <script src="./js/location.js"></script>
     <script src="./js/footer.js"></script>
 </body>
 
