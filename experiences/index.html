@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expériences - Guide Local</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/experiences.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="icon" type="image/x-icon" href="../images/icon-guide.png">
+</head>
+
+<body>
+    <header id="header"></header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Expériences</h1>
+            <p>Vivez la Côte Fleurie à votre rythme</p>
+        </div>
+    </section>
+
+    <section class="experience-intro container">
+
+        <p>Entre mer, nature, loisirs et détente, découvrez
+            quelques-unes des expériences qui rendent un séjour
+            sur la Côte Fleurie unique.
+        </p>
+
+    </section>
+
+    <!-- PLAGES & MER -->
+
+    <section class="experience-category container">
+
+        <div class="category-heading">
+            <div>
+                <h2>Plages & mer</h2>
+                <p>Profiter du littoral et de l'air marin.</p>
+            </div>
+        </div>
+
+        <div class="experience-grid">
+            <article class="experience-card" data-modal="plages">
+                <div class="experience-card-image">
+                    <img src="../images/Plage_de_Houlgate_-_Falaises_des_Vaches_Noires_23-12-08.jpg"
+                        alt="Plage sur la Côte Fleurie" loading="lazy">
+                </div>
+
+                <div class="experience-card-content">
+                    <h3>Profiter des grandes plages</h3>
+                    <p>
+                        Sable fin, baignade et longues promenades
+                        face à la mer.
+                    </p>
+
+                    <span class="card-link">
+                        Découvrir →
+                    </span>
+                </div>
+
+            </article>
+
+            <article class="experience-card" data-modal="marees">
+                <div class="experience-card-image">
+                    <img src="../images/marees-thomas-boivin-1.webp" alt="Marée sur la Côte Fleurie" loading="lazy">
+                </div>
+
+                <div class="experience-card-content">
+                    <h3>Vivre au rythme des marées</h3>
+                    <p>
+                        Observer le littoral changer au fil
+                        de la journée.
+                    </p>
+                    <span class="card-link">
+                        Découvrir →
+                    </span>
+                </div>
+
+            </article>
+            <article class="experience-card" data-modal="nautique">
+                <div class="experience-card-image">
+                    <img src="../images/bouee-tractee-1920x1080-f50_50.webp" alt="Activité nautique sur la Côte Fleurie"
+                        loading="lazy">
+                </div>
+
+                <div class="experience-card-content">
+                    <h3>Prendre le large</h3>
+                    <p>
+                        Découvrir la côte depuis la mer,
+                        au fil des activités nautiques.
+                    </p>
+                    <span class="card-link">
+                        Découvrir →
+                    </span>
+                </div>
+
+            </article>
+        </div>
+    </section>
+
+    <!-- BALADES & NATURE -->
+
+    <section class="experience-category container">
+
+        <div class="category-heading">
+            <div>
+                <h2>Balades & nature</h2>
+                <p>
+                    Prendre le temps de découvrir les paysages.
+                </p>
+            </div>
+        </div>
+
+        <div class="experience-grid">
+
+            <article class="experience-card" data-modal="bord-mer">
+                <div class="experience-card-image">
+                    <img src="../images/bord-de-mer.jpeg" alt="Promenade en bord de mer" loading="lazy">
+                </div>
+                <div class="experience-card-content">
+                    <h3>Se promener en bord de mer</h3>
+                    <p>
+                        Profiter des promenades, digues et
+                        chemins du littoral.
+                    </p>
+
+                    <span class="card-link">
+                        Découvrir →
+                    </span>
+                </div>
+            </article>
+
+            <article class="experience-card" data-modal="paysages">
+
+                <div class="experience-card-image">
+                    <img src="../images/paysages.jpeg" alt="Paysage de la Côte Fleurie" loading="lazy">
+                </div>
+                <div class="experience-card-content">
+                    <h3>Admirer les paysages</h3>
+                    <p>
+                        Falaises, panoramas et grands espaces
+                        entre mer et campagne.
+                    </p>
+                    <span class="card-link">
+                        Découvrir →
+                    </span>
+                </div>
+            </article>
+
+            <article class="experience-card" data-modal="velo">
+                <div class="experience-card-image">
+                    <img src="../images/Voyage-a-velo-Normandie-Dune_Cabourg-Normandie-Rando.jpg"
+                        alt="Vélo sur la Côte Fleurie" loading="lazy">
+                </div>
+                <div class="experience-card-content">
+                    <h3>Explorer à vélo</h3>
+                    <p>
+                        Découvrir la Côte Fleurie autrement,
+                        à son propre rythme.
+                    </p>
+
+                    <span class="card-link">
+                        Découvrir →
+                    </span>
+                </div>
+            </article>
+        </div>
+
+    </section>
+
+    <!-- LOISIRS -->
+
+    <section class="experience-category container">
+        <div class="category-heading">
+            <div>
+                <h2>Loisirs & activités</h2>
+                <p>Bouger, s'amuser et profiter du territoire.</p>
+            </div>
+
+        </div>
+
+        <div class="experience-grid">
+            <article class="experience-card" data-modal="golf">
+                <div class="experience-card-image">
+                    <img src="../images/golf-le-home.png" alt="Golf sur la Côte Fleurie" loading="lazy">
+                </div>
+
+                <div class="experience-card-content">
+                    <h3>Une partie de golf</h3>
+                    <p>Jouer dans un cadre entre campagne et littoral.</p>
+                    <span class="card-link">
+                        Découvrir →
+                    </span>
+                </div>
+            </article>
+
+            <article class="experience-card" data-modal="cheval">
+                <div class="experience-card-image">
+                    <img src="../images/sulky-cabourg.jpg" alt="Équitation sur la Côte Fleurie" loading="lazy">
+                </div>
+
+                <div class="experience-card-content">
+                    <h3>Découvrir la côte à cheval</h3>
+                    <p>Une autre manière de parcourir les paysages normands.
+                    </p>
+                    <span class="card-link">
+                        Découvrir →
+                    </span>
+                </div>
+            </article>
+
+            <article class="experience-card" data-modal="famille">
+                <div class="experience-card-image">
+                    <img src="../images/famille-cabourg-eric-larrayadieu-380x380-f50_50.jpg"
+                        alt="Activité en famille sur la Côte Fleurie" loading="lazy">
+                </div>
+
+                <div class="experience-card-content">
+                    <h3>Profiter en famille</h3>
+                    <p>
+                        Des idées pour partager la Côte Fleurie
+                        avec les enfants.
+                    </p>
+                    <span class="card-link">
+                        Découvrir →
+                    </span>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- BIEN-ÊTRE -->
+
+    <section class="experience-category container">
+
+        <div class="category-heading">
+            <div>
+                <h2>Bien-être & détente</h2>
+                <p>Prendre le temps de ralentir.</p>
+            </div>
+        </div>
+
+        <div class="experience-grid">
+
+            <article class="experience-card" data-modal="thalasso">
+                <div class="experience-card-image">
+                    <img src="../images/thalasso.jpg" alt="Thalassothérapie en Normandie" loading="lazy">
+                </div>
+
+                <div class="experience-card-content">
+                    <h3>Une pause bien-être</h3>
+                    <p>
+                        Profiter des bienfaits de la mer
+                        et prendre soin de soi.
+                    </p>
+
+                    <span class="card-link">
+                        Découvrir →
+                    </span>
+                </div>
+            </article>
+        </div>
+
+    </section>
+
+    <!-- CULTURE & SORTIES -->
+
+    <section class="experience-category container">
+        <div class="category-heading">
+            <div>
+                <h2>Culture & sorties</h2>
+                <p>
+                    Découvrir, sortir et profiter de la vie locale.
+                </p>
+            </div>
+        </div>
+
+        <div class="experience-grid">
+
+            <article class="experience-card" data-modal="casino">
+
+                <div class="experience-card-image">
+                    <img src="../images/casinos.webp" alt="Casino sur la Côte Fleurie" loading="lazy">
+                </div>
+                <div class="experience-card-content">
+                    <h3>Une soirée au casino</h3>
+                    <p>
+                        Une expérience emblématique des stations
+                        balnéaires de la Côte Fleurie.
+                    </p>
+                    <span class="card-link">
+                        Découvrir →
+                    </span>
+                </div>
+            </article>
+
+        </div>
+
+    </section>
+
+    <footer id="footer"></footer>
+    <script src="../js/header.js"></script>
+    <script src="../js/footer.js"></script>
+</body>
+
+</html>
