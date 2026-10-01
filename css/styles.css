@@ -203,6 +203,7 @@ header nav a {
     .nav-dropdown {
         position: relative;
         width: auto;
+        margin: 0 15px;
     }
 
     .dropdown-toggle {
