@@ -1,0 +1,432 @@
+/* ========================================
+   PRATIQUE
+======================================== */
+
+.pratique-section {
+    padding: 70px 20px;
+    background-color: #fff;
+}
+
+.pratique-section .container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+
+/* BLOCS */
+
+.pratique-block {
+    padding: 45px 0;
+    border-bottom: 1px solid #e1e6e8;
+}
+
+.pratique-block:first-child {
+    padding-top: 0;
+}
+
+.pratique-block:last-child {
+    border-bottom: none;
+}
+
+
+/* TITRES */
+
+.pratique-heading {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 18px;
+}
+
+.pratique-heading i {
+    color: #034462;
+    font-size: 1.4rem;
+}
+
+.pratique-heading h2 {
+    margin: 0;
+    color: #034462;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+}
+
+.pratique-block>p {
+    max-width: 750px;
+    margin-bottom: 30px;
+    color: #555;
+    line-height: 1.7;
+}
+
+
+/* SE DÉPLACER */
+
+.deplacements-content {
+    display: grid;
+    gap: 25px;
+}
+
+.deplacements-content h3,
+.infos-utiles h3 {
+    margin: 0 0 8px;
+    color: #345C72;
+    font-size: 1.05rem;
+}
+
+.deplacements-content p,
+.infos-utiles p {
+    margin: 0;
+    color: #555;
+    line-height: 1.7;
+}
+
+
+/* MARCHÉS */
+
+.marches-table {
+    border-top: 1px solid #dfe5e8;
+}
+
+.marche-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5px;
+
+    padding: 15px 0;
+    border-bottom: 1px solid #dfe5e8;
+
+    color: #555;
+}
+
+.marche-row span:first-child {
+    color: #034462;
+    font-weight: 600;
+}
+
+.marche-header {
+    display: none;
+}
+
+
+/* MÉTÉO & MARÉES */
+
+#meteo-marees {
+    min-height: 150px;
+}
+
+.api-loading {
+    color: #777;
+}
+
+
+/* INFOS UTILES */
+
+.infos-utiles {
+    display: grid;
+    gap: 25px;
+}
+
+
+/* ========================================
+   TABLETTE
+======================================== */
+
+@media (min-width: 768px) {
+
+    .pratique-section {
+        padding: 90px 30px;
+    }
+
+    .deplacements-content {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 35px;
+    }
+
+    .marche-row {
+        grid-template-columns: 180px 1fr;
+        align-items: center;
+    }
+
+    .marche-header {
+        display: grid;
+        color: #034462;
+        font-size: 0.85rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .infos-utiles {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+
+}
+
+
+/* ========================================
+   DESKTOP
+======================================== */
+
+@media (min-width: 1100px) {
+
+    .pratique-section {
+        padding: 100px 30px;
+    }
+
+    .pratique-block {
+        padding: 60px 0;
+    }
+
+    .pratique-heading h2 {
+        font-size: 2rem;
+    }
+
+}
+
+/* ========================================
+   MÉTÉO & MARÉES
+======================================== */
+
+.weather-section,
+.tides-section {
+    margin-top: 35px;
+}
+
+
+/* ========================================
+   TITRES
+======================================== */
+
+.weather-section h3,
+.tides-section h3 {
+    margin: 0 0 15px;
+
+    color: #345C72;
+    font-size: 1.15rem;
+    font-weight: 600;
+}
+
+
+/* ========================================
+   SELECT
+======================================== */
+
+#weatherCity,
+#tidePort {
+    width: 100%;
+    max-width: 250px;
+
+    margin-bottom: 25px;
+    padding: 10px 12px;
+
+    border: 1px solid #dfe5e8;
+    border-radius: 6px;
+
+    background-color: #fff;
+    color: #345C72;
+
+    font-family: inherit;
+    font-size: 0.95rem;
+
+    cursor: pointer;
+}
+
+#weatherCity:focus,
+#tidePort:focus {
+    outline: none;
+    border-color: #345C72;
+}
+
+
+/* ========================================
+   MÉTÉO
+======================================== */
+
+#weather {
+    width: 100%;
+}
+
+
+/* Météo actuelle */
+
+.weather-current {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+
+    margin-bottom: 30px;
+    padding-bottom: 25px;
+
+    border-bottom: 1px solid #e1e6e8;
+}
+
+
+.weather-temperature {
+    color: #034462;
+
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    line-height: 1;
+}
+
+
+.weather-description {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    color: #666;
+    line-height: 1.5;
+}
+
+
+.weather-description strong {
+    color: #034462;
+}
+
+
+/* Prévisions */
+
+.weather-forecast {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+
+.weather-day {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+
+    padding: 15px;
+
+    border-left: 2px solid #dce5e9;
+}
+
+
+.weather-day strong {
+    color: #034462;
+
+    font-size: 0.95rem;
+    text-transform: capitalize;
+}
+
+
+.weather-day span {
+    color: #666;
+    font-size: 0.85rem;
+    line-height: 1.4;
+}
+
+
+/* ========================================
+   MARÉES
+======================================== */
+
+.tides-section {
+    padding-top: 15px;
+}
+
+
+/* Ports */
+
+.tide-port {
+    display: none;
+}
+
+.tide-port.active {
+    display: block;
+}
+
+
+/* Petite vignette
+   Mobile + tablette */
+
+.tide-small {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    overflow-x: auto;
+}
+
+
+/* Grande vignette
+   Cachée sur mobile/tablette */
+
+.tide-large {
+    display: none;
+
+    width: 100%;
+    overflow-x: auto;
+}
+
+
+/* ========================================
+   TABLETTE
+======================================== */
+
+@media (min-width: 768px) {
+
+    .weather-section,
+    .tides-section {
+        margin-top: 45px;
+    }
+
+
+    .weather-forecast {
+        grid-template-columns: repeat(5, 1fr);
+        gap: 20px;
+    }
+
+
+    .weather-day {
+        padding: 15px 10px;
+    }
+
+}
+
+
+/* ========================================
+   DESKTOP
+======================================== */
+
+@media (min-width: 1024px) {
+
+    /* Météo */
+
+    .weather-current {
+        gap: 35px;
+    }
+
+
+    .weather-temperature {
+        font-size: 3.5rem;
+    }
+
+
+    .weather-forecast {
+        gap: 25px;
+    }
+
+
+    .weather-day {
+        padding: 18px;
+    }
+
+
+    /* Marées */
+
+    .tide-small {
+        display: none;
+    }
+
+    .tide-large {
+        display: block;
+    }
+
+    .tide-large {
+        overflow-x: auto;
+    }
+
+}

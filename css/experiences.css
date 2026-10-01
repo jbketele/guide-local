@@ -8,28 +8,36 @@
 }
 
 
+
 /* =========================================
    INTRODUCTION
 ========================================= */
 
 .experience-intro {
     padding-top: 30px;
-    padding-bottom: 10px;
+    padding-bottom: 30px;
 }
 
 .experience-intro p {
     margin: 0;
     font-size: 1rem;
-    line-height: 1.710;
+    line-height: 1.5;
+    font-family: "Manrope", sans-serif;
 }
 
+@media (min-width: 768px) {
+    .experience-intro {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
 
 /* =========================================
    CATÉGORIES
 ========================================= */
 
 .experience-category {
-    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .category-heading {
@@ -120,164 +128,4 @@
     display: inline-block;
     font-weight: 600;
     font-size: 0.9rem;
-}
-
-
-/* =========================================
-   MODAL
-========================================= */
-
-.experience-modal {
-    position: fixed;
-    inset: 0;
-    z-index: 1000;
-    display: none;
-}
-
-.experience-modal.is-open {
-    display: flex;
-    align-items: flex-end;
-}
-
-.modal-overlay {
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.55);
-}
-
-.modal-content {
-    position: relative;
-    z-index: 1;
-    width: 100%;
-    max-height: 90vh;
-    overflow-y: auto;
-    background: #fff;
-    border-radius: 20px 20px 0 0;
-    animation: modalUp 0.25s ease;
-}
-
-@keyframes modalUp {
-    from {
-        transform: translateY(100%);
-    }
-
-    to {
-        transform: translateY(0);
-    }
-}
-
-.modal-close {
-    position: absolute;
-    top: 14px;
-    right: 14px;
-    z-index: 2;
-
-    width: 38px;
-    height: 38px;
-
-    border: none;
-    border-radius: 50%;
-
-    background: rgba(0, 0, 0, 0.55);
-    color: #fff;
-
-    font-size: 1.5rem;
-    line-height: 1;
-
-    cursor: pointer;
-}
-
-.modal-image {
-    display: block;
-    width: 100%;
-    aspect-ratio: 16 / 10;
-    object-fit: cover;
-}
-
-.modal-body {
-    padding: 22px 20px 30px;
-}
-
-.modal-category {
-    display: block;
-    margin-bottom: 6px;
-    font-size: 0.75rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: 600;
-}
-
-.modal-body h2 {
-    margin: 0 0 14px;
-    font-size: 1.6rem;
-}
-
-.modal-body p {
-    margin: 0;
-    line-height: 1.7;
-    color: #555;
-}
-
-.modal-extra {
-    margin-top: 20px;
-}
-
-
-/* =========================================
-   TABLET
-========================================= */
-
-@media (min-width: 600px) {
-
-    .experience-hero {
-        min-height: 320px;
-        padding: 50px 30px;
-    }
-
-    .experience-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-}
-
-
-/* =========================================
-   DESKTOP
-========================================= */
-
-@media (min-width: 992px) {
-
-    .experience-hero {
-        min-height: 380px;
-        padding: 60px;
-    }
-
-    .experience-hero h1 {
-        font-size: 3rem;
-    }
-
-    .experience-category {
-        padding-top: 60px;
-    }
-
-    .experience-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .experience-card:hover {
-        transform: translateY(-4px);
-        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
-    }
-
-    .experience-modal {
-        align-items: center;
-        justify-content: center;
-    }
-
-    .modal-content {
-        width: min(700px, 90%);
-        max-height: 85vh;
-        border-radius: 20px;
-    }
-
 }

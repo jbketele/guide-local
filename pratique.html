@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratique - Guide Local de la Côte Fleurie</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/pratique.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="icon" type="image/x-icon" href="./images/icon-guide.png">
+</head>
+
+<body>
+    <header id="header"></header>
+
+    <section id="hero" class="pratique-hero">
+        <div class="container">
+            <span class="section-label">PRATIQUE</span>
+            <h1>Préparez votre séjour</h1>
+            <p>
+                Retrouvez les informations essentielles pour profiter
+                pleinement de votre séjour sur la Côte Fleurie.
+            </p>
+        </div>
+    </section>
+
+
+    <!-- PRATIQUE -->
+
+    <section class="pratique-section">
+
+        <div class="container">
+
+            <!-- SE DÉPLACER -->
+            <section class="pratique-block">
+                <div class="pratique-heading">
+                    <i class="bi bi-car-front"></i>
+                    <h2>Se déplacer</h2>
+                </div>
+
+                <div class="deplacements-content">
+
+                    <div>
+                        <h3>🚗 En voiture</h3>
+                        <p>
+                            La voiture reste le moyen le plus pratique pour
+                            découvrir les différentes villes de la Côte Fleurie.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3>🚆 En train</h3>
+                        <p>
+                            Plusieurs stations sont accessibles en train,
+                            notamment depuis Caen et Paris.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3>🚲 À vélo</h3>
+                        <p>
+                            Les itinéraires cyclables permettent de parcourir
+                            le littoral et de relier plusieurs stations.
+                        </p>
+                    </div>
+
+                </div>
+            </section>
+
+
+            <!-- MARCHÉS -->
+            <section class="pratique-block">
+
+                <div class="pratique-heading">
+                    <i class="bi bi-basket2"></i>
+                    <h2>Marchés</h2>
+                </div>
+
+                <p>
+                    Retrouvez les principaux marchés de la Côte Fleurie
+                    et leurs jours d'ouverture.
+                </p>
+
+                <div class="marches-table">
+
+                    <div class="marche-row marche-header">
+                        <span>Ville</span>
+                        <span>Jour(s)</span>
+                    </div>
+
+                    <div class="marche-row">
+                        <span>Cabourg</span>
+                        <span>Mercredi, vendredi, samedi, dimanche</span>
+                    </div>
+
+                    <div class="marche-row">
+                        <span>Dives-sur-Mer</span>
+                        <span>Samedi</span>
+                    </div>
+
+                    <div class="marche-row">
+                        <span>Houlgate</span>
+                        <span>Jeudi</span>
+                    </div>
+
+                    <div class="marche-row">
+                        <span>Villers-sur-Mer</span>
+                        <span>Jeudi</span>
+                    </div>
+
+                    <div class="marche-row">
+                        <span>Deauville</span>
+                        <span>Mardi, vendredi, samedi</span>
+                    </div>
+
+                    <div class="marche-row">
+                        <span>Trouville-sur-Mer</span>
+                        <span>Mercredi, dimanche</span>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- MÉTÉO & MARÉES -->
+            <section class="pratique-block">
+
+                <div class="pratique-heading">
+                    <i class="bi bi-cloud-sun"></i>
+                    <h2>Météo & marées</h2>
+                </div>
+
+                <div class="weather-header">
+
+                    <h3>Météo sur la Côte Fleurie</h3>
+
+                    <select id="weatherCity">
+
+                        <option value="49.2917,-0.1133">Cabourg</option>
+                        <option value="49.2998,-0.0799">Dives-sur-Mer</option>
+                        <option value="49.2987,-0.0738">Houlgate</option>
+                        <option value="49.3228,-0.0069">Villers-sur-Mer</option>
+                        <option value="49.3570,0.0697">Deauville</option>
+                        <option value="49.3651,0.0800">Trouville-sur-Mer</option>
+                        <option value="49.4197,0.2342">Honfleur</option>
+
+                    </select>
+
+                </div>
+
+                <div id="weather">
+
+                    <p>Chargement de la météo...</p>
+
+                </div>
+
+                <!-- MARÉES -->
+
+                <div class="tides-section">
+
+                    <h3>Marées</h3>
+
+                    <select id="tidePort">
+
+                        <option value="dives">Dives-sur-Mer</option>
+
+                        <option value="trouville">Trouville-Deauville</option>
+
+                    </select>
+
+                    <!-- DIVES -->
+
+                    <div id="tide-dives" class="tide-port">
+
+                        <!-- Mobile + tablette -->
+
+                        <div class="tide-small">
+                            <script
+                                src="https://services.data.shom.fr/hdm/vignette/petite/DIVES-SUR-MER?locale=fr"></script>
+                        </div>
+
+                        <!-- PC -->
+
+                        <div class="tide-large">
+                            <script
+                                src="https://services.data.shom.fr/hdm/vignette/grande/DIVES-SUR-MER?locale=fr"></script>
+                        </div>
+
+                    </div>
+
+                    <!-- TROUVILLE-DEAUVILLE -->
+
+                    <div id="tide-trouville" class="tide-port">
+
+                        <!-- Mobile + tablette -->
+
+                        <div class="tide-small">
+                            <script
+                                src="https://services.data.shom.fr/hdm/vignette/petite/DEAUVILLE?locale=fr"></script>
+                        </div>
+
+                        <!-- PC -->
+
+                        <div class="tide-large">
+                            <script
+                                src="https://services.data.shom.fr/hdm/vignette/grande/DEAUVILLE?locale=fr"></script>
+                        </div>
+
+                    </div>
+                </div>
+
+            </section>
+
+
+            <!-- INFOS UTILES -->
+            <section class="pratique-block">
+
+                <div class="pratique-heading">
+                    <i class="bi bi-info-circle"></i>
+                    <h2>Infos utiles</h2>
+                </div>
+
+                <div class="infos-utiles">
+
+                    <div>
+                        <h3>🚑 Urgences</h3>
+                        <p>
+                            112 — numéro d'urgence européen<br>
+                            15 — SAMU<br>
+                            18 — Pompiers<br>
+                            17 — Police<br>
+                            114 — numéro d'urgence pour les personnes sourdes ou malentendantes
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3>🌊 En mer / sur le littoral</h3>
+                        <p>
+                            196 - Secours en mer depuis le littoral<br>
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3>📞 Autres numéros utiles</h3>
+                        <p>
+                            116 117 - Médecin de garde<br>
+                            3237 - Pharmacie de garde
+                        </p>
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </section>
+
+    <footer id="footer"></footer>
+
+    <script src="../js/header.js"></script>
+    <script src="../js/footer.js"></script>
+    <script src="../js/meteo.js"></script>
+</body>
+
+</html>
