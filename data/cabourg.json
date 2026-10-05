@@ -16,8 +16,8 @@
       "category": "Patrimoine",
       "description": "Un édifice emblématique de la station balnéaire et de son histoire.",
       "address": "Les Jardins du Casino, 14390 Cabourg",
-      "lat": 49.293813,
-      "lng": -0.115614
+      "lat": 49.293931686456,
+      "lng": -0.11581525921602998
     },
     {
       "name": "Le casino historique",
@@ -97,6 +97,16 @@
       "address": "46 avenue de la Mer, 14390 Cabourg",
       "lat": 49.2918,
       "lng": -0.117
+    },
+    {
+      "image": "../images/le-balbec-cabourg.jpg",
+      "name": "Le Balbec",
+      "category": "Gastronomique",
+      "description": "Une adresse emblématique de Cabourg, offrant une cuisine raffinée dans un cadre élégant face à la mer.",
+      "address": "Les Jardins du Casino, 14390 Cabourg",
+      "lat": 49.294009109342966,
+      "lng": -0.1160115640297743,
+      "link": "https://maps.app.goo.gl/3MHHegHo4J8vFYbCA"
     }
   ],
   "activites": [

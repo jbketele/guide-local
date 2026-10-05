@@ -122,6 +122,16 @@
       "address": "Deauville",
       "lat": 49.3611946105957,
       "lng": 0.07240539789199829
+    },
+    {
+      "image": "../images/la-cantine-deauville-2.jpg",
+      "name": "La Cantine de Deauville",
+      "category": "Brasserie",
+      "description": "Une adresse conviviale proposant une cuisine généreuse et gourmande, idéale pour partager un moment chaleureux au cœur de Deauville.",
+      "address": "90 rue Eugène Colas, 14800 Deauville",
+      "lat": 49.359615325927734,
+      "lng": 0.07338669896125793,
+      "link": "https://maps.app.goo.gl/ZpF12kmMWzg5myCv7"
     }
   ]
 }

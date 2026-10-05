@@ -30,76 +30,93 @@ const markers = L.markerClusterGroup({
 fetch("../data/trouville.json")
 
     .then(response => response.json())
+
     .then(data => {
+
         const elements = [
             ...data.lieux,
             ...data.restaurants
         ];
 
+        // =========================
+        // CARTE
+        // =========================
+
         elements.forEach(element => {
-            // Ignore les lieux sans coordonnées
+
             if (element.lat == null || element.lng == null) {
                 return;
             }
 
-            // Création du marqueur
             const marker = L.marker([
                 element.lat,
                 element.lng
             ]);
 
-            // Contenu de la popup
             marker.bindPopup(`
                 <strong>${element.name}</strong>
                 <br>
                 <span>${element.category}</span>
             `);
 
-            // Ajout au groupe
             markers.addLayer(marker);
         });
 
-        // Ajout du groupe à la carte
         map.addLayer(markers);
+
+
+        // =========================
+        // RESTAURANTS
+        // =========================
+
+        const restaurantsContainer =
+            document.querySelector(".restaurants-list");
+
+        data.restaurants.forEach(restaurant => {
+
+            const exists = [...restaurantsContainer.querySelectorAll(".restaurant-card")]
+                .some(card => card.dataset.name === restaurant.name);
+
+            if (exists) return;
+
+            const card = `
+                <article class="restaurant-card">
+
+                    <img
+                        src="${restaurant.image}"
+                        alt="${restaurant.name}"
+                    >
+
+                    <div class="restaurant-content">
+
+                        <span class="category">
+                            🍴 ${restaurant.category}
+                        </span>
+
+                        <h3>${restaurant.name}</h3>
+
+                        <p>
+                            ${restaurant.description}
+                        </p>
+
+                        <a
+                            href="${restaurant.link}"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="restaurant-link"
+                        >
+                            Découvrir l'adresse
+                        </a>
+
+                    </div>
+
+                </article>
+            `;
+
+            restaurantsContainer.insertAdjacentHTML(
+                "beforeend",
+                card
+            );
+        });
+
     })
-
-    .catch(error => {
-        console.error(
-            "Erreur lors du chargement des données :",
-            error
-        );
-    });
-
-const seeMoreButton = document.getElementById("seeMoreRestaurants");
-const hiddenRestaurants = document.querySelectorAll(".restaurant-hidden");
-
-if (seeMoreButton) {
-    seeMoreButton.addEventListener("click", () => {
-        const isExpanded = seeMoreButton.classList.contains("expanded");
-
-        if (isExpanded) {
-            // On referme la liste
-            hiddenRestaurants.forEach((restaurant) => {
-                restaurant.classList.add("restaurant-hidden");
-            });
-
-            seeMoreButton.classList.remove("expanded");
-            seeMoreButton.textContent = "Voir plus de restaurants";
-
-            // Retour au niveau du bouton
-            seeMoreButton.scrollIntoView({
-                behavior: "smooth",
-                block: "center"
-            });
-
-        } else {
-            // On affiche les restaurants supplémentaires
-            hiddenRestaurants.forEach((restaurant) => {
-                restaurant.classList.remove("restaurant-hidden");
-            });
-
-            seeMoreButton.classList.add("expanded");
-            seeMoreButton.textContent = "Voir moins de restaurants";
-        }
-    });
-}

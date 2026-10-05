@@ -82,6 +82,15 @@
       "address": "Village Guillaume le Conquérant, 14160 Dives-sur-Mer",
       "lat": 49.2869,
       "lng": -0.0985
+    },
+    {
+      "image": "../images/bistrot-port-dives.jpeg",
+      "name": "Le Bistrot du Port",
+      "category": "Brasserie",
+      "description": "Une brasserie conviviale au cœur du port de Dives-sur-Mer, idéal pour déguster une cuisine généreuse dans une ambiance chaleureuse.",
+      "address": "1 Place Guillaume, 14160 Dives-sur-Mer",
+      "lat": 49.2934961,
+      "lng": -0.0998917
     }
   ]
 }
