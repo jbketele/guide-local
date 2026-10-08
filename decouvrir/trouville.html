@@ -24,7 +24,7 @@
     }
 </style>
 
-<body>
+<body data-ville="trouville">
     <header id="header"></header>
 
     <section id="hero">
@@ -93,12 +93,16 @@
             </article>
 
         </div>
+
+        <button class="btn-see-more" id="seeMoreIncontournables">
+            Voir plus d'incontournables
+        </button>
     </section>
 
     <section id="restaurants">
 
         <div class="section-title">
-            <p>Saveurs</p>
+            <p>Restaurants</p>
             <h2>Où manger à Trouville ?</h2>
             <span>
                 Découvrez quelques bonnes adresses pour manger à Trouville.
@@ -114,7 +118,8 @@
                     <h3>Les Vapeurs</h3>
                     <p>Une institution trouvi­llaise pour profiter d’une cuisine traditionnelle dans une ambiance
                         animée.</p>
-                    <a href="" class="restaurant-link">Découvrir l'adresse </a>
+                    <a href="https://maps.app.goo.gl/HhXW14u7Xk8wsDgK8" class="restaurant-link"
+                        target="_blank">Découvrir l'adresse </a>
                 </div>
             </article>
 
@@ -124,7 +129,8 @@
                     <span class="category">🦪 Fruits de mer</span>
                     <h3>Le Noroit</h3>
                     <p>Une adresse tournée vers les produits de la mer dans une ambiance conviviale.</p>
-                    <a href="" class="restaurant-link">Découvrir l'adresse </a>
+                    <a href="https://maps.app.goo.gl/H7rKnTHfSw7FbNgV9" class="restaurant-link"
+                        target="_blank">Découvrir l'adresse </a>
                 </div>
             </article>
 
@@ -134,7 +140,8 @@
                     <span class="category">Crêperie</span>
                     <h3>Le Vieux Normand</h3>
                     <p>Une adresse conviviale pour savourer galettes et crêpes dans une ambiance chaleureuse.</p>
-                    <a href="" class="restaurant-link">Découvrir l'adresse </a>
+                    <a href="https://maps.app.goo.gl/zbnFLdaYL7ocXkUD8" class="restaurant-link"
+                        target="_blank">Découvrir l'adresse </a>
                 </div>
             </article>
 
@@ -144,11 +151,17 @@
                     <span class="category">🍕 Pizzeria</span>
                     <h3>Il Parasole</h3>
                     <p>Une adresse italienne appréciée pour ses pizzas et ses spécialités gourmandes.</p>
-                    <a href="" class="restaurant-link">Découvrir l'adresse </a>
+                    <a href="https://maps.app.goo.gl/7J25wkXvqMnRPo589" class="restaurant-link"
+                        target="_blank">Découvrir l'adresse </a>
                 </div>
             </article>
 
         </div>
+
+        <button class="btn-see-more" id="seeMoreRestaurants">
+            Voir plus de restaurants
+        </button>
+
     </section>
 
     <section id="coups-de-coeur">
@@ -192,6 +205,10 @@
             </article>
 
         </div>
+
+        <button class="btn-see-more" id="seeMoreFavorites">
+            Voir plus de coups de cœur
+        </button>
     </section>
 
     <section id="carte">
@@ -216,7 +233,7 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
     </script>
     <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
-    <script src="../js/trouville.js"></script>
+    <script src="../js/villes.js"></script>
     <script src="../js/footer.js"></script>
 </body>
 

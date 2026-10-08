@@ -38,6 +38,15 @@
       "lng": -0.1566
     },
     {
+      "name": "Avenue de la Mer",
+      "type": "incontournables",
+      "category": "Centre-ville",
+      "description": "L'artère commerçante de Cabourg, bordée de boutiques, cafés et restaurants, qui relie le centre-ville à la mer.",
+      "address": "Place de l'Église, 14390 Cabourg",
+      "lat": 49.2935,
+      "lng": -0.1159
+    },
+    {
       "name": "Villas Belle Époque",
       "type": "coups de cœur",
       "category": "Patrimoine",
@@ -107,30 +116,6 @@
       "lat": 49.294009109342966,
       "lng": -0.1160115640297743,
       "link": "https://maps.app.goo.gl/3MHHegHo4J8vFYbCA"
-    }
-  ],
-  "activites": [
-    {
-      "name": "Activités nautiques",
-      "category": "Nautique",
-      "description": "Voile, char à voile, paddle et autres activités pour profiter pleinement du littoral."
-    },
-    {
-      "name": "À vélo",
-      "category": "Vélo",
-      "description": "Parcourez le littoral et les environs de Cabourg à vélo."
-    },
-    {
-      "name": "Golf",
-      "category": "Golf",
-      "description": "Profitez d'une partie de golf dans un cadre naturel entre terre et mer.",
-      "lat": 49.293,
-      "lng": -0.157
-    },
-    {
-      "name": "Équitation",
-      "category": "Activité équestre",
-      "description": "Découvrez l'univers équestre de Cabourg, entre balades à cheval et courses hippiques."
     }
   ]
 }

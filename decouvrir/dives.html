@@ -24,7 +24,7 @@
     }
 </style>
 
-<body>
+<body data-ville="dives">
     <header id="header"></header>
 
     <section id="hero">
@@ -95,12 +95,16 @@
             </article>
 
         </div>
+
+        <button class="btn-see-more" id="seeMoreIncontournables">
+            Voir plus d'incontournables
+        </button>
     </section>
 
     <section id="restaurants">
 
         <div class="section-title">
-            <p>Saveurs</p>
+            <p>Restaurants</p>
             <h2>Où manger à Dives-sur-Mer ?</h2>
             <span>
                 Découvrez quelques bonnes adresses pour manger à Dives-sur-Mer.
@@ -115,7 +119,8 @@
                     <span class="category">🍽️ Restaurant</span>
                     <h3>L'Hydromel</h3>
                     <p>Une table gastronomique et raffinée.</p>
-                    <a href="" class="restaurant-link">Découvrir l'adresse </a>
+                    <a href="https://maps.app.goo.gl/tncFNuKwFPPkbtGc9" class="restaurant-link"
+                        target="_blank">Découvrir l'adresse </a>
                 </div>
             </article>
 
@@ -125,7 +130,8 @@
                     <span class="category">🍴 Brasserie</span>
                     <h3>Chez le Bougnat</h3>
                     <p>Une adresse conviviale au cœur de Dives-sur-Mer.</p>
-                    <a href="" class="restaurant-link">Découvrir l'adresse </a>
+                    <a href="https://maps.app.goo.gl/ZTSsagRuPYNZmEJv9" class="restaurant-link"
+                        target="_blank">Découvrir l'adresse </a>
                 </div>
             </article>
 
@@ -135,7 +141,8 @@
                     <span class="category">🍽️ Restaurant</span>
                     <h3>À l'Intuition</h3>
                     <p>Une cuisine soignée dans une ambiance chaleureuse.</p>
-                    <a href="" class="restaurant-link">Découvrir l'adresse </a>
+                    <a href="https://maps.app.goo.gl/oSosRv5pN7PwGPNaA" class="restaurant-link"
+                        target="_blank">Découvrir l'adresse </a>
                 </div>
             </article>
 
@@ -145,11 +152,17 @@
                     <span class="category">🥞 Crêperie</span>
                     <h3>Le Billig's</h3>
                     <p>Galettes et crêpes dans le Village Guillaume le Conquérant.</p>
-                    <a href="" class="restaurant-link">Découvrir l'adresse </a>
+                    <a href="https://maps.app.goo.gl/97iAzKbpPe6NfVtz6" class="restaurant-link"
+                        target="_blank">Découvrir l'adresse </a>
                 </div>
             </article>
 
         </div>
+
+        <button class="btn-see-more" id="seeMoreRestaurants">
+            Voir plus de restaurants
+        </button>
+
     </section>
 
     <section id="coups-de-coeur">
@@ -185,6 +198,10 @@
             </article>
 
         </div>
+
+        <button class="btn-see-more" id="seeMoreFavorites">
+            Voir plus de coups de cœur
+        </button>
     </section>
 
     <section id="carte">
@@ -209,7 +226,7 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
     </script>
     <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
-    <script src="../js/dives.js"></script>
+    <script src="../js/villes.js"></script>
     <script src="../js/footer.js"></script>
 </body>
 

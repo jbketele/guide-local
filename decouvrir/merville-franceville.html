@@ -24,7 +24,7 @@
     }
 </style>
 
-<body>
+<body data-ville="merville">
     <header id="header"></header>
 
     <section id="hero">
@@ -86,12 +86,16 @@
         </article>
 
         </div>
+
+        <button class="btn-see-more" id="seeMoreIncontournables">
+            Voir plus d'incontournables
+        </button>
     </section>
 
     <section id="restaurants">
 
         <div class="section-title">
-            <p>Saveurs</p>
+            <p>Restaurants</p>
             <h2>Où manger à Merville-Franceville ?</h2>
             <span>
                 Découvrez quelques bonnes adresses pour manger à Merville-Franceville.
@@ -107,7 +111,8 @@
                     <h3>Santa Fe</h3>
                     <p> Une adresse conviviale à deux pas de la plage, entre pizzas, galettes, crêpes et moules-frites.
                     </p>
-                    <a href="" class="restaurant-link">Découvrir l'adresse </a>
+                    <a href="https://maps.app.goo.gl/DimZBRgGmFWsGVbt7" class="restaurant-link"
+                        target="_blank">Découvrir l'adresse </a>
                 </div>
             </article>
 
@@ -118,7 +123,8 @@
                     <h3>La Réserve Péché Iodé</h3>
                     <p> Une adresse emblématique, avec un cadre particulièrement intéressant au bord de la baie. Elle
                         ressort régulièrement parmi les adresses les plus populaires de la commune.</p>
-                    <a href="" class="restaurant-link">Découvrir l'adresse </a>
+                    <a href="https://maps.app.goo.gl/J3neZQnpDZmCD4VFA" class="restaurant-link"
+                        target="_blank">Découvrir l'adresse </a>
                 </div>
             </article>
 
@@ -128,7 +134,8 @@
                     <span class="category">🍽️ Restaurant</span>
                     <h3>L'Atrium</h3>
                     <p>Pour représenter une cuisine plus gastronomique et locale.</p>
-                    <a href="" class="restaurant-link">Découvrir l'adresse </a>
+                    <a href="https://maps.app.goo.gl/pvXbuksweJhH9qf39" class="restaurant-link"
+                        target="_blank">Découvrir l'adresse </a>
                 </div>
             </article>
 
@@ -139,11 +146,17 @@
                     <h3>Crêpit'roll</h3>
                     <p>Une option plus décontractée, face à la mer, qui apporte une vraie touche « station balnéaire
                     </p>
-                    <a href="" class="restaurant-link">Découvrir l'adresse </a>
+                    <a href="https://maps.app.goo.gl/uohws7qrCNoCdAHEA" class="restaurant-link"
+                        target="_blank">Découvrir l'adresse </a>
                 </div>
             </article>
 
         </div>
+
+        <button class="btn-see-more" id="seeMoreRestaurants">
+            Voir plus de restaurants
+        </button>
+
     </section>
 
     <section id="coups-de-coeur">
@@ -188,6 +201,10 @@
             </article>
 
         </div>
+
+        <button class="btn-see-more" id="seeMoreFavorites">
+            Voir plus de coups de cœur
+        </button>
     </section>
 
     <section id="carte">
@@ -212,7 +229,7 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
     </script>
     <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
-    <script src="../js/merville.js"></script>
+    <script src="../js/villes.js"></script>
     <script src="../js/footer.js"></script>
 </body>
 

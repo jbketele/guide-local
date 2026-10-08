@@ -24,7 +24,7 @@
     }
 </style>
 
-<body>
+<body data-ville="honfleur">
     <header id="header"></header>
 
     <section id="hero">
@@ -104,12 +104,16 @@
             </article>
 
         </div>
+
+        <button class="btn-see-more" id="seeMoreIncontournables">
+            Voir plus d'incontournables
+        </button>
     </section>
 
     <section id="restaurants">
 
         <div class="section-title">
-            <p>Saveurs</p>
+            <p>Restaurants</p>
             <h2>Où manger à Honfleur ?</h2>
             <span>
                 Découvrez quelques bonnes adresses pour manger à Honfleur.
@@ -125,7 +129,8 @@
                     <h3>La Cidrerie</h3>
                     <p>Une adresse conviviale pour découvrir les spécialités normandes autour des pommes et du cidre.
                     </p>
-                    <a href="" class="restaurant-link">Découvrir l'adresse </a>
+                    <a href="https://maps.app.goo.gl/xuNS4CEbuTqLZG5G9" class="restaurant-link"
+                        target="_blank">Découvrir l'adresse </a>
                 </div>
             </article>
 
@@ -136,7 +141,8 @@
                     <h3>Le Corsaire</h3>
                     <p>Une adresse traditionnelle au cœur du quartier Sainte-Catherine, idéale pour une pause gourmande.
                     </p>
-                    <a href="" class="restaurant-link">Découvrir l'adresse </a>
+                    <a href="https://maps.app.goo.gl/N7uBhjzKNEKr3biAA" class="restaurant-link"
+                        target="_blank">Découvrir l'adresse </a>
                 </div>
             </article>
 
@@ -146,7 +152,8 @@
                     <span class="category">🦪 Fruits de mer</span>
                     <h3>L'Escale</h3>
                     <p>Une table tournée vers la mer pour déguster poissons et fruits de mer au cœur de Honfleur. </p>
-                    <a href="" class="restaurant-link">Découvrir l'adresse </a>
+                    <a href="https://maps.app.goo.gl/GqWPm845hCsWt8iHA" class="restaurant-link"
+                        target="_blank">Découvrir l'adresse </a>
                 </div>
             </article>
 
@@ -156,11 +163,17 @@
                     <span class="category">🍽️ Restaurant</span>
                     <h3>La Fleur de Sel</h3>
                     <p>Une cuisine raffinée qui met en valeur les produits de saison dans un cadre chaleureux.</p>
-                    <a href="" class="restaurant-link">Découvrir l'adresse </a>
+                    <a href="https://maps.app.goo.gl/PriKaUoiu7XF384r7" class="restaurant-link"
+                        target="_blank">Découvrir l'adresse </a>
                 </div>
             </article>
 
         </div>
+
+        <button class="btn-see-more" id="seeMoreRestaurants">
+            Voir plus de restaurants
+        </button>
+
     </section>
 
     <section id="coups-de-coeur">
@@ -196,6 +209,10 @@
 
 
         </div>
+
+        <button class="btn-see-more" id="seeMoreFavorites">
+            Voir plus de coups de cœur
+        </button>
     </section>
 
     <section id="carte">
@@ -220,7 +237,7 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
     </script>
     <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
-    <script src="../js/honfleur.js"></script>
+    <script src="../js/villes.js"></script>
     <script src="../js/footer.js"></script>
 </body>
 
