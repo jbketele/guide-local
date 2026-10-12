@@ -2,6 +2,7 @@
   "ville": "Dives-sur-Mer",
   "lieux": [
     {
+      "image": "/images/Dives-sur-Mer_Halle_7534.jpeg",
       "name": "Les halles médiévales",
       "category": "Patrimoine",
       "description": "Un monument emblématique du centre-ville, qui accueille encore aujourd’hui le marché.",
@@ -10,6 +11,7 @@
       "lng": -0.096826
     },
     {
+      "image": "/images/village-d-art-pendant-medievales-de-guillaume-eyes-of-gd-ncpa-toutrisme-41593-1920px-1024x767.webp",
       "name": "Le Village d'art Guillaume le Conquérant",
       "category": "Artisanat et culture",
       "description": "Un ensemble de cours, jardins et boutiques d’artisans installé dans un décor aux influences médiévales et Renaissance.",
@@ -18,6 +20,7 @@
       "lng": -0.098658
     },
     {
+      "image": "/images/Église_Notre-Dame_de_Dives_octobre_2020_1.jpg",
       "name": "Église Notre-Dame",
       "category": "Patrimoine",
       "description": "Une église remarquable où se trouve notamment la célèbre liste des 475 compagnons de Guillaume le Conquérant.",
@@ -26,6 +29,7 @@
       "lng": -0.09682
     },
     {
+      "image": "/images/maison-bleue-dives.webp",
       "name": "La Maison bleue",
       "category": "Patrimoine",
       "description": "Une étonnante maison entièrement recouverte de mosaïques, créée par l’artiste portugais Euclides Da Costa Ferreira.",
@@ -34,6 +38,7 @@
       "lng": -0.098632
     },
     {
+      "image": "/images/Dives-sur-Mer,_villa_Les_Bossettes.jpeg",
       "name": "Villa Les Bossettes",
       "category": "Patrimoine",
       "description": "Une élégante villa balnéaire construite entre 1903 et 1908, reconnaissable à son architecture éclectique.",
@@ -42,6 +47,7 @@
       "lng": -0.0922
     },
     {
+      "image": "/images/manoir-dives.jpeg",
       "name": "Manoir du Bois-Hibout",
       "category": "Patrimoine",
       "description": "Une imposante demeure en pierre de Caen datant du XVIIe siècle, qui domine la place de la République.",
@@ -52,6 +58,7 @@
   ],
   "restaurants": [
     {
+      "image": "/images/hydromel-dives.jpg",
       "name": "L'Hydromel",
       "category": "Restaurant",
       "description": "Une table gastronomique et raffinée.",
@@ -60,6 +67,7 @@
       "lng": -0.10798820108175278
     },
     {
+      "image": "/images/bougnat-dives.jpg",
       "name": "Chez le Bougnat",
       "category": "Brasserie",
       "description": "Une adresse conviviale au cœur de Dives-sur-Mer.",
@@ -68,6 +76,7 @@
       "lng": -0.098
     },
     {
+      "image": "/images/restaurant-a-l-intuition.jpg",
       "name": "À l'Intuition",
       "category": "Restaurant",
       "description": "Une cuisine soignée dans une ambiance chaleureuse.",
@@ -76,6 +85,7 @@
       "lng": -0.10527680069208145
     },
     {
+      "image": "/images/le-billig-s.jpg",
       "name": "Le Billig's",
       "category": "Crêperie",
       "description": "Galettes et crêpes dans le Village Guillaume le Conquérant.",
@@ -84,7 +94,7 @@
       "lng": -0.0985
     },
     {
-      "image": "../images/bistrot-port-dives.jpeg",
+      "image": "/images/bistrot-port-dives.jpeg",
       "name": "Le Bistrot du Port",
       "category": "Brasserie",
       "description": "Une brasserie conviviale au cœur du port de Dives-sur-Mer, idéal pour déguster une cuisine généreuse dans une ambiance chaleureuse.",

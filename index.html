@@ -24,8 +24,8 @@
             <h1>Découvrez la Côte Fleurie autrement</h1>
             <p>Nos bonnes adresses, plages, activités et coups de coeur pour profiter pleinement de la Côte Fleurie.</p>
             <div class="hero-buttons">
-                <a href="" class="btn">Explorer le guide</a>
-                <a href="" class="btn">Voir la carte</a>
+                <a href="#destinations" class="btn">Explorer le guide</a>
+                <a href="#carte" class="btn">Voir la carte</a>
             </div>
 
         </div>
@@ -33,47 +33,18 @@
 
     <section id="coups-de-coeur">
         <div class="section-title">
-            <p>Nos sélections</p>
-            <h2>Coups de cœur</h2>
+            <p>La Côte Fleurie</p>
+            <h2>Nos inspirations</h2>
             <span>
-                Quelques adresses et lieux que nous vous recommandons
-                particulièrement.
+                Des adresses, des paysages et des lieux à apprécier
+                tout au long de la Côte Fleurie.
             </span>
         </div>
 
-        <div class="favorites">
-            <article class="favorite-card">
-                <img src="./images/AdobeStock_329598216.jpeg" alt="Plage de Cabourg">
-                <div class="favorite-content">
-                    <span class="category">🏖️ Plage</span>
-                    <h3>Plage de Cabourg</h3>
-                    <p> Une grande plage idéale pour profiter du littoral.</p>
-                </div>
-            </article>
-
-            <article class="favorite-card">
-                <img src="./images/encas-cabourg.webp" alt="Restaurant">
-                <div class="favorite-content">
-                    <span class="category">🍽️ Restaurant</span>
-                    <h3>L'Encas - Cabourg</h3>
-                    <p>Une brasserie sur la Promenade Marcel Proust, pour déguster des plats locaux et profiter de la
-                        vue sur la mer.</p>
-                </div>
-            </article>
-
-            <article class="favorite-card">
-                <img src="./images/vue-roches-noires.webp" alt="Point de vue">
-                <div class="favorite-content">
-                    <span class="category">🌅 Point de vue</span>
-                    <h3>Point de vue des Roches Noires — Trouville sur mer</h3>
-                    <p>La Vue des Roches Noires - Route de la Corniche offre un point de vue panoramique captivant le
-                        long du littoral spectaculaire de Trouville-sur-Mer
-                    </p>
-                </div>
-            </article>
+        <div class="favorites" id="favorites-container">
+            <!-- Les coups de coeur seront insérés ici par JavaScript -->
         </div>
 
-        <a href="" class="btn">Voir tous les coups de cœur</a>
     </section>
 
     <section id="categories">
@@ -112,23 +83,11 @@
     </section>
 
     <section id="carte">
-
-        <div class="section-title">
-            <p>Explorez la Côte Fleurie</p>
-            <h2>La carte</h2>
-            <span>
-                Retrouvez nos plages, restaurants, activités et bonnes adresses
-                directement sur la carte.
-            </span>
+        <div class="carte-touristique">
+            <img src="./images/carte-cote-fleurie.png"
+                alt="Carte touristique de la Côte Fleurie présentant les villes de Cabourg, Houlgate, Villers-sur-Mer, Deauville et Trouville-sur-Mer"
+                class="carte-touristique__image" loading="lazy">
         </div>
-
-        <div class="map-preview">
-            <!-- La carte interactive viendra ici -->
-            <div id="map"></div>
-        </div>
-
-        <a href="" class="btn">Explorer la carte</a>
-
     </section>
 
     <section id="explorer">
@@ -265,9 +224,7 @@
     <footer id="footer"></footer>
 
     <script src="./js/header.js"></script>
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
-    </script>
-    <script src="./js/map.js"></script>
+    <script src="./js/favorites.js"></script>
     <script src="./js/location.js"></script>
     <script src="./js/footer.js"></script>
 </body>

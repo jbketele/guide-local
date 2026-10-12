@@ -383,27 +383,24 @@ header nav a.nav-avis {
 .favorites {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 14px;
     margin-bottom: 20px;
 }
 
 .favorite-card {
     overflow: hidden;
-
     background-color: #F5F0E7;
-
     border-radius: 8px;
 }
 
 .favorite-card img {
     width: 100%;
-    height: 220px;
-
+    height: 160px;
     object-fit: cover;
 }
 
 .favorite-content {
-    padding: 18px;
+    padding: 12px 14px;
 }
 
 .category {
@@ -414,16 +411,16 @@ header nav a.nav-avis {
 }
 
 .favorite-content h3 {
-    margin: 5px 0;
-
+    margin: 4px 0;
     font-family: "Raleway", sans-serif;
-    font-size: 1.3rem;
+    font-size: 1.15rem;
     font-weight: 500;
 }
 
 .favorite-content p {
-    font-size: 0.9rem;
-    line-height: 1.5;
+    margin: 4px 0 0;
+    font-size: 0.85rem;
+    line-height: 1.4;
     font-family: "Manrope", sans-serif;
 }
 
@@ -665,6 +662,36 @@ header nav a.nav-avis {
     }
 }
 
+
+/*==========================
+   Carte touristique 
+===========================*/
+
+.carte-touristique__contenu {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.carte-touristique__contenu h2 {
+    margin-bottom: 12px;
+}
+
+.carte-touristique__contenu p {
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.carte-touristique__image {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 12px;
+}
+
 /* ================================
    EXPLORATION
 ================================ */
@@ -679,6 +706,7 @@ header nav a.nav-avis {
     grid-template-columns: 1fr;
     gap: 1.5rem;
     margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .explore-card {
@@ -962,126 +990,189 @@ header nav a.nav-avis {
 
 /* =========================
    FOOTER
-   MOBILE
 ========================= */
 
 footer {
     background-color: #345C72;
     color: white;
+
+    height: 20px;
+}
+
+.footer-brand p {
+    font-family: "Manrope", sans-serif;
+    font-size: 0.7rem;
+    line-height: 1.4;
+    margin: 10px auto 0;
+    color: rgba(255, 255, 255, 0.8);
+    width: 250px;
+    text-align: justify;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+footer a:hover {
+    color: #C9A66B;
 }
 
 
 /* =========================
    CONTENU
+   MOBILE
 ========================= */
 
 .footer-content {
-    padding: 50px 20px;
+    padding: 30px 20px;
+    display: flex;
+    justify-content: center;
+
+    display: none;
 }
 
 .footer-brand {
-    margin-bottom: 40px;
     text-align: center;
 }
 
 .footer-brand img {
+    display: block;
     width: 140px;
-    margin: 0 auto 15px;
-}
-
-.footer-brand p {
-    max-width: 280px;
+    max-width: 100%;
     margin: 0 auto;
-
-    font-family: "Manrope", sans-serif;
-    font-size: 0.85rem;
-    line-height: 1.5;
 }
 
 
 /* =========================
    LIENS
+   MASQUÉS SUR MOBILE
 ========================= */
 
 .footer-links {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+    display: none;
 }
 
-.footer-links>div {
-    text-align: center;
-}
-
-.footer-links h3 {
-    margin-bottom: 12px;
-
-    color: #C9A66B;
-
-    font-family: "Raleway", sans-serif;
-    font-size: 1rem;
-    font-weight: 500;
-}
-
-.footer-links a {
-    display: block;
-
-    padding: 5px 0;
-
-    font-family: "Manrope", sans-serif;
-    font-size: 0.85rem;
-}
 
 /* =========================
-   FOOTER TABLETTE
+   TABLETTE
 ========================= */
 
 @media (min-width: 768px) {
+
     .footer-content {
-        max-width: 1000px;
+        max-width: 1100px;
         margin: 0 auto;
-        padding: 60px 40px;
+        padding: 40px 30px;
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
     }
 
     .footer-brand {
-        margin-bottom: 0;
-        text-align: left;
-        flex: 1;
-        max-width: 500px;
-    }
-
-    .footer-brand img {
-        margin-left: 0;
+        text-align: center;
     }
 
     .footer-brand p {
-        max-width: none;
-        white-space: nowrap;
+        font-size: 0.7rem;
+        line-height: 1.4;
+        margin: 4px auto 0;
+
+    }
+
+    .footer-brand img {
+        width: 130px;
     }
 
     .footer-links {
-        flex-direction: row;
-        gap: 70px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+        width: 100%;
     }
 
-    .footer-links>div {
-        text-align: left;
+    /* Première ligne : les villes */
+
+    .footer-cities {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px 22px;
+    }
+
+    /* Deuxième ligne : les autres pages */
+
+    .footer-pages {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .footer-links a {
+        font-family: "Manrope", sans-serif;
+        font-size: 0.85rem;
+    }
+}
+
+
+/* =========================
+   PC
+========================= */
+
+@media (min-width: 1200px) {
+
+    .footer-content {
+        max-width: 1200px;
+        padding: 45px 40px;
+        gap: 25px;
+    }
+
+    .footer-brand img {
+        width: 140px;
+    }
+
+    .footer-cities {
+        gap: 12px 28px;
+    }
+
+    .footer-pages {
+        gap: 35px;
     }
 }
 
 /* =========================
-   FOOTER PC
+   HOVER DES LIENS DU FOOTER
+   PC UNIQUEMENT
 ========================= */
 
-@media (min-width: 1200px) {
-    .footer-content {
-        max-width: 1200px;
-        padding: 70px 60px;
+@media (min-width: 768px) and (hover: hover) {
+
+    .footer-links a {
+        position: relative;
+        transition: color 0.3s ease;
     }
 
-    .footer-links {
-        gap: 100px;
+    .footer-links a::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: #C9A66B;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.3s ease;
+    }
+
+    .footer-links a:hover {
+        color: #C9A66B;
+    }
+
+    .footer-links a:hover::after {
+        transform: scaleX(1);
     }
 }

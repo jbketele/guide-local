@@ -2,6 +2,7 @@
   "ville": "Deauville",
   "lieux": [
     {
+      "image": "/images/planches-deauville.jpeg",
       "name": "Les Planches",
       "type": "incontournables",
       "category": "Bord de mer",
@@ -11,6 +12,7 @@
       "lng": 0.06533289700746536
     },
     {
+      "image": "/images/le-cloitre-des-franciscaines.jpg",
       "name": "Les Franciscaines",
       "type": "incontournables",
       "category": "Patrimoine",
@@ -20,6 +22,7 @@
       "lng": 0.06811639666557312
     },
     {
+      "image": "/images/Casino_de_Deauville.jpeg",
       "name": "Casino Barrière Deauville",
       "type": "incontournables",
       "category": "Patrimoine",
@@ -29,6 +32,7 @@
       "lng": 0.0689
     },
     {
+      "image": "/images/deauville-le-normandy-facade.jpg ",
       "name": "Hôtel Le Normandy",
       "type": "incontournables",
       "category": "Patrimoine",
@@ -38,6 +42,7 @@
       "lng": 0.0713132992386818
     },
     {
+      "image": "/images/place-morny.webp",
       "name": "Place de Morny",
       "type": "coups de cœur",
       "category": "Centre-ville",
@@ -47,6 +52,7 @@
       "lng": 0.077345
     },
     {
+      "image": "/images/bassin-morny.jpg",
       "name": "Bassin Morny",
       "type": "coups de cœur",
       "category": "Balade",
@@ -56,6 +62,7 @@
       "lng": 0.0810059979557991
     },
     {
+      "image": "/images/bains-pompeiens.jpeg",
       "name": "Bains Poméiens",
       "type": "coups de cœur",
       "category": "Patrimoine",
@@ -65,6 +72,7 @@
       "lng": 0.06627147906442143
     },
     {
+      "image": "/images/hippodrome-deauville.webp",
       "name": "Hippodrome de Deauville-La Touques",
       "type": "incontournables",
       "category": "Courses hippiques",
@@ -76,6 +84,7 @@
   ],
   "restaurants": [
     {
+      "image": "/images/Essentiel-demo_1.jpeg",
       "name": "L'Essentiel",
       "category": "Gastronomique",
       "description": "Une table raffinée qui propose une cuisine créative autour de produits de saison.",
@@ -84,6 +93,7 @@
       "lng": 0.07760805636644363
     },
     {
+      "image": "/images/etoile-des-mers-deauville.jpg",
       "name": "L'Étoile des Mers",
       "category": "Fruits de mer",
       "description": "Une adresse tournée vers les produits de la mer, parfaite pour découvrir huîtres, poissons et autres spécialités normandes.",
@@ -92,6 +102,7 @@
       "lng": 0.07666260004043579
     },
     {
+      "image": "/images/Mamma-mia.jpg",
       "name": "Mamma Mia",
       "category": "Italien",
       "description": "Une table conviviale proposant une cuisine française soignée au cœur de Deauville.",
@@ -100,6 +111,7 @@
       "lng": 0.0820280984044075
     },
     {
+      "image": "/images/Hibouville-5-2022.jpg",
       "name": "Le Hibouville",
       "category": "Brasserie",
       "description": "Une adresse animée sur la place de Morny, idéale pour manger ou prendre un verre au cœur de Deauville.",
@@ -108,14 +120,16 @@
       "lng": 0.07726100087165833
     },
     {
+      "image": "/images/Le-Drakkar-Deauville.jpg",
       "name": "Le Drakkar",
-      "category": "Fruits de mer",
-      "description": "Une adresse incontournable pour les amateurs de fruits de mer, avec une vue imprenable sur la mer.",
+      "category": "Brasserie",
+      "description": "Une adresse conviviale à Deauville pour partager un repas dans une ambiance décontractée, à deux pas de l’animation du centre-ville.",
       "address": "77 rue Eugène Colas, 14800 Deauville",
       "lat": 49.359405517578125,
       "lng": 0.07337450236082077
     },
     {
+      "image": "/images/L-etage-2019-5.jpg",
       "name": "L'Étage",
       "category": "Restaurant",
       "description": "Une table conviviale située face au port, proposant une cuisine française dans un cadre agréable.",
@@ -124,7 +138,7 @@
       "lng": 0.07240539789199829
     },
     {
-      "image": "../images/la-cantine-deauville-2.jpg",
+      "image": "/images/la-cantine-deauville-2.jpg",
       "name": "La Cantine de Deauville",
       "category": "Brasserie",
       "description": "Une adresse conviviale proposant une cuisine généreuse et gourmande, idéale pour partager un moment chaleureux au cœur de Deauville.",

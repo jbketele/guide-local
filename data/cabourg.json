@@ -2,6 +2,7 @@
   "ville": "Cabourg",
   "lieux": [
     {
+      "image": "/images/couple-sur-la-promenade-marcel-proust-adobe-stock-28093-e1639668825862-600x400-f50_50.webp",
       "name": "Promenade Marcel Proust",
       "type": "incontournables",
       "category": "Balade",
@@ -11,6 +12,7 @@
       "lng": -0.119
     },
     {
+      "image": "/images/Grand_Hotel_-_Cabourg.jpeg",
       "name": "Grand Hôtel de Cabourg",
       "type": "incontournables",
       "category": "Patrimoine",
@@ -20,6 +22,7 @@
       "lng": -0.11581525921602998
     },
     {
+      "image": "/images/Casino_Cabourg.JPG",
       "name": "Le casino historique",
       "type": "incontournables",
       "category": "Patrimoine",
@@ -29,6 +32,7 @@
       "lng": -0.11643
     },
     {
+      "image": "/images/parasols-et-cabines-camille-plichard-ncpa-tourisme-42024-1920px-1920x1080-f50_50.webp",
       "name": "Plage de Cabourg",
       "type": "incontournables",
       "category": "Plage",
@@ -38,6 +42,7 @@
       "lng": -0.1566
     },
     {
+      "image": "/images/avenue-de-la-mer-cabourg.jpeg",
       "name": "Avenue de la Mer",
       "type": "incontournables",
       "category": "Centre-ville",
@@ -47,6 +52,7 @@
       "lng": -0.1159
     },
     {
+      "image": "/images/facade-villa-l-annonciade-camille-plichard-ncpa-tourisme-34729-1920px-1920x1080-f50_50.webp",
       "name": "Villas Belle Époque",
       "type": "coups de cœur",
       "category": "Patrimoine",
@@ -56,6 +62,7 @@
       "lng": -0.1158
     },
     {
+      "image": "/images/jardins-casino-cabourg.png",
       "name": "Jardins du Casino",
       "type": "coups de cœur",
       "category": "Nature",
@@ -65,6 +72,7 @@
       "lng": -0.1155
     },
     {
+      "image": "/images/villa-temps-retrouve.webp",
       "name": "Villa du Temps retrouvé",
       "type": "coups de cœur",
       "category": "Patrimoine",
@@ -76,6 +84,7 @@
   ],
   "restaurants": [
     {
+      "image": "/images/encas-cabourg.webp",
       "name": "L'Encas",
       "category": "Brasserie",
       "description": "Une brasserie conviviale face à la mer, idéale pour profiter d’un repas avec vue sur la Promenade Marcel Proust.",
@@ -84,6 +93,7 @@
       "lng": -0.11595
     },
     {
+      "image": "/images/le-balligan-cabourg.jpg",
       "name": "Le Balligan",
       "category": "Fruits de mer",
       "description": "Une adresse incontournable pour savourer poissons, coquillages et fruits de mer dans une ambiance chaleureuse.",
@@ -92,6 +102,7 @@
       "lng": -0.1165
     },
     {
+      "image": "/images/latelier-cabourg.webp",
       "name": "L'Atelier",
       "category": "Restaurant",
       "description": "Une table conviviale proposant une cuisine française soignée au cœur de Cabourg.",
@@ -100,6 +111,7 @@
       "lng": -0.1172
     },
     {
+      "image": "/images/lolivier-cabourg.webp",
       "name": "L'Olivier",
       "category": "Pizzeria",
       "description": "Une adresse appréciée pour ses pizzas et sa cuisine italienne, parfaite pour un repas décontracté.",
@@ -108,7 +120,7 @@
       "lng": -0.117
     },
     {
-      "image": "../images/le-balbec-cabourg.jpg",
+      "image": "/images/le-balbec-cabourg.jpg",
       "name": "Le Balbec",
       "category": "Gastronomique",
       "description": "Une adresse emblématique de Cabourg, offrant une cuisine raffinée dans un cadre élégant face à la mer.",

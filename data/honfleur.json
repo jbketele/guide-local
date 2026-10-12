@@ -2,6 +2,7 @@
   "ville": "Honfleur",
   "lieux": [
     {
+      "image": "/images/honfleur-vieux-bassin.jpg",
       "name": "Le Vieux Bassin",
       "category": "Patrimoine",
       "type": "incontournable",
@@ -9,6 +10,7 @@
       "lng": 0.2327589988708496
     },
     {
+      "image": "/images/eglise-ste-catherine.jpg",
       "name": "Église Sainte-Catherine",
       "category": "Patrimoine",
       "type": "incontournable",
@@ -16,6 +18,7 @@
       "lng": 0.23255430161952972
     },
     {
+      "image": "/images/Honfleur-Lieutenance-20120916.jpg",
       "name": "La Lieutenance",
       "category": "Patrimoine",
       "type": "incontournable",
@@ -23,6 +26,7 @@
       "lng": 0.2335444986820221
     },
     {
+      "image": "/images/Greniers-à-Sel-Honfleur-2-q6n1g3p2kkzfo9iikz5xw8hnkpe7hb339qikz3lv08.jpg",
       "name": "Les Greniers à Sel",
       "category": "Patrimoine",
       "type": "incontournable",
@@ -30,6 +34,7 @@
       "lng": 0.23485420644283295
     },
     {
+      "image": "/images/musee-eugene-boudin.jpg",
       "name": "Musée Eugène Boudin",
       "category": "Culture",
       "type": "incontournable",
@@ -37,6 +42,7 @@
       "lng": 0.23042860627174377
     },
     {
+      "image": "/images/jardins-personnalites.jpg",
       "name": "Le Jardin des Personnalités",
       "category": "Nature",
       "type": "coup-de-coeur",
@@ -44,6 +50,7 @@
       "lng": 0.22766050696372986
     },
     {
+      "image": "/images/panorama-du-mont-joli.jpg",
       "name": "Le Mont Joli",
       "category": "Point de vue",
       "type": "coup-de-coeur",
@@ -53,29 +60,41 @@
   ],
   "restaurants": [
     {
+      "image": "/images/cidrerie-honfleur.webp",
       "name": "La Cidrerie",
       "category": "Crêperie",
+      "description": "Une crêperie conviviale proposant des galettes et crêpes savoureuses.",
+      "address": "Honfleur",
       "lat": 49.42148208618164,
       "lng": 0.23293399810791016,
       "url": ""
     },
     {
+      "image": "/images/corsaire-honfleur.webp",
       "name": "Le Corsaire",
       "category": "Restaurant",
+      "description": "Un restaurant proposant une cuisine traditionnelle normande.",
+      "address": "Honfleur",
       "lat": 49.421573638916016,
       "lng": 0.23206430673599243,
       "url": ""
     },
     {
+      "image": "/images/escale-honfleur.jpg",
       "name": "L'Escale",
       "category": "Fruits de mer",
+      "description": "Un restaurant spécialisé dans les fruits de mer de la région.",
+      "address": "Honfleur",
       "lat": 49.41969299316406,
       "lng": 0.23506340384483337,
       "url": ""
     },
     {
+      "image": "/images/fleur-de-sel-honfleur.jpg",
       "name": "La Fleur de Sel",
       "category": "Restaurant",
+      "description": "Un restaurant proposant une cuisine traditionnelle normande.",
+      "address": "Honfleur",
       "lat": 49.4220016,
       "lng": 0.2324344,
       "url": ""

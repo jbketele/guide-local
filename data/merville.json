@@ -2,6 +2,7 @@
   "ville": "Merville-Franceville",
   "lieux": [
     {
+      "image": "/images/plage-merville.jpg",
       "name": "Plage de Merville-Franceville",
       "type": "incontournables",
       "category": "Plage",
@@ -11,6 +12,7 @@
       "lng": -0.20204900205135345
     },
     {
+      "image": "/images/port-de-plaisance-de-merville-thomas-boivin-1920x1280-1-1920x1080-f50_50.webp",
       "name": "La Baie de l'Orne",
       "type": "incontournables",
       "category": "Nature",
@@ -20,6 +22,7 @@
       "lng": -0.218
     },
     {
+      "image": "/images/batterie-merville.jpg",
       "name": "La batterie de Merville",
       "type": "incontournables",
       "category": "Patrimoine",
@@ -29,6 +32,7 @@
       "lng": -0.18731
     },
     {
+      "image": "/images/dunes-merville.webp",
       "name": "Dunes de Merville-Franceville",
       "type": "coups de cœur",
       "category": "Nature",
@@ -38,6 +42,7 @@
       "lng": -0.20538634408177048
     },
     {
+      "image": "/images/reserve-gros-banc.webp",
       "name": "Réserve ornithologique du Gros-Banc",
       "type": "coups de cœur",
       "category": "Nature",
@@ -47,6 +52,7 @@
       "lng": 0.2187844067811966
     },
     {
+      "image": "/images/la-redoute-de-merville-eyes-of-gd-ncpa-toutrisme-41477-1920px-1920x1080-f50_50.webp",
       "name": "La Redoute de Merville",
       "type": "coups de cœur",
       "category": "Patrimoine",
@@ -58,6 +64,7 @@
   ],
   "restaurants": [
     {
+      "image": "/images/santa-fe-merville.webp",
       "name": "Santa Fe",
       "category": "Pizzeria",
       "description": "Une adresse conviviale à deux pas de la plage, entre pizzas, galettes, crêpes et moules-frites.",
@@ -66,6 +73,7 @@
       "lng": -0.2027724
     },
     {
+      "image": "/images/la-reserve-merville.webp",
       "name": "La Réserve Péché Iodé",
       "category": "Fruits de mer",
       "description": "Une adresse emblématique au bord de la baie, dans un cadre naturel exceptionnel.",
@@ -74,6 +82,7 @@
       "lng": -0.2233
     },
     {
+      "image": "/images/l-atrium-franceville.jpg",
       "name": "L'Atrium",
       "category": "Restaurant",
       "description": "Une table mettant à l’honneur une cuisine locale et de saison.",
@@ -82,6 +91,7 @@
       "lng": -0.20230449736118317
     },
     {
+      "image": "/images/crepitroll-merville.webp",
       "name": "Crêpit'roll",
       "category": "Crêperie",
       "description": "Une option décontractée face à la mer, parfaite pour une pause gourmande.",

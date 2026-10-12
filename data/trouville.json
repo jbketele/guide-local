@@ -2,6 +2,7 @@
   "ville": "Trouville-sur-Mer",
   "lieux": [
     {
+      "image": "/images/Marche-au-poissons-trouville.webp",
       "name": "Marché aux poissons",
       "type": "incontournables",
       "category": "Marché",
@@ -11,6 +12,7 @@
       "lng": 0.08175399899482727
     },
     {
+      "image": "/images/Promenade_des_planches,_near_the_tennis_club,_Trouville-sur-Mer,_2024.jpg",
       "name": "Promenade des Planches",
       "type": "incontournables",
       "category": "Promenade",
@@ -20,6 +22,7 @@
       "lng": 0.07874900102615356
     },
     {
+      "image": "/images/villa-montebello.webp",
       "name": "La Villa Montebello",
       "type": "incontournables",
       "category": "Patrimoine",
@@ -29,6 +32,7 @@
       "lng": 0.08422040194272995
     },
     {
+      "image": "/images/rue-des-bains.jpg",
       "name": "La Rue des Bains",
       "type": "incontournables",
       "category": "Shopping",
@@ -38,6 +42,7 @@
       "lng": 0.08197770267724991
     },
     {
+      "image": "/images/casino-trouville.jpg",
       "name": "Casino Barrière",
       "type": "coups de cœur",
       "category": "Patrimoine",
@@ -47,6 +52,7 @@
       "lng": 0.0782041
     },
     {
+      "image": "/images/cures-marines.jpg",
       "name": "Les Cures Marines",
       "type": "coups de cœur",
       "category": "Hotel et spa",
@@ -56,6 +62,7 @@
       "lng": 0.07784619927406311
     },
     {
+      "image": "/images/Trouville-sur-Mer_mairie.jpg",
       "name": "Hôtel de Ville",
       "type": "coups de cœur",
       "category": "Patrimoine",
@@ -67,6 +74,7 @@
   ],
   "restaurants": [
     {
+      "image": "/images/les-vapeurs.jpg",
       "name": "Les Vapeurs",
       "category": "Brasserie",
       "description": "Une institution trouvillaise pour profiter d’une cuisine traditionnelle dans une ambiance animée.",
@@ -75,6 +83,7 @@
       "lng": 0.0818762
     },
     {
+      "image": "/images/le-noroit.webp",
       "name": "Le Noroit",
       "category": "Fruits de mer",
       "description": "Une adresse tournée vers les produits de la mer dans une ambiance conviviale.",
@@ -83,6 +92,7 @@
       "lng": 0.08299955798483971
     },
     {
+      "image": "/images/vieux-normand.jpeg",
       "name": "Le Vieux Normand",
       "category": "Crêperie",
       "description": "Une adresse conviviale pour savourer galettes et crêpes dans une ambiance chaleureuse.",
@@ -91,6 +101,7 @@
       "lng": 0.08300039617515687
     },
     {
+      "image": "/images/il-parasole.jpg",
       "name": "Il Parasole",
       "category": "Pizzeria",
       "description": "Une adresse italienne appréciée pour ses pizzas et ses spécialités gourmandes.",
