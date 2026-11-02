@@ -1,0 +1,151 @@
+{
+  "ville": "Deauville",
+  "lieux": [
+    {
+      "image": "/images/planches-deauville.jpeg",
+      "name": "Les Planches",
+      "type": "incontournables",
+      "category": "Seafront",
+      "description": "Take a walk along the famous wooden promenade of Deauville, lined with cabins bearing the names\n                        of great figures from cinema.",
+      "address": "Les Planches, 14800 Deauville",
+      "lat": 49.3600959777832,
+      "lng": 0.06533289700746536
+    },
+    {
+      "image": "/images/le-cloitre-des-franciscaines.jpg",
+      "name": "Les Franciscaines",
+      "type": "incontournables",
+      "category": "Heritage",
+      "description": "Discover this cultural site installed in an old monastery, between exhibitions, museum, library\n                        and history of Deauville.",
+      "address": "145B avenue de la République, 14800 Deauville",
+      "lat": 49.35393524169922,
+      "lng": 0.06811639666557312
+    },
+    {
+      "image": "/images/Casino_de_Deauville.jpeg",
+      "name": "Casino Barrière Deauville",
+      "type": "incontournables",
+      "category": "Heritage",
+      "description": "Discover the emblematic casino of Deauville, a symbol of the city's elegance and entertainment,\n                        offering games, shows and a unique atmosphere.",
+      "address": "2 rue Edmond Blanc, 14800 Deauville",
+      "lat": 49.3582,
+      "lng": 0.0689
+    },
+    {
+      "image": "/images/deauville-le-normandy-facade.jpg ",
+      "name": "Hôtel Le Normandy",
+      "type": "incontournables",
+      "category": "Heritage",
+      "description": "Discover one of Deauville's most iconic hotels, recognizable by its timber-framed facades and\n                        Anglo-Norman style.",
+      "address": "38 rue Jean Mermoz, 14800 Deauville",
+      "lat": 49.36001205444336,
+      "lng": 0.0713132992386818
+    },
+    {
+      "image": "/images/place-morny.webp",
+      "name": "Place de Morny",
+      "type": "favorites",
+      "category": "Centre-ville",
+      "description": "Stroll around this central square surrounded by shops, a true meeting point in the heart of Deauville.",
+      "address": "Place de Morny, 14800 Deauville",
+      "lat": 49.357903,
+      "lng": 0.077345
+    },
+    {
+      "image": "/images/bassin-morny.jpg",
+      "name": "Bassin Morny",
+      "type": "favorites",
+      "category": "Balade",
+      "description": "Stroll around the Bassin Morny and enjoy the maritime atmosphere in the heart of Deauville.",
+      "address": "Bassin Morny, 14800 Deauville",
+      "lat": 49.3609619140625,
+      "lng": 0.0810059979557991
+    },
+    {
+      "image": "/images/bains-pompeiens.jpeg",
+      "name": "Bains Poméiens",
+      "type": "favorites",
+      "category": "Heritage",
+      "description": "Enjoy these aquatic facilities to cool off in the heart of Deauville.",
+      "address": "Les Planches, 14800 Deauville",
+      "lat": 49.36032868985317,
+      "lng": 0.06627147906442143
+    },
+    {
+      "image": "/images/hippodrome-deauville.webp",
+      "name": "Hippodrome de Deauville-La Touques",
+      "type": "must-see",
+      "category": "Horse Racing",
+      "description": "Discover the world of horse racing in this historic racetrack located in the heart of Deauville.",
+      "address": "45 avenue Hocquart de Turtot, 14800 Deauville",
+      "lat": 49.35325622558594,
+      "lng": 0.07344959676265717
+    }
+  ],
+  "restaurants": [
+    {
+      "image": "/images/Essentiel-demo_1.jpeg",
+      "name": "L'Essentiel",
+      "category": "Gastronomic",
+      "description": "A refined table that offers creative cuisine around seasonal products.",
+      "address": "29 rue Mirabeau, 14800 Deauville",
+      "lat": 49.362579345703125,
+      "lng": 0.07760805636644363
+    },
+    {
+      "image": "/images/etoile-des-mers-deauville.jpg",
+      "name": "L'Étoile des Mers",
+      "category": "Seafood",
+      "description": "A venue focused on seafood, perfect for discovering mussels, fish and other Norman specialties.",
+      "address": "74 rue Gambetta, 14800 Deauville",
+      "lat": 49.35892868041992,
+      "lng": 0.07666260004043579
+    },
+    {
+      "image": "/images/Mamma-mia.jpg",
+      "name": "Mamma Mia",
+      "category": "Italian",
+      "description": "A friendly restaurant offering refined French cuisine in the heart of Deauville.",
+      "address": "Deauville",
+      "lat": 49.36152267456055,
+      "lng": 0.0820280984044075
+    },
+    {
+      "image": "/images/Hibouville-5-2022.jpg",
+      "name": "Le Hibouville",
+      "category": "Brasserie",
+      "description": "A lively address on the place of Morny, ideal for dining or having a drink in the heart of Deauville.",
+      "address": "Place de Morny, 14800 Deauville",
+      "lat": 49.36003494262695,
+      "lng": 0.07726100087165833
+    },
+    {
+      "image": "/images/Le-Drakkar-Deauville.jpg",
+      "name": "Le Drakkar",
+      "category": "Brasserie",
+      "description": "A friendly address in Deauville for sharing a meal in a relaxed atmosphere, just steps from the city center's animation.",
+      "address": "77 rue Eugène Colas, 14800 Deauville",
+      "lat": 49.359405517578125,
+      "lng": 0.07337450236082077
+    },
+    {
+      "image": "/images/L-etage-2019-5.jpg",
+      "name": "L'Étage",
+      "category": "Restaurant",
+      "description": "A friendly restaurant offering refined French cuisine in the heart of Deauville.",
+      "address": "Deauville",
+      "lat": 49.3611946105957,
+      "lng": 0.07240539789199829
+    },
+    {
+      "image": "/images/la-cantine-deauville-2.jpg",
+      "name": "La Cantine de Deauville",
+      "category": "Brasserie",
+      "description": "A friendly address offering generous and delicious cuisine, ideal for sharing a warm moment in the heart of Deauville.",
+      "address": "90 rue Eugène Colas, 14800 Deauville",
+      "lat": 49.359615325927734,
+      "lng": 0.07338669896125793,
+      "link": "https://maps.app.goo.gl/ZpF12kmMWzg5myCv7"
+    }
+  ]
+}

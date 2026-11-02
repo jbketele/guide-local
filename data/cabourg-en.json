@@ -1,0 +1,133 @@
+{
+  "ville": "Cabourg",
+  "lieux": [
+    {
+      "image": "/images/couple-sur-la-promenade-marcel-proust-adobe-stock-28093-e1639668825862-600x400-f50_50.webp",
+      "name": "Promenade Marcel Proust",
+      "type": "incontournables",
+      "category": "Walk",
+      "description": "An iconic walk along the seafront of Cabourg.",
+      "address": "Promenade Marcel Proust, 14390 Cabourg",
+      "lat": 49.2933,
+      "lng": -0.119
+    },
+    {
+      "image": "/images/Grand_Hotel_-_Cabourg.jpeg",
+      "name": "Grand Hôtel de Cabourg",
+      "type": "must-see",
+      "category": "Heritage",
+      "description": "An iconic building of the seaside resort and its history.",
+      "address": "Les Jardins du Casino, 14390 Cabourg",
+      "lat": 49.293931686456,
+      "lng": -0.11581525921602998
+    },
+    {
+      "image": "/images/Casino_Cabourg.JPG",
+      "name": "Le casino historique",
+      "type": "must-see",
+      "category": "Heritage",
+      "description": "Facing the sea, this iconic building of Cabourg reflects the seaside history of the town.",
+      "address": "Promenade Marcel Proust, 14390 Cabourg",
+      "lat": 49.29357,
+      "lng": -0.11643
+    },
+    {
+      "image": "/images/parasols-et-cabines-camille-plichard-ncpa-tourisme-42024-1920px-1920x1080-f50_50.webp",
+      "name": "Plage de Cabourg",
+      "type": "must-see",
+      "category": "Beach",
+      "description": "A long sandy beach ideal for enjoying the seafront.",
+      "address": "Promenade Marcel Proust, 14390 Cabourg",
+      "lat": 49.28782,
+      "lng": -0.1566
+    },
+    {
+      "image": "/images/avenue-de-la-mer-cabourg.jpeg",
+      "name": "Avenue de la Mer",
+      "type": "incontournables",
+      "category": "Centre-ville",
+      "description": "An iconic street in the heart of Cabourg, lined with shops, cafes, and restaurants, connecting\n                        the city center to the sea.",
+      "address": "Place de l'Église, 14390 Cabourg",
+      "lat": 49.2935,
+      "lng": -0.1159
+    },
+    {
+      "image": "/images/facade-villa-l-annonciade-camille-plichard-ncpa-tourisme-34729-1920px-1920x1080-f50_50.webp",
+      "name": "Villas Belle Époque",
+      "type": "favorites",
+      "category": "Heritage",
+      "description": "Stroll through the streets of Cabourg to discover its elegant villas and their historically rich facades.",
+      "address": "Centre-ville de Cabourg",
+      "lat": 49.293,
+      "lng": -0.1158
+    },
+    {
+      "image": "/images/jardins-casino-cabourg.png",
+      "name": "Jardins du Casino",
+      "type": "favorites",
+      "category": "Nature",
+      "description": "A pleasant greenery setting facing the sea, ideal for a break in the heart of Cabourg.",
+      "address": "Promenade Marcel Proust, 14390 Cabourg",
+      "lat": 49.29307,
+      "lng": -0.1155
+    },
+    {
+      "image": "/images/villa-temps-retrouve.webp",
+      "name": "Villa du Temps retrouvé",
+      "type": "favorites",
+      "category": "Heritage",
+      "description": "An original immersion in the world of the Belle Époque and the art of living of the great Norman seaside resorts.",
+      "address": "15 avenue du Président Raymond Poincaré, 14390 Cabourg",
+      "lat": 49.294,
+      "lng": -0.118
+    }
+  ],
+  "restaurants": [
+    {
+      "image": "/images/encas-cabourg.webp",
+      "name": "L'Encas",
+      "category": "Brasserie",
+      "description": "An inviting brasserie facing the sea, perfect for enjoying a meal with a view of the Marcel Proust Promenade.",
+      "address": "4 Promenade Marcel Proust, 14390 Cabourg",
+      "lat": 49.29315,
+      "lng": -0.11595
+    },
+    {
+      "image": "/images/le-balligan-cabourg.jpg",
+      "name": "Le Balligan",
+      "category": "Seafood",
+      "description": "An essential address for tasting fish, shellfish and seafood in a warm atmosphere.",
+      "address": "Cabourg",
+      "lat": 49.2928,
+      "lng": -0.1165
+    },
+    {
+      "image": "/images/latelier-cabourg.webp",
+      "name": "L'Atelier",
+      "category": "Restaurant",
+      "description": "An inviting table offering refined French cuisine in the heart of Cabourg.",
+      "address": "37 avenue de la Mer, 14390 Cabourg",
+      "lat": 49.2922,
+      "lng": -0.1172
+    },
+    {
+      "image": "/images/lolivier-cabourg.webp",
+      "name": "L'Olivier",
+      "category": "Pizzeria",
+      "description": "An appreciated address for its pizzas and Italian cuisine, perfect for a relaxed meal.",
+      "address": "46 avenue de la Mer, 14390 Cabourg",
+      "lat": 49.2918,
+      "lng": -0.117
+    },
+    {
+      "image": "/images/le-balbec-cabourg.jpg",
+      "name": "Le Balbec",
+      "category": "Fine dining",
+      "description": "An iconic address in Cabourg, offering refined cuisine in an elegant setting by the sea.",
+      "address": "Les Jardins du Casino, 14390 Cabourg",
+      "lat": 49.294009109342966,
+      "lng": -0.1160115640297743,
+      "link": "https://maps.app.goo.gl/3MHHegHo4J8vFYbCA"
+    }
+  ]
+}

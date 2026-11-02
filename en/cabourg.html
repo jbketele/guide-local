@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guide local - Cabourg</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/villes.css">
+    <link rel="icon" type="image/x-icon" href="../images/icon-guide.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css">
+</head>
+
+<body data-ville="cabourg">
+    <header id="header"></header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Cabourg</h1>
+            <p>Between the beach, Belle Époque villas and Marcel Proust's promenade</p>
+        </div>
+    </section>
+
+    <section id="presentation">
+        <div class="section-title">
+            <p>Presentation</p>
+        </div>
+        <div class="presentation-title">
+            <h2>Cabourg, the elegance <br>by the sea</h2>
+        </div>
+
+        <p>Iconic seaside resort of the Fleurie Coast, Cabourg seduces with its long sandy beach, its Belle Époque
+            villas and its peaceful atmosphere. Between beach walks, city center and heritage, the city is easy to
+            discover on foot.</p>
+    </section>
+
+    <section id="incontournables">
+        <div class="section-title">
+            <p>Don't miss</p>
+            <h2>Must-sees</h2>
+        </div>
+
+        <div class="incontournables-list">
+            <article class="incontournable-card">
+                <img src="/images/couple-sur-la-promenade-marcel-proust-adobe-stock-28093-e1639668825862-600x400-f50_50.webp"
+                    alt="Promenade Marcel Proust à Cabourg">
+                <div class="incontournable-content">
+                    <span class="category">Walk</span>
+                    <h3>Promenade Marcel Proust</h3>
+                    <p>An iconic walk along the seafront of Cabourg.</p>
+                </div>
+            </article>
+
+            <article class="incontournable-card">
+                <img src="/images/Grand_Hotel_-_Cabourg.jpeg" alt="Grand Hôtel de Cabourg">
+                <div class="incontournable-content">
+                    <span class="category">Heritage</span>
+                    <h3>Grand Hôtel</h3>
+                    <p>An iconic building of the seaside resort and its history.</p>
+                </div>
+            </article>
+
+            <article class="incontournable-card">
+                <img src="/images/Casino_Cabourg.JPG" alt="Casino de Cabourg">
+                <div class="incontournable-content">
+                    <span class="category">Heritage</span>
+                    <h3>Historic Casino</h3>
+                    <p>A historic casino with a Belle Époque architecture, offering shows and entertainment.
+                    </p>
+                </div>
+            </article>
+
+            <article class="incontournable-card">
+                <img src="/images/parasols-et-cabines-camille-plichard-ncpa-tourisme-42024-1920px-1920x1080-f50_50.webp"
+                    alt="Plage de Cabourg">
+                <div class="incontournable-content">
+                    <span class="category">Plage</span>
+                    <h3>Cabourg Beach</h3>
+                    <p>An iconic beach with golden sand, perfect for enjoying the seaside.</p>
+                </div>
+            </article>
+
+            <article class="incontournable-card">
+                <img src="/images/avenue-de-la-mer-cabourg.jpeg" alt="Avenue de la Mer à Cabourg">
+                <div class="incontournable-content">
+                    <span class="category">Centre-ville</span>
+                    <h3>Avenue de la Mer</h3>
+                    <p>An iconic street in the heart of Cabourg, lined with shops, cafes, and restaurants, connecting
+                        the city center to the sea.</p>
+                </div>
+
+            </article>
+
+        </div>
+
+        <button class="btn-see-more" id="seeMoreIncontournables">
+            See more must-sees
+        </button>
+    </section>
+
+    <section id="restaurants">
+
+        <div class="section-title">
+            <p>Restaurants</p>
+            <h2>Where to eat in Cabourg?</h2>
+            <span>
+                Discover some great places to eat in Cabourg.
+            </span>
+        </div>
+
+        <div class="restaurants-list">
+
+            <article class="restaurant-card" data-name="L'Encas">
+                <img src="/images/encas-cabourg.webp" alt="Restaurant à Cabourg">
+                <div class="restaurant-content">
+                    <span class="category">🍴 Brasserie</span>
+                    <h3>L'Encas</h3>
+                    <p>A friendly brasserie facing the sea, perfect for enjoying a meal with a view of the Marcel Proust
+                        Promenade.</p>
+                    <a href="https://maps.app.goo.gl/txpSzQerutRjapfr8" target="_blank" rel="noopener noreferrer"
+                        class="restaurant-link">Discover the address </a>
+                </div>
+            </article>
+
+            <article class="restaurant-card" data-name="Le Balligan">
+                <img src="/images/le-balligan-cabourg.jpg" alt="Restaurant de fruits de mer à Cabourg">
+                <div class="restaurant-content">
+                    <span class="category">🦪 Seafood</span>
+                    <h3>Le Balligan</h3>
+                    <p>A must-visit address for tasting fish, shellfish, and seafood in a warm atmosphere.</p>
+                    <a href="https://maps.app.goo.gl/suwPyikgsBmxvZ5j7" target="_blank" rel="noopener noreferrer"
+                        class="restaurant-link">Discover the address </a>
+                </div>
+            </article>
+
+            <article class="restaurant-card" data-name="L'Atelier">
+                <img src="/images/latelier-cabourg.webp" alt="Brasserie à Cabourg">
+                <div class="restaurant-content">
+                    <span class="category">🍽️ Restaurant</span>
+                    <h3>L'Atelier</h3>
+                    <p>A friendly dining spot offering refined French cuisine in the heart of Cabourg.</p>
+                    <a href="https://maps.app.goo.gl/npQCEeVfvokLBW5F6" target="_blank" rel="noopener noreferrer"
+                        class="restaurant-link">Discover the address </a>
+                </div>
+            </article>
+
+            <article class="restaurant-card" data-name="L'Olivier">
+                <img src="/images/lolivier-cabourg.webp" alt="Restaurant à Cabourg">
+                <div class="restaurant-content">
+                    <span class="category">🍕 Pizzeria</span>
+                    <h3>L'Olivier</h3>
+                    <p>A great address for tasting pizzas and Italian cuisine, perfect for a relaxed meal.</p>
+                    <a href="https://maps.app.goo.gl/wcTs4fsFCy5AjEHf8" target="_blank" rel="noopener noreferrer"
+                        class="restaurant-link">Discover the address </a>
+                </div>
+            </article>
+
+        </div>
+
+        <button class="btn-see-more" id="seeMoreRestaurants">
+            See more restaurants
+        </button>
+
+    </section>
+
+    <section id="coups-de-coeur">
+
+        <div class="section-title">
+            <p>Favorites</p>
+            <h2>Our favorite spots in Cabourg</h2>
+            <span>
+                Discover our favorite spots to fully enjoy Cabourg.
+            </span>
+        </div>
+
+        <div class="favorites">
+
+            <article class="favorite-card">
+                <img src="/images/facade-villa-l-annonciade-camille-plichard-ncpa-tourisme-34729-1920px-1920x1080-f50_50.webp"
+                    alt="Villas Belle Époque à Cabourg">
+                <div class="favorite-content">
+                    <span class="category">🏛️ Heritage</span>
+                    <h3>Villas Belle Époque</h3>
+                    <p>Discover the elegant villas and their historic facades as you stroll through the streets of
+                        Cabourg.</p>
+                </div>
+            </article>
+
+            <article class="favorite-card">
+                <img src="/images/jardins-casino-cabourg.png" alt="Jardin botanique à Cabourg">
+                <div class="favorite-content">
+                    <span class="category">🌳 Nature</span>
+                    <h3>Jardins du Casino</h3>
+                    <p> An delightful green oasis facing the sea, perfect for a break in the heart of Cabourg. </p>
+                </div>
+            </article>
+
+            <article class="favorite-card">
+                <img src="/images/villa-temps-retrouve.webp" alt="Villa du Temps retrouvé à Cabourg">
+                <div class="favorite-content">
+                    <span class="category">🏛️ Heritage</span>
+                    <h3>Villa du Temps retrouvé</h3>
+                    <p>An original immersion into the world of the Belle Époque and the art of living at the great
+                        seaside resorts of Normandy.</p>
+                </div>
+            </article>
+
+        </div>
+
+        <button class="btn-see-more" id="seeMoreFavorites">
+            See more favorite spots
+        </button>
+    </section>
+
+    <section id="carte">
+
+        <div class="section-title">
+            <p>Explore Cabourg</p>
+            <h2>The main places on the map</h2>
+            <span>
+                Discover the key locations presented in our guide.
+            </span>
+        </div>
+
+        <div class="map-preview">
+            <div id="map"></div>
+        </div>
+
+    </section>
+
+    <footer id="footer"></footer>
+
+    <script src="/js/header.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
+    </script>
+    <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+    <script src="/js/villes.js"></script>
+    <script src="/js/footer.js"></script>
+    <script src="/js/langues.js"></script>
+</body>
+
+</html>

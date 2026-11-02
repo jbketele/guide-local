@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Côte Fleurie - The Local Guide</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="icon" type="image/x-icon" href="/images/icon-guide.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css">
+</head>
+
+<body>
+    <header id="header"></header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Discover the Flowered Coast differently</h1>
+            <p>Our curated selection of addresses, beaches, activities and favorites to fully enjoy the Flowered Coast.
+            </p>
+            <div class="hero-buttons">
+                <a href="#destinations" class="btn">Explore the guide</a>
+                <a href="#carte" class="btn">View the map</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="coups-de-coeur">
+        <div class="section-title">
+            <p>The Flowered Coast</p>
+            <h2>Our inspirations</h2>
+            <span>
+                adresses, landscapes and places to enjoy
+                along the Flowered Coast.
+            </span>
+        </div>
+
+        <div class="favorites" id="favorites-container">
+            <!-- Les coups de coeur seront insérés ici par JavaScript -->
+        </div>
+
+    </section>
+
+    <section id="categories">
+
+        <div class="section-title">
+            <p>Explore the guide</p>
+            <h2>What are you looking for?</h2>
+        </div>
+
+        <div class="categories">
+
+            <a href="#destinations" class="category-card">
+                <img src="/images/cote-fleurie-honfleur.jpg" alt="Discover the Flowered Coast">
+                <div class="category-content">
+                    <h3>Discover</h3>
+                    <p>Explore cities and villages of the Flowered Coast.</p>
+                </div>
+            </a>
+
+            <a href="/experiences/index.html" class="category-card">
+                <img src="/images/Voyage-a-velo-Normandie-Dune_Cabourg-Normandie-Rando.jpg" alt="Activities">
+                <div class="category-content">
+                    <h3>Experiences</h3>
+                    <p>Leisure and relaxation for everyone.</p>
+                </div>
+            </a>
+
+            <a href="/pratique.html" class="category-card">
+                <img src="/images/paysages.jpeg" alt="Practical Information">
+                <div class="category-content">
+                    <h3>Pratical</h3>
+                    <p>Everything you need to know for your stay.</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section id="carte">
+        <div class="carte-touristique">
+            <img src="/images/carte-cote-fleurie.png"
+                alt="Carte touristique de la Côte Fleurie présentant les villes de Cabourg, Houlgate, Villers-sur-Mer, Deauville et Trouville-sur-Mer"
+                class="carte-touristique__image" loading="lazy">
+        </div>
+    </section>
+
+    <section id="explorer">
+
+        <div class="section-title">
+            <p>The Flowered Coast</p>
+            <h2>Explore the Flowered Coast</h2>
+            <span>
+                Discover the places around you or go straight to your chosen destination.
+            </span>
+        </div>
+
+        <div class="explore-options">
+
+            <article class="explore-card">
+                <div class="explore-card-content">
+
+                    <span class="explore-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </span>
+
+                    <h3>Around Me</h3>
+
+                    <p>
+                        Discover the places and good addresses
+                        near your location.
+                    </p>
+
+                    <button id="locate-me" class="btn">
+                        📍 Locate Me
+                    </button>
+
+                    <p id="location-status"></p>
+
+                </div>
+            </article>
+
+
+            <article class="explore-card">
+                <div class="explore-card-content">
+
+                    <span class="explore-icon">🏙️</span>
+
+                    <h3>Choose a City</h3>
+
+                    <p>
+                        Find our destinations and explore
+                        directly the guide of your choice.
+                    </p>
+
+                    <span class="explore-down">↓</span>
+
+                </div>
+            </article>
+
+        </div>
+
+        <div id="nearby-list" class="nearby-list"></div>
+
+    </section>
+    <section id="destinations">
+
+        <div class="section-title">
+            <p>The Flowered Coast</p>
+            <h2>Discover Our Destinations</h2>
+            <span>
+                Explore the cities and villages that make the charm of the Flowered Coast.
+            </span>
+        </div>
+
+        <div class="destinations-list">
+
+            <a href="/decouvrir/merville-franceville.html" class="destination-card">
+                <img src="/images/merville-franceville.jpg" alt="Merville-Franceville">
+                <div class="destination-content">
+                    <h3>Merville-Franceville</h3>
+                </div>
+            </a>
+
+            <a href="/decouvrir/cabourg.html" class="destination-card">
+                <img src="/images/grand-hotel-et-casino-studio-911-28022-1600x900-c-1920x1080-f50_50.webp"
+                    alt="Cabourg">
+                <div class="destination-content">
+                    <h3>Cabourg</h3>
+                </div>
+            </a>
+
+            <a href="/decouvrir/dives.html" class="destination-card">
+                <img src="/images/que-faire-dives-sur-mer-visiter-incontournable.jpg" alt="Dives-sur-Mer">
+                <div class="destination-content">
+                    <h3>Dives-sur-Mer</h3>
+                </div>
+            </a>
+
+            <a href="/decouvrir/houlgate.html" class="destination-card">
+                <img src="/images/houlgate.jpeg" alt="Houlgate">
+                <div class="destination-content">
+                    <h3>Houlgate</h3>
+                </div>
+            </a>
+
+            <a href="/decouvrir/villers.html" class="destination-card">
+                <img src="/images/flaner-a-villers-sur-mer-1.jpg" alt="Villers-sur-Mer">
+                <div class="destination-content">
+                    <h3>Villers-sur-Mer</h3>
+                </div>
+            </a>
+
+            <a href="/decouvrir/deauville.html" class="destination-card">
+                <img src="/images/deauville.webp" alt="Deauville">
+                <div class="destination-content">
+                    <h3>Deauville</h3>
+                </div>
+            </a>
+
+            <a href="/decouvrir/trouville.html" class="destination-card">
+                <img src="/images/depositphotos_40401073-stock-photo-france-picturesque-city-of-trouville.jpg"
+                    alt="Trouville-sur-Mer">
+                <div class="destination-content">
+                    <h3>Trouville-sur-Mer</h3>
+                </div>
+            </a>
+
+            <a href="/decouvrir/honfleur.html" class="destination-card">
+                <img src="/images/honfleur03-1920x1281-1.jpg" alt="Honfleur">
+                <div class="destination-content">
+                    <h3>Honfleur</h3>
+                </div>
+            </a>
+
+        </div>
+    </section>
+
+    <footer id="footer"></footer>
+
+    <script src="/js/header.js"></script>
+    <script src="/js/favorites.js"></script>
+    <script src="/js/location.js"></script>
+    <script src="/js/footer.js"></script>
+    <script src="/js/langues.js"></script>
+</body>
+
+</html>

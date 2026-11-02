@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guide local - Deauville</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/villes.css">
+    <link rel="icon" type="image/x-icon" href="/images/icon-guide.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css">
+</head>
+
+<style>
+    #hero::before {
+        background-image: url('/images/Promenade_Planches_-_Deauville_\(FR14\)_-_2021-11-12_-_1.jpg');
+    }
+</style>
+
+<body data-ville="deauville">
+    <header id="header"></header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Deauville</h1>
+            <p>the elegance of the Fleurie Coast</p>
+        </div>
+    </section>
+
+    <section id="presentation">
+        <div class="section-title">
+            <p>Presentation</p>
+        </div>
+        <div class="presentation-title">
+            <h2>Deauville, between<br>elegance and seafront</h2>
+        </div>
+
+        <p>Deauville seduces with its architecture, its beach and its elegant atmosphere. From the famous Planches to
+            the Belle Époque villas, the city is easy to discover whether for a seafront walk or a cultural escape.</p>
+    </section>
+
+    <section id="incontournables">
+        <div class="section-title">
+            <p>Don't miss</p>
+            <h2>Must-sees</h2>
+        </div>
+
+        <div class="incontournables-list">
+            <article class="incontournable-card">
+                <img src="/images/planches-deauville.jpeg" alt="Planches de Deauville">
+                <div class="incontournable-content">
+                    <span class="category">Seafront</span>
+                    <h3>Les Planches</h3>
+                    <p>Take a walk along the famous wooden promenade of Deauville, lined with cabins bearing the names
+                        of great figures from cinema.</p>
+                </div>
+            </article>
+
+            <article class="incontournable-card">
+                <img src="/images/le-cloitre-des-franciscaines.jpg" alt="Les Franciscaines de Deauville">
+                <div class="incontournable-content">
+                    <span class="category">Heritage</span>
+                    <h3>Les Franciscaines</h3>
+                    <p>Discover this cultural site installed in an old monastery, between exhibitions, museum, library
+                        and history of Deauville.</p>
+                </div>
+            </article>
+
+            <article class="incontournable-card">
+                <img src="/images/Casino_de_Deauville.jpeg" alt="Casino de Deauville">
+                <div class="incontournable-content">
+                    <span class="category">Heritage</span>
+                    <h3>Casino Barrière Deauville </h3>
+                    <p>Discover the emblematic casino of Deauville, a symbol of the city's elegance and entertainment,
+                        offering games, shows and a unique atmosphere.
+                    </p>
+                </div>
+            </article>
+
+            <article class="incontournable-card">
+                <img src="/images/deauville-le-normandy-facade.jpg " alt="Hôtel Le Normandy à Deauville">
+                <div class="incontournable-content">
+                    <span class="category">Heritage</span>
+                    <h3>Hôtel Le Normandy</h3>
+                    <p>Discover one of Deauville's most iconic hotels, recognizable by its timber-framed facades and
+                        Anglo-Norman style.</p>
+                </div>
+            </article>
+
+        </div>
+
+        <button class="btn-see-more" id="seeMoreIncontournables">
+            See more must-sees
+        </button>
+    </section>
+
+    <section id="restaurants">
+
+        <div class="section-title">
+            <p>Restaurants</p>
+            <h2>Where to eat in Deauville?</h2>
+            <span>
+                Discover some great places to eat in Deauville.
+            </span>
+        </div>
+
+        <div class="restaurants-list">
+
+            <article class="restaurant-card" data-name="L'Essentiel">
+                <img src="/images/Essentiel-demo_1.jpeg" alt="Restaurant à Deauville">
+                <div class="restaurant-content">
+                    <span class="category">Gastronomic</span>
+                    <h3>L'Essentiel</h3>
+                    <p>A refined table that offers creative cuisine around seasonal products.</p>
+                    <a href="https://maps.app.goo.gl/v8DUQBe5Jq22Btf7A" class="restaurant-link" target="_blank">Discover
+                        the address </a>
+                </div>
+            </article>
+
+            <article class="restaurant-card" data-name="L'Étoile des Mers">
+                <img src="/images/etoile-des-mers-deauville.jpg" alt="Restaurant de fruits de mer à Cabourg">
+                <div class="restaurant-content">
+                    <span class="category">🦪 Fruits de mer</span>
+                    <h3>L'Étoile des Mers</h3>
+                    <p>Une adresse tournée vers les produits de la mer, parfaite pour découvrir huîtres, poissons et
+                        autres spécialités normandes.</p>
+                    <a href="https://maps.app.goo.gl/uMzj5yQXyNCe2P3K6" class="restaurant-link"
+                        target="_blank">Découvrir l'adresse </a>
+                </div>
+            </article>
+
+            <article class="restaurant-card" data-name="Mamma Mia">
+                <img src="/images/Mamma-mia.jpg" alt="Restaurant italien à Deauville">
+                <div class="restaurant-content">
+                    <span class="category">🍕 Italien</span>
+                    <h3>Mamma Mia</h3>
+                    <p>Une table conviviale proposant une cuisine française soignée au cœur de Deauville.</p>
+                    <a href="https://maps.app.goo.gl/tHbweQt3uty2cBts7" class="restaurant-link"
+                        target="_blank">Découvrir l'adresse </a>
+                </div>
+            </article>
+
+            <article class="restaurant-card restaurant-hidden" data-name="Le Hibouville">
+                <img src="/images/Hibouville-5-2022.jpg" alt="Brasserie à Deauville">
+                <div class="restaurant-content">
+                    <span class="category">🍴 Brasserie</span>
+                    <h3>Le Hibouville</h3>
+                    <p>Une adresse animée sur la place de Morny, idéale pour manger ou prendre un verre au cœur de
+                        Deauville.</p>
+                    <a href="https://maps.app.goo.gl/nahDNsyo7MogVTEH9" class="restaurant-link"
+                        target="_blank">Découvrir l'adresse </a>
+                </div>
+            </article>
+
+            <article class="restaurant-card restaurant-hidden" data-name="Le Drakkar">
+                <img src="/images/Le-Drakkar-Deauville.jpg" alt="Restaurant de fruits de mer à Deauville">
+                <div class="restaurant-content">
+                    <span class="category">🦪 Fruits de mer</span>
+                    <h3>Le Drakkar</h3>
+                    <p>Une adresse incontournable pour les amateurs de fruits de mer, avec une vue imprenable sur la
+                        mer.</p>
+                    <a href="https://maps.app.goo.gl/TxUXMzvMWFxY5aVQ6" class="restaurant-link"
+                        target="_blank">Découvrir l'adresse </a>
+                </div>
+            </article>
+
+            <article class="restaurant-card restaurant-hidden" data-name="L'Étage">
+                <img src="/images/L-etage-2019-5.jpg" alt="Restaurant de fruits de mer à Deauville">
+                <div class="restaurant-content">
+                    <span class="category">🍽️ Restaurant</span>
+                    <h3>L'Étage</h3>
+                    <p>Une table conviviale située face au port, proposant une cuisine française dans un cadre agréable.
+                    </p>
+                    <a href="https://maps.app.goo.gl/nXgA31fHPyubhWi28" class="restaurant-link"
+                        target="_blank">Découvrir l'adresse </a>
+                </div>
+            </article>
+
+        </div>
+
+        <button class="btn-see-more" id="seeMoreRestaurants">
+            Voir plus de restaurants
+        </button>
+
+    </section>
+
+    <section id="coups-de-coeur">
+
+        <div class="section-title">
+            <p>Favorites</p>
+            <h2>Our favorite spots in Deauville</h2>
+            <span>
+                Discover our favorite spots to fully enjoy Deauville.
+            </span>
+        </div>
+
+        <div class="favorites">
+
+            <article class="favorite-card">
+                <img src="/images/place-morny.webp" alt="Place de Morny à Deauville">
+                <div class="favorite-content">
+                    <span class="category">🛍️ Town center</span>
+                    <h3>Place de Morny</h3>
+                    <p>Stroll through this central square surrounded by shops, a true meeting point at the heart of
+                        Deauville.</p>
+                </div>
+            </article>
+
+            <article class="favorite-card">
+                <img src="/images/bassin-morny.jpg" alt="Bassin Morny à Deauville">
+                <div class="favorite-content">
+                    <span class="category">🚶🏻 Walking</span>
+                    <h3>Bassin Morny</h3>
+                    <p>Stroll around the Morny Basin and enjoy the maritime atmosphere at the heart of Deauville.</p>
+                </div>
+            </article>
+
+            <article class="favorite-card">
+                <img src="/images/bains-pompeiens.jpeg" alt="Bains Poméiens à Deauville">
+                <div class="favorite-content">
+                    <span class="category">🏛️ Heritage</span>
+                    <h3>Bains Poméiens</h3>
+                    <p>Discover these aquatic facilities to refresh yourself at the heart of Deauville.</p>
+                </div>
+            </article>
+
+            <article class="favorite-card">
+                <img src="/images/hippodrome-deauville.webp" alt="Hippodrome de Deauville">
+                <div class="favorite-content">
+                    <span class="category">🏇 Horse racing</span>
+                    <h3>Hippodrome de Deauville-La Touques</h3>
+                    <p>Discover the world of horse racing in this historic stadium located at the heart of
+                        Deauville.</p>
+                </div>
+            </article>
+
+        </div>
+
+        <button class="btn-see-more" id="seeMoreFavorites">
+            See more favorite spots
+        </button>
+    </section>
+
+    <section id="carte">
+
+        <div class="section-title">
+            <p>Explore Deauville</p>
+            <h2>The main places on the map</h2>
+            <span>
+                Discover the key locations presented in our guide.
+            </span>
+        </div>
+
+        <div class="map-preview">
+            <div id="map"></div>
+        </div>
+
+    </section>
+
+    <footer id="footer"></footer>
+
+    <script src="/js/header.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
+    </script>
+    <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+    <script src="/js/villes.js"></script>
+    <script src="/js/footer.js"></script>
+    <script src="/js/langues.js"></script>
+</body>
+
+</html>

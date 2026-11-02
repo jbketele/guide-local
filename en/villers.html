@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guide local - Villers sur Mer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/villes.css">
+    <link rel="icon" type="image/x-icon" href="/images/icon-guide.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css">
+</head>
+
+<style>
+    #hero::before {
+        background-image: url('/images/flaner-a-villers-sur-mer-1.jpg');
+    }
+</style>
+
+<body data-ville="villers">
+    <header id="header"></header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Villers sur Mer</h1>
+            <p>Between sea, nature and jurassic heritage</p>
+        </div>
+    </section>
+
+    <section id="presentation">
+        <div class="section-title">
+            <p>Presentation</p>
+        </div>
+        <div class="presentation-title">
+            <h2>Villers sur Mer,<br>between land and sea</h2>
+        </div>
+
+        <p>Villers-sur-Mer seduces with its seafront, its seaside villas and its exceptional natural heritage. Between
+            the beach, the cliffs of the Black Cows and the coastal marsh, the resort offers a nice balance between
+            walking, nature and discovery. It is also an essential destination for paleontology enthusiasts thanks to
+            Paléospace, dedicated to the history of the Jurassic in Normandy. </p>
+    </section>
+
+    <section id="incontournables">
+        <div class="section-title">
+            <p>Don't miss</p>
+            <h2>Must-sees</h2>
+        </div>
+
+        <div class="incontournables-list">
+            <article class="incontournable-card">
+                <img src="/images/paleospace.jpg" alt="Paléospace à Villers sur Mer">
+                <div class="incontournable-content">
+                    <span class="category">🔬 Discovery</span>
+                    <h3>Paléospace</h3>
+                    <p>A unique museum dedicated to paleontology and the history of the Jurassic in Normandy.</p>
+                </div>
+            </article>
+            <article class="incontournable-card">
+                <img src="/images/plage-villers.webp" alt="Plage de Villers sur Mer">
+                <div class="incontournable-content">
+                    <span class="category">🏖️ Beach</span>
+                    <h3>Plage de Villers sur Mer</h3>
+                    <p>Enjoy the large sandy beach and its pleasant seafront.</p>
+                </div>
+            </article>
+
+            <article class="incontournable-card">
+                <img src="/images/Marais-de-Villers-Blonville---G--3-.jpg" alt="Marais de Blonville-Villers">
+                <div class="incontournable-content">
+                    <span class="category">🌳 Nature</span>
+                    <h3>Marais de Blonville-Villers</h3>
+                    <p>Discover a preserved natural space between wet meadows and small channels.</p>
+                </div>
+            </article>
+
+            <article class="incontournable-card">
+                <img src="/images/eglise-villers.jpeg" alt="Église de Villers sur Mer">
+                <div class="incontournable-content">
+                    <span class="category">🏛️ Heritage</span>
+                    <h3>L'église de Villers sur Mer</h3>
+                    <p>Admire this beautiful neo-Gothic church, one of the notable buildings of the resort.</p>
+                </div>
+            </article>
+
+        </div>
+
+        <button class="btn-see-more" id="seeMoreIncontournables">
+            See more must-sees
+        </button>
+    </section>
+
+    <section id="restaurants">
+
+        <div class="section-title">
+            <p>Restaurants</p>
+            <h2>Where to eat in Villers sur Mer?</h2>
+            <span>
+                Discover some great places to eat in Villers sur Mer.
+            </span>
+        </div>
+
+        <div class="restaurants-list">
+
+            <article class="restaurant-card" data-name="Bistrot 19">
+                <img src="/images/bistrot-villers.webp" alt="Brasserie à Villers sur Mer">
+                <div class="restaurant-content">
+                    <span class="category">🍴 Brasserie</span>
+                    <h3>Bistrot 19</h3>
+                    <p>A welcoming address to discover refined French cuisine in a bistrot atmosphere.</p>
+                    <a href="https://maps.app.goo.gl/CpSv1kMSYjYE7YdHA" class="restaurant-link" target="_blank">Discover
+                        the address </a>
+                </div>
+            </article>
+
+            <article class="restaurant-card" data-name="La Digue de Villers">
+                <img src="/images/Digue-de-Villers-2-8x6.jpg" alt="Restaurant de fruits de mer à Cabourg">
+                <div class="restaurant-content">
+                    <span class="category">🦪 Seafood</span>
+                    <h3>La Digue de Villers</h3>
+                    <p>Enjoy a cuisine focused on seafood in a pleasant setting near the seafront. </p>
+                    <a href="https://maps.app.goo.gl/LDBLShq5zfXLDze48" class="restaurant-link" target="_blank">Discover
+                        the address </a>
+                </div>
+            </article>
+
+            <article class="restaurant-card" data-name="L'Aigue Marine">
+                <img src="/images/aigue-marine-villers.jpg" alt="Brasserie à Cabourg">
+                <div class="restaurant-content">
+                    <span class="category">🦪 Seafood</span>
+                    <h3>L'Aigue Marine</h3>
+                    <p>Enjoy a great address for fish and seafood lovers. </p>
+                    <a href="https://maps.app.goo.gl/bZZ9391UhoQ8ycan7" class="restaurant-link" target="_blank">Discover
+                        the address </a>
+                </div>
+            </article>
+
+            <article class="restaurant-card" data-name="Gani">
+                <img src="/images/gani-villers.jpg" alt="Restaurant à Cabourg">
+                <div class="restaurant-content">
+                    <span class="category">🍽️ Restaurant</span>
+                    <h3>Gani</h3>
+                    <p>A more gourmet address, ideal for an original and refined culinary experience. </p>
+                    <a href="https://maps.app.goo.gl/XAaPWM6uNn2uNa778" class="restaurant-link" target="_blank">Discover
+                        the address </a>
+                </div>
+            </article>
+
+        </div>
+
+        <button class="btn-see-more" id="seeMoreRestaurants">
+            See more restaurants
+        </button>
+
+    </section>
+
+    <section id="coups-de-coeur">
+
+        <div class="section-title">
+            <p>Favorites</p>
+            <h2>Our picks in Villers sur Mer</h2>
+            <span>
+                Discover our favorite spots to fully enjoy Villers sur Mer.
+            </span>
+        </div>
+
+        <div class="favorites">
+
+            <article class="favorite-card">
+                <img src="/images/promenade-villers.jpeg" alt="Promenade Claude Lelouch à Villers sur Mer">
+                <div class="favorite-content">
+                    <span class="category">🏛️ Heritage</span>
+                    <h3>Promenade Claude Lelouch</h3>
+                    <p>Stroll along the seafront while enjoying the view of the English Channel.</p>
+                </div>
+            </article>
+
+            <article class="favorite-card">
+                <img src="/images/meridien-villers.jpg" alt="Méridien de Greenwich à Villers sur Mer">
+                <div class="favorite-content">
+                    <span class="category">🏛️ Heritage</span>
+                    <h3>Méridien de Greenwich</h3>
+                    <p>Discover this historical monument that marks the passage of the Greenwich meridian through
+                        Villers-sur-Mer.
+                    </p>
+                </div>
+            </article>
+
+            <article class="favorite-card">
+                <img src="/images/villare-villers.jpeg" alt="Le Villare à Villers sur Mer">
+                <div class="favorite-content">
+                    <span class="category">🎭 Culture</span>
+                    <h3>Le Villare</h3>
+                    <p>Discover this cultural venue at the heart of Villers-sur-Mer, which hosts exhibitions, animations
+                        and
+                        events throughout the year.</p>
+                </div>
+            </article>
+
+        </div>
+
+        <button class="btn-see-more" id="seeMoreFavorites">
+            See more favorites
+        </button>
+    </section>
+
+    <section id="carte">
+
+        <div class="section-title">
+            <p>Explore Villers sur Mer</p>
+            <h2>The main places on the map</h2>
+            <span>
+                Discover the key locations presented on our guide.
+            </span>
+        </div>
+
+        <div class="map-preview">
+            <div id="map"></div>
+        </div>
+
+    </section>
+
+    <footer id="footer"></footer>
+
+    <script src="/js/header.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
+    </script>
+    <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+    <script src="/js/villes.js"></script>
+    <script src="/js/footer.js"></script>
+    <script src="/js/langues.js"></script>
+</body>
+
+</html>

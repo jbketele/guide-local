@@ -1,0 +1,83 @@
+{
+  "ville": "Villers-sur-Mer",
+  "lieux": [
+    {
+      "image": "/images/paleospace.jpg",
+      "name": "Paléospace",
+      "category": "🔬 Discovery",
+      "description": "A unique museum dedicated to palaeontology and the Jurassic history of Normandy.",
+      "address": "Avenue Jean Moulin, 14640 Villers-sur-Mer",
+      "lat": 49.327884674072266,
+      "lng": 0.013260800391435623,
+      "type": "must-sees"
+    },
+    {
+      "image": "/images/plage-villers.webp",
+      "name": "Plage de Villers sur Mer",
+      "category": "🏖️ Beach",
+      "description": "Enjoy the wide sandy beach and its pleasant seafront.",
+      "address": "Front de mer, 14640 Villers-sur-Mer",
+      "lat": 49.324474,
+      "lng": -0.005044,
+      "type": "must-sees"
+    },
+    {
+      "image": "/images/Marais-de-Villers-Blonville---G--3-.jpg",
+      "name": "Marais de Blonville-Villers",
+      "category": "🌳 Nature",
+      "description": "Discover a protected natural area of wet meadows and small waterways.",
+      "address": "Marais de Blonville-Villers, 14640 Villers-sur-Mer",
+      "lat": 49.325531005859375,
+      "lng": 0.013219400309026241,
+      "type": "must-sees"
+    },
+    {
+      "image": "/images/eglise-villers.jpeg",
+      "name": "L'église de Villers sur Mer",
+      "category": "🏛️ Heritage",
+      "description": "Admire this beautiful Neo-Gothic church, one of the resort's notable landmarks.",
+      "address": "Place de l'Église, 14640 Villers-sur-Mer",
+      "lat": 49.3207,
+      "lng": -0.0063,
+      "type": "must-sees"
+    }
+  ],
+  "restaurants": [
+    {
+      "image": "/images/bistrot-villers.webp",
+      "name": "Bistrot 19",
+      "category": "Brasserie",
+      "description": "A welcoming spot serving carefully prepared French cuisine in a traditional bistro atmosphere.",
+      "address": "19 rue du Maréchal Leclerc, 14640 Villers-sur-Mer",
+      "lat": 49.32212448120117,
+      "lng": -0.00526819983497262
+    },
+    {
+      "image": "/images/Digue-de-Villers-2-8x6.jpg",
+      "name": "La Digue de Villers",
+      "category": "Seafood",
+      "description": "Enjoy seafood-focused cuisine in a pleasant setting near the seafront.",
+      "address": "Avenue de la République, 14640 Villers-sur-Mer",
+      "lat": 49.32992172241211,
+      "lng": 0.009456999599933624
+    },
+    {
+      "image": "/images/aigue-marine-villers.jpg",
+      "name": "L'Aigue Marine",
+      "category": "Seafood",
+      "description": "A great spot for fish and seafood lovers.",
+      "address": "21 rue Michel d'Ornano, 14640 Villers-sur-Mer",
+      "lat": 49.32221603393555,
+      "lng": -0.006297599989920855
+    },
+    {
+      "image": "/images/gani-villers.jpg",
+      "name": "Gani",
+      "category": "Restaurant",
+      "description": "A more refined dining experience, ideal for an original and sophisticated culinary experience.",
+      "address": "1 Avenue de la Brigade Piron, 14640 Villers-sur-Mer",
+      "lat": 49.32172393798828,
+      "lng": -0.0034586999099701643
+    }
+  ]
+}

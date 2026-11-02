@@ -1,0 +1,124 @@
+{
+  "ville": "Merville-Franceville",
+  "lieux": [
+    {
+      "image": "/images/plage-merville.jpg",
+      "name": "Plage de Merville-Franceville",
+      "type": "must-sees",
+      "category": "Beach",
+      "description": "A vast sandy beach, ideal for enjoying the coastline.",
+      "address": "Boulevard Wattier, 14810 Merville-Franceville-Plage",
+      "lat": 49.28632736206055,
+      "lng": -0.20204900205135345
+    },
+    {
+      "image": "/images/port-de-plaisance-de-merville-thomas-boivin-1920x1280-1-1920x1080-f50_50.webp",
+      "name": "La Baie de l'Orne",
+      "type": "must-sees",
+      "category": "Nature",
+      "description": "A protected natural area to explore on foot or by bike.",
+      "address": "Baie de l'Orne, 14810 Merville-Franceville-Plage",
+      "lat": 49.282,
+      "lng": -0.218
+    },
+    {
+      "image": "/images/batterie-merville.jpg",
+      "name": "La batterie de Merville",
+      "type": "must-sees",
+      "category": "Heritage",
+      "description": "A major historic site associated with the D-Day landings in Normandy.",
+      "address": "Place du 9e Bataillon, 14810 Merville-Franceville-Plage",
+      "lat": 49.26421,
+      "lng": -0.18731
+    },
+    {
+      "image": "/images/dunes-merville.webp",
+      "name": "Dunes de Merville-Franceville",
+      "type": "favorites",
+      "category": "Nature",
+      "description": "Enjoy the natural beauty of the dunes lining the Normandy coast.",
+      "address": "Dunes de Merville-Franceville-Plage",
+      "lat": 49.28622359129485,
+      "lng": -0.20538634408177048
+    },
+    {
+      "image": "/images/reserve-gros-banc.webp",
+      "name": "Réserve ornithologique du Gros-Banc",
+      "type": "favorites",
+      "category": "Nature",
+      "description": "A peaceful spot for birdwatching in the heart of the Orne estuary.",
+      "address": "Estuaire de l'Orne, 14810 Merville-Franceville-Plage",
+      "lat": 49.276065826416016,
+      "lng": 0.2187844067811966
+    },
+    {
+      "image": "/images/la-redoute-de-merville-eyes-of-gd-ncpa-toutrisme-41477-1920px-1920x1080-f50_50.webp",
+      "name": "La Redoute de Merville",
+      "type": "favorites",
+      "category": "Heritage",
+      "description": "A remarkable small horseshoe-shaped fortress, a reminder of the estuary's former defences.",
+      "address": "La Redoute, 14810 Merville-Franceville-Plage",
+      "lat": 49.282346,
+      "lng": -0.218706
+    }
+  ],
+  "restaurants": [
+    {
+      "image": "/images/santa-fe-merville.webp",
+      "name": "Santa Fe",
+      "category": "Pizzeria",
+      "description": "A welcoming spot just steps from the beach, serving pizzas, galettes, crêpes and moules-frites.",
+      "address": "2 avenue Houdard, 14810 Merville-Franceville-Plage",
+      "lat": 49.2852985,
+      "lng": -0.2027724
+    },
+    {
+      "image": "/images/la-reserve-merville.webp",
+      "name": "La Réserve Péché Iodé",
+      "category": "Seafood",
+      "description": "A well-known restaurant overlooking the bay, set in an exceptional natural environment.",
+      "address": "Chemin de la Baie, Base nautique, 14810 Merville-Franceville-Plage",
+      "lat": 49.2798,
+      "lng": -0.2233
+    },
+    {
+      "image": "/images/l-atrium-franceville.jpg",
+      "name": "L'Atrium",
+      "category": "Restaurant",
+      "description": "A restaurant showcasing local, seasonal cuisine.",
+      "address": "42 avenue de Paris, 14810 Merville-Franceville-Plage",
+      "lat": 49.28401184082031,
+      "lng": -0.20230449736118317
+    },
+    {
+      "image": "/images/crepitroll-merville.webp",
+      "name": "Crêpit'roll",
+      "category": "Crêperie",
+      "description": "A relaxed spot facing the sea, perfect for a tasty break.",
+      "address": "Boulevard Wattier, 14810 Merville-Franceville-Plage",
+      "lat": 49.28532791137695,
+      "lng": -0.20306649804115295
+    }
+  ],
+  "activites": [
+    {
+      "name": "La Vélomaritime",
+      "category": "Cycling",
+      "description": "A great way to explore Merville-Franceville and the surrounding area by bike."
+    },
+    {
+      "name": "Spot de kitesurf",
+      "category": "Water sports",
+      "description": "Enjoy a popular spot for board sports on the expansive beach.",
+      "lat": 49.28486251831055,
+      "lng": -0.21179239451885223
+    },
+    {
+      "name": "Voile et pagaie",
+      "category": "Water sports",
+      "description": "Kayaking, paddleboarding and other water activities offer a different way to discover the bay.",
+      "lat": 49.281,
+      "lng": -0.219
+    }
+  ]
+}

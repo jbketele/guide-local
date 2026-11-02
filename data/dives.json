@@ -4,6 +4,7 @@
     {
       "image": "/images/Dives-sur-Mer_Halle_7534.jpeg",
       "name": "Les halles médiévales",
+      "type": "incontournables",
       "category": "Patrimoine",
       "description": "Un monument emblématique du centre-ville, qui accueille encore aujourd’hui le marché.",
       "address": "Place de la République, 14160 Dives-sur-Mer",
@@ -13,6 +14,7 @@
     {
       "image": "/images/village-d-art-pendant-medievales-de-guillaume-eyes-of-gd-ncpa-toutrisme-41593-1920px-1024x767.webp",
       "name": "Le Village d'art Guillaume le Conquérant",
+      "type": "incontournables",
       "category": "Artisanat et culture",
       "description": "Un ensemble de cours, jardins et boutiques d’artisans installé dans un décor aux influences médiévales et Renaissance.",
       "address": "Place de la République, 14160 Dives-sur-Mer",
@@ -22,6 +24,7 @@
     {
       "image": "/images/Église_Notre-Dame_de_Dives_octobre_2020_1.jpg",
       "name": "Église Notre-Dame",
+      "type": "incontournables",
       "category": "Patrimoine",
       "description": "Une église remarquable où se trouve notamment la célèbre liste des 475 compagnons de Guillaume le Conquérant.",
       "address": "Place de l'Église, 14160 Dives-sur-Mer",
@@ -31,6 +34,7 @@
     {
       "image": "/images/maison-bleue-dives.webp",
       "name": "La Maison bleue",
+      "type": "incontournables",
       "category": "Patrimoine",
       "description": "Une étonnante maison entièrement recouverte de mosaïques, créée par l’artiste portugais Euclides Da Costa Ferreira.",
       "address": "13 rue du Port, 14160 Dives-sur-Mer",
@@ -40,6 +44,7 @@
     {
       "image": "/images/Dives-sur-Mer,_villa_Les_Bossettes.jpeg",
       "name": "Villa Les Bossettes",
+      "type": "coups de coeur",
       "category": "Patrimoine",
       "description": "Une élégante villa balnéaire construite entre 1903 et 1908, reconnaissable à son architecture éclectique.",
       "address": "Dives-sur-Mer",
@@ -49,6 +54,7 @@
     {
       "image": "/images/manoir-dives.jpeg",
       "name": "Manoir du Bois-Hibout",
+      "type": "coups de coeur",
       "category": "Patrimoine",
       "description": "Une imposante demeure en pierre de Caen datant du XVIIe siècle, qui domine la place de la République.",
       "address": "Place de la République, 14160 Dives-sur-Mer",

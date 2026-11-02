@@ -1,21 +1,30 @@
-// Fichiers JSON des villes
+// Détection de la langue
+const isEnglish = document.documentElement.lang === "en";
+
+// Chemins des ressources
+const dataPath = "/data/";
+const imagePath = "/images/";
+
+const DEFAULT_IMAGE = `${imagePath}cote-fleurie-honfleur.jpg`;
+
+// Fichiers JSON des villes selon la langue
+const suffix = isEnglish ? "-en" : "";
+
 const citiesFiles = [
-    { name: "Merville-Franceville", file: "./data/merville.json" },
-    { name: "Cabourg", file: "./data/cabourg.json" },
-    { name: "Dives-sur-Mer", file: "./data/dives.json" },
-    { name: "Houlgate", file: "./data/houlgate.json" },
-    { name: "Villers-sur-Mer", file: "./data/villers.json" },
-    { name: "Deauville", file: "./data/deauville.json" },
-    { name: "Trouville-sur-Mer", file: "./data/trouville.json" },
-    { name: "Honfleur", file: "./data/honfleur.json" }
+    { name: "Merville-Franceville", file: `${dataPath}merville${suffix}.json` },
+    { name: "Cabourg", file: `${dataPath}cabourg${suffix}.json` },
+    { name: "Dives-sur-Mer", file: `${dataPath}dives${suffix}.json` },
+    { name: "Houlgate", file: `${dataPath}houlgate${suffix}.json` },
+    { name: "Villers-sur-Mer", file: `${dataPath}villers${suffix}.json` },
+    { name: "Deauville", file: `${dataPath}deauville${suffix}.json` },
+    { name: "Trouville-sur-Mer", file: `${dataPath}trouville${suffix}.json` },
+    { name: "Honfleur", file: `${dataPath}honfleur${suffix}.json` }
 ];
 
+// Nombre de favoris à afficher selon la taille de l'écran
 function getNumberOfFavorites() {
     return window.matchMedia("(max-width: 767px)").matches ? 3 : 4;
 }
-
-const DEFAULT_IMAGE = "./images/cote-fleurie-honfleur.jpg";
-
 
 // Mélange aléatoire de Fisher-Yates
 function shuffleArray(array) {
@@ -77,8 +86,8 @@ function createFavoriteCard(item) {
         : DEFAULT_IMAGE;
 
     const category = item.itemType === "restaurant"
-        ? item.category || "Restaurant"
-        : item.category || "Lieu à découvrir";
+        ? item.category || (isEnglish ? "Restaurant" : "Restaurant")
+        : item.category || (isEnglish ? "Place to discover" : "Lieu à découvrir");
 
     return `
         <article class="favorite-card">
@@ -105,9 +114,10 @@ function createFavoriteCard(item) {
 
 // Convertit les chemins d'images en chemins adaptés à la page d'accueil
 function resolveImagePath(path) {
-    const filename = path.split("/").pop();
+    if (!path) return DEFAULT_IMAGE;
 
-    return `./images/${filename}`;
+    const filename = path.split("/").pop();
+    return `${imagePath}${filename}`;
 }
 
 

@@ -1,0 +1,113 @@
+{
+  "ville": "Trouville-sur-Mer",
+  "lieux": [
+    {
+      "image": "/images/Marche-au-poissons-trouville.webp",
+      "name": "Marché aux poissons",
+      "type": "must-sees",
+      "category": "Market",
+      "description": "An iconic place to experience the lively atmosphere of the port and discover local seafood.",
+      "address": "Boulevard Fernand Moureaux, 14360 Trouville-sur-Mer",
+      "lat": 49.364925384521484,
+      "lng": 0.08175399899482727
+    },
+    {
+      "image": "/images/Promenade_des_planches,_near_the_tennis_club,_Trouville-sur-Mer,_2024.jpg",
+      "name": "Promenade des Planches",
+      "type": "must-sees",
+      "category": "Walk",
+      "description": "An iconic seaside promenade lined with beach huts, offering views of the sea and elegant villas.",
+      "address": "Promenade des Planches, 14360 Trouville-sur-Mer",
+      "lat": 49.367958068847656,
+      "lng": 0.07874900102615356
+    },
+    {
+      "image": "/images/villa-montebello.webp",
+      "name": "La Villa Montebello",
+      "type": "must-sees",
+      "category": "Heritage",
+      "description": "An elegant 19th-century villa that now houses the Trouville museum.",
+      "address": "64 Rue du Général Leclerc, 14360 Trouville-sur-Mer",
+      "lat": 49.37139892578125,
+      "lng": 0.08422040194272995
+    },
+    {
+      "image": "/images/rue-des-bains.jpg",
+      "name": "La Rue des Bains",
+      "type": "must-sees",
+      "category": "Shopping",
+      "description": "A lively, colourful street lined with shops, restaurants and beautiful façades.",
+      "address": "Rue des Bains, 14360 Trouville-sur-Mer",
+      "lat": 49.366580963134766,
+      "lng": 0.08197770267724991
+    },
+    {
+      "image": "/images/casino-trouville.jpg",
+      "name": "Casino Barrière",
+      "type": "favorites",
+      "category": "Heritage",
+      "description": "An iconic seafront building, distinguished by its distinctive architecture.",
+      "address": "Place Foch, 14360 Trouville-sur-Mer",
+      "lat": 49.3656784,
+      "lng": 0.0782041
+    },
+    {
+      "image": "/images/cures-marines.jpg",
+      "name": "Les Cures Marines",
+      "type": "favorites",
+      "category": "Hotel and Spa",
+      "description": "A historic seafront landmark, renowned for its architecture and elegant façade.",
+      "address": "Boulevard de la Cahotte, 14360 Trouville-sur-Mer",
+      "lat": 49.36608123779297,
+      "lng": 0.07784619927406311
+    },
+    {
+      "image": "/images/Trouville-sur-Mer_mairie.jpg",
+      "name": "Hôtel de Ville",
+      "type": "favorites",
+      "category": "Heritage",
+      "description": "A remarkable building in the heart of Trouville, reflecting the resort's architectural elegance.",
+      "address": "164 Boulevard Fernand Moureaux, 14360 Trouville-sur-Mer",
+      "lat": 49.3659,
+      "lng": 0.08125200122594833
+    }
+  ],
+  "restaurants": [
+    {
+      "image": "/images/les-vapeurs.jpg",
+      "name": "Les Vapeurs",
+      "category": "Brasserie",
+      "description": "A Trouville institution, serving traditional cuisine in a lively atmosphere.",
+      "address": "160 Boulevard Fernand Moureaux, 14360 Trouville-sur-Mer",
+      "lat": 49.3653435,
+      "lng": 0.0818762
+    },
+    {
+      "image": "/images/le-noroit.webp",
+      "name": "Le Noroit",
+      "category": "Seafood",
+      "description": "A welcoming restaurant specialising in seafood.",
+      "address": "Trouville-sur-Mer, 14360 Trouville-sur-Mer",
+      "lat": 49.36425454306841,
+      "lng": 0.08299955798483971
+    },
+    {
+      "image": "/images/vieux-normand.jpeg",
+      "name": "Le Vieux Normand",
+      "category": "Crêperie",
+      "description": "A welcoming spot to enjoy traditional galettes and crêpes in a warm atmosphere.",
+      "address": "Trouville-sur-Mer, 14360 Trouville-sur-Mer",
+      "lat": 49.36441469412038,
+      "lng": 0.08300039617515687
+    },
+    {
+      "image": "/images/il-parasole.jpg",
+      "name": "Il Parasole",
+      "category": "Pizzeria",
+      "description": "A popular Italian restaurant serving pizzas and other delicious specialities.",
+      "address": "Trouville-sur-Mer, 14360 Trouville-sur-Mer",
+      "lat": 49.3614853,
+      "lng": 0.0866649
+    }
+  ]
+}

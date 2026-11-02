@@ -1,5 +1,8 @@
 console.log("villes.js chargé");
 
+// Chemin des images selon la langue
+const imagePath = "/images/";
+
 const villes = {
     cabourg: {
         fetch: "../data/cabourg.json",
@@ -339,7 +342,7 @@ fetch(config.fetch)
                 <article class="restaurant-card">
 
                     <img
-                        src="${restaurant.image}"
+                        src="${imagePath + restaurant.image.split("/").pop()}"
                         alt="${restaurant.name}"
                     >
 

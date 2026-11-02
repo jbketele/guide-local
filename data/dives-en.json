@@ -1,0 +1,112 @@
+{
+  "ville": "Dives-sur-Mer",
+  "lieux": [
+    {
+      "image": "/images/Dives-sur-Mer_Halle_7534.jpeg",
+      "name": "Les halles médiévales",
+      "type": "must-sees",
+      "category": "🏛️ Heritage",
+      "description": "Between the medieval halls, the port and the alleys of the historical center, Dives-sur-Mer\n                        possesses a very particular charm on the Flowered Coast.",
+      "address": "Place de la République, 14160 Dives-sur-Mer",
+      "lat": 49.286559,
+      "lng": -0.096826
+    },
+    {
+      "image": "/images/village-d-art-pendant-medievales-de-guillaume-eyes-of-gd-ncpa-toutrisme-41593-1920px-1024x767.webp",
+      "name": "Le Village d'art Guillaume le Conquérant",
+      "type": "must-sees",
+      "category": "🎨 Craft and culture",
+      "description": "A collection of courtyards, gardens and artisan shops set in a decor with medieval and\n                        Renaissance influences.",
+      "address": "Place de la République, 14160 Dives-sur-Mer",
+      "lat": 49.286958,
+      "lng": -0.098658
+    },
+    {
+      "image": "/images/Église_Notre-Dame_de_Dives_octobre_2020_1.jpg",
+      "name": "Église Notre-Dame",
+      "type": "must-sees",
+      "category": "🏛️ Heritage",
+      "description": "A remarkable church where the famous list of 475 companions of William the Conqueror is kept.",
+      "address": "Place de l'Église, 14160 Dives-sur-Mer",
+      "lat": 49.28528,
+      "lng": -0.09682
+    },
+    {
+      "image": "/images/maison-bleue-dives.webp",
+      "name": "La Maison bleue",
+      "type": "must-sees",
+      "category": "🏛️ Heritage",
+      "description": "An astonishing house entirely covered with mosaics, created by the Portuguese artist Euclides\n                        Da Costa Ferreira.",
+      "address": "13 rue du Port, 14160 Dives-sur-Mer",
+      "lat": 49.291983,
+      "lng": -0.098632
+    },
+    {
+      "image": "/images/Dives-sur-Mer,_villa_Les_Bossettes.jpeg",
+      "name": "Villa Les Bossettes",
+      "type": "favorites",
+      "category": "Heritage",
+      "description": "An elegant seaside villa built between 1903 and 1908, distinguished by its eclectic architecture.",
+      "address": "Dives-sur-Mer",
+      "lat": 49.29166,
+      "lng": -0.0922
+    },
+    {
+      "image": "/images/manoir-dives.jpeg",
+      "name": "Manoir du Bois-Hibout",
+      "type": "favorites",
+      "category": "Heritage",
+      "description": "An astonishing house entirely covered with mosaics, created by the Portuguese artist Euclides Da Costa Ferreira.",
+      "address": "Place de la République, 14160 Dives-sur-Mer",
+      "lat": 49.286748,
+      "lng": -0.097067
+    }
+  ],
+  "restaurants": [
+  {
+    "image": "/images/hydromel-dives.jpg",
+    "name": "L'Hydromel",
+    "category": "Restaurant",
+    "description": "A refined dining experience offering gourmet cuisine.",
+    "address": "96 rue du Général de Gaulle, 14160 Dives-sur-Mer",
+    "lat": 49.28525924682617,
+    "lng": -0.10798820108175278
+  },
+  {
+    "image": "/images/bougnat-dives.jpg",
+    "name": "Chez le Bougnat",
+    "category": "Brasserie",
+    "description": "A welcoming restaurant in the heart of Dives-sur-Mer.",
+    "address": "27 rue Gaston Manneville, 14160 Dives-sur-Mer",
+    "lat": 49.286,
+    "lng": -0.098
+  },
+  {
+    "image": "/images/restaurant-a-l-intuition.jpg",
+    "name": "À l'Intuition",
+    "category": "Restaurant",
+    "description": "Carefully prepared cuisine in a warm and welcoming atmosphere.",
+    "address": "64 rue du Général de Gaulle, 14160 Dives-sur-Mer",
+    "lat": 49.285316467285156,
+    "lng": -0.10527680069208145
+  },
+  {
+    "image": "/images/le-billig-s.jpg",
+    "name": "Le Billig's",
+    "category": "Crêperie",
+    "description": "Traditional Breton galettes and crêpes in the Guillaume the Conqueror Village.",
+    "address": "Village Guillaume le Conquérant, 14160 Dives-sur-Mer",
+    "lat": 49.2869,
+    "lng": -0.0985
+  },
+  {
+    "image": "/images/bistrot-port-dives.jpeg",
+    "name": "Le Bistrot du Port",
+    "category": "Brasserie",
+    "description": "A welcoming brasserie in the heart of Dives-sur-Mer harbour, serving generous portions in a warm and friendly atmosphere.",
+    "address": "1 Place Guillaume, 14160 Dives-sur-Mer",
+    "lat": 49.2934961,
+    "lng": -0.0998917
+  }
+]
+}

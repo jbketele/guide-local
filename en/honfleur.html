@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guide local - Honfleur</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/villes.css">
+    <link rel="icon" type="image/x-icon" href="/images/icon-guide.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css">
+</head>
+
+<style>
+    #hero::before {
+        background-image: url('/images/honfleur03-1920x1281-1.jpg');
+    }
+</style>
+
+<body data-ville="honfleur">
+    <header id="header"></header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Honfleur</h1>
+            <p>Between port, art and Norman charm</p>
+        </div>
+    </section>
+
+    <section id="presentation">
+        <div class="section-title">
+            <p>Presentation</p>
+        </div>
+        <div class="presentation-title">
+            <h2>Honfleur,<br>an timeless charm</h2>
+        </div>
+
+        <p>Honfleur is one of the gems of the Flowered Coast. Around the Old Harbor, its colorful houses, cobbled
+            streets and maritime heritage compose a unique setting. A city of art and history, Honfleur has also
+            inspired many painters and invites visitors today to stroll through its quays, galleries and terraces.</p>
+    </section>
+
+    <section id="incontournables">
+        <div class="section-title">
+            <p>Don't miss</p>
+            <h2>Must-sees</h2>
+        </div>
+
+        <div class="incontournables-list">
+            <article class="incontournable-card">
+                <img src="/images/honfleur-vieux-bassin.jpg" alt="Vieux Bassin d'Honfleur">
+                <div class="incontournable-content">
+                    <span class="category">🏛️ Heritage</span>
+                    <h3> Le Vieux Bassin</h3>
+                    <p>The heart of Honfleur, famous for its colorful facades that reflect in the water. </p>
+                </div>
+            </article>
+
+            <article class="incontournable-card">
+                <img src="/images/eglise-ste-catherine.jpg" alt="Église Sainte-Catherine à Honfleur">
+                <div class="incontournable-content">
+                    <span class="category">🏛️ Heritage</span>
+                    <h3>Église Sainte-Catherine</h3>
+                    <p>An amazing wooden church, built by the shipwrights of Honfleur.</p>
+                </div>
+            </article>
+
+            <article class="incontournable-card">
+                <img src="/images/Honfleur-Lieutenance-20120916.jpg" alt="La Lieutenance à Honfleur">
+                <div class="incontournable-content">
+                    <span class="category">🏛️ Heritage</span>
+                    <h3>La Lieutenance</h3>
+                    <p>The former fortified building that guards the entrance of the Old Basin and offers a beautiful
+                        view of the
+                        port. </p>
+                </div>
+            </article>
+
+            <article class="incontournable-card">
+                <img src="/images/Greniers-à-Sel-Honfleur-2-q6n1g3p2kkzfo9iikz5xw8hnkpe7hb339qikz3lv08.jpg"
+                    alt="Les Greniers à Sel à Honfleur">
+                <div class="incontournable-content">
+                    <span class="category">🏛️ Heritage</span>
+                    <h3>Les Greniers à Sel</h3>
+                    <p>The former warehouses of the 17th century, witnesses of the importance of the salt trade in the
+                        maritime history of Honfleur.</p>
+                </div>
+            </article>
+
+            <article class="incontournable-card">
+                <img src="/images/musee-eugene-boudin.jpg" alt="Musée Eugène Boudin à Honfleur">
+                <div class="incontournable-content">
+                    <span class="category">🎨 Culture</span>
+                    <h3>Musée Eugène Boudin</h3>
+                    <p>Discover the works of the Honfleur painter and the artists inspired by the Norman landscapes.
+                    </p>
+                </div>
+            </article>
+
+        </div>
+
+        <button class="btn-see-more" id="seeMoreIncontournables">
+            See more must-sees
+        </button>
+    </section>
+
+    <section id="restaurants">
+
+        <div class="section-title">
+            <p>Restaurants</p>
+            <h2>Where to eat in Honfleur?</h2>
+            <span>
+                Discover some great places to eat in Honfleur.
+            </span>
+        </div>
+
+        <div class="restaurants-list">
+
+            <article class="restaurant-card" data-name="La Cidrerie">
+                <img src="/images/cidrerie-honfleur.webp" alt="Crêperie à Honfleur">
+                <div class="restaurant-content">
+                    <span class="category">Crêperie</span>
+                    <h3>La Cidrerie</h3>
+                    <p>A warm and friendly crêperie, perfect for a casual meal in Honfleur.
+                    </p>
+                    <a href="https://maps.app.goo.gl/xuNS4CEbuTqLZG5G9" class="restaurant-link" target="_blank">Discover
+                        the address </a>
+                </div>
+            </article>
+
+            <article class="restaurant-card" data-name="Le Corsaire">
+                <img src="/images/corsaire-honfleur.webp" alt="Restaurant à Honfleur">
+                <div class="restaurant-content">
+                    <span class="category">🍽️ Restaurant</span>
+                    <h3>Le Corsaire</h3>
+                    <p>A traditional address at the heart of the Sainte-Catherine neighborhood, ideal for a delightful
+                        break.
+                    </p>
+                    <a href="https://maps.app.goo.gl/N7uBhjzKNEKr3biAA" class="restaurant-link" target="_blank">Discover
+                        the address </a>
+                </div>
+            </article>
+
+            <article class="restaurant-card" data-name="L'Escale">
+                <img src="/images/escale-honfleur.jpg" alt="Restaurant de fruits de mer à Honfleur">
+                <div class="restaurant-content">
+                    <span class="category">🦪 Seafood</span>
+                    <h3>L'Escale</h3>
+                    <p>A table facing the sea to taste fish and seafood in the heart of Honfleur. </p>
+                    <a href="https://maps.app.goo.gl/GqWPm845hCsWt8iHA" class="restaurant-link" target="_blank">Discover
+                        the address </a>
+                </div>
+            </article>
+
+            <article class="restaurant-card" data-name="La Fleur de Sel">
+                <img src="/images/fleur-de-sel-honfleur.jpg" alt="Restaurant à Honfleur">
+                <div class="restaurant-content">
+                    <span class="category">🍽️ Restaurant</span>
+                    <h3>La Fleur de Sel</h3>
+                    <p>A refined cuisine that highlights seasonal products in a warm setting.</p>
+                    <a href="https://maps.app.goo.gl/PriKaUoiu7XF384r7" class="restaurant-link" target="_blank">Discover
+                        the address </a>
+                </div>
+            </article>
+
+        </div>
+
+        <button class="btn-see-more" id="seeMoreRestaurants">
+            See more restaurants
+        </button>
+
+    </section>
+
+    <section id="coups-de-coeur">
+
+        <div class="section-title">
+            <p>Favorites</p>
+            <h2>Our picks in Honfleur</h2>
+            <span>
+                Discover our favorite spots to fully enjoy Honfleur.
+            </span>
+        </div>
+
+        <div class="favorites">
+
+            <article class="favorite-card">
+                <img src="/images/jardins-personnalites.jpg" alt="Le Jardin des Personnalités à Honfleur">
+                <div class="favorite-content">
+                    <span class="category">🌿 Nature</span>
+                    <h3>Le Jardin des Personnalités</h3>
+                    <p>An pleasant walk by the water, between gardens, sculptures and famous characters.</p>
+                </div>
+            </article>
+
+            <article class="favorite-card">
+                <img src="/images/panorama-du-mont-joli.jpg" alt="Le Mont Joli à Honfleur">
+                <div class="favorite-content">
+                    <span class="category">🏛️ Patrimoine</span>
+                    <h3>Le Mont Joli</h3>
+                    <p>Take the height to enjoy a magnificent panorama on Honfleur, the port and the estuary.</p>
+                </div>
+            </article>
+
+
+
+        </div>
+
+        <button class="btn-see-more" id="seeMoreFavorites">
+            See more favorites
+        </button>
+    </section>
+
+    <section id="carte">
+
+        <div class="section-title">
+            <p>Explore Honfleur</p>
+            <h2>The main places on the map</h2>
+            <span>
+                Discover the key locations presented on our guide.
+            </span>
+        </div>
+
+        <div class="map-preview">
+            <div id="map"></div>
+        </div>
+
+    </section>
+
+    <footer id="footer"></footer>
+
+    <script src="/js/header.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
+    </script>
+    <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+    <script src="/js/villes.js"></script>
+    <script src="/js/footer.js"></script>
+    <script src="/js/langues.js"></script>
+</body>
+
+</html>

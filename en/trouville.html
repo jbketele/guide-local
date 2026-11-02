@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guide local - Trouville sur Mer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/villes.css">
+    <link rel="icon" type="image/x-icon" href="/images/icon-guide.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css">
+</head>
+
+<style>
+    #hero::before {
+        background-image: url('/images/trouville-scaled.jpeg');
+    }
+</style>
+
+<body data-ville="trouville">
+    <header id="header"></header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Trouville sur Mer</h1>
+            <p>Between beach, port and authenticity, discover the charm of the Côte Fleurie.</p>
+        </div>
+    </section>
+
+    <section id="presentation">
+        <div class="section-title">
+            <p>Presentation</p>
+        </div>
+        <div class="presentation-title">
+            <h2>Trouville, the authenticity <br>of the Côte Fleurie</h2>
+        </div>
+
+        <p>Face à Deauville, Trouville-sur-Mer séduit par son ambiance chaleureuse et son caractère maritime. Entre les
+            quais, la grande plage, les villas et le célèbre marché aux poissons, profitez d’une escapade pleine de
+            charme et de gourmandise.</p>
+    </section>
+
+    <section id="incontournables">
+        <div class="section-title">
+            <p>Don't miss</p>
+            <h2>Must-sees</h2>
+        </div>
+
+        <div class="incontournables-list">
+            <article class="incontournable-card">
+                <img src="/images/Marche-au-poissons-trouville.webp" alt="Marché aux poissons de Trouville">
+                <div class="incontournable-content">
+                    <span class="category">Market</span>
+                    <h3>Marché aux poissons</h3>
+                    <p>An iconic place to discover the port's animation and the products of the sea.</p>
+                </div>
+            </article>
+
+            <article class="incontournable-card">
+                <img src="/images/Promenade_des_planches,_near_the_tennis_club,_Trouville-sur-Mer,_2024.jpg"
+                    alt="Promenade des Planches à Trouville">
+                <div class="incontournable-content">
+                    <span class="category">Walk</span>
+                    <h3>Promenade des Planches</h3>
+                    <p>An iconic walk along the beach, between huts, sea and villas.</p>
+                </div>
+            </article>
+
+            <article class="incontournable-card">
+                <img src="/images/villa-montebello.webp" alt="Villa Montebello à Trouville">
+                <div class="incontournable-content">
+                    <span class="category">Heritage</span>
+                    <h3>La Villa Montebello</h3>
+                    <p>An elegant villa from the 19th century that houses the museum of Trouville today.
+                    </p>
+                </div>
+            </article>
+
+            <article class="incontournable-card">
+                <img src="/images/rue-des-bains.jpg" alt="Rue des Bains à Trouville">
+                <div class="incontournable-content">
+                    <span class="category">Shopping</span>
+                    <h3>La Rue des Bains</h3>
+                    <p>An animated and colorful street where shops, restaurants and beautiful facades meet.</p>
+                </div>
+            </article>
+
+        </div>
+
+        <button class="btn-see-more" id="seeMoreIncontournables">
+            See more must-sees
+        </button>
+    </section>
+
+    <section id="restaurants">
+
+        <div class="section-title">
+            <p>Restaurants</p>
+            <h2>Where to eat in Trouville?</h2>
+            <span>
+                Discover some great places to eat in Trouville.
+            </span>
+        </div>
+
+        <div class="restaurants-list">
+
+            <article class="restaurant-card" data-name="Les Vapeurs">
+                <img src="/images/les-vapeurs.jpg" alt="Brasserie à Trouville sur Mer">
+                <div class="restaurant-content">
+                    <span class="category">🍴 Brasserie</span>
+                    <h3>Les Vapeurs</h3>
+                    <p>An iconic Trouville institution to enjoy traditional cuisine in a lively atmosphere.</p>
+                    <a href="https://maps.app.goo.gl/HhXW14u7Xk8wsDgK8" class="restaurant-link" target="_blank">Discover
+                        the address </a>
+                </div>
+            </article>
+
+            <article class="restaurant-card" data-name="Le Noroit">
+                <img src="/images/le-noroit.webp" alt="Restaurant de fruits de mer à Trouville sur Mer">
+                <div class="restaurant-content">
+                    <span class="category">🦪 Seafood</span>
+                    <h3>Le Noroit</h3>
+                    <p>An address focused on seafood in a welcoming atmosphere.</p>
+                    <a href="https://maps.app.goo.gl/H7rKnTHfSw7FbNgV9" class="restaurant-link" target="_blank">Discover
+                        the address </a>
+                </div>
+            </article>
+
+            <article class="restaurant-card" data-name="Le Vieux Normand">
+                <img src="/images/vieux-normand.jpeg" alt="Crêperie à Trouville sur Mer">
+                <div class="restaurant-content">
+                    <span class="category">🥞 Crêperie</span>
+                    <h3>Le Vieux Normand</h3>
+                    <p>An welcoming address to enjoy galettes and crêpes in a warm atmosphere.</p>
+                    <a href="https://maps.app.goo.gl/zbnFLdaYL7ocXkUD8" class="restaurant-link" target="_blank">Discover
+                        the address </a>
+                </div>
+            </article>
+
+            <article class="restaurant-card" data-name="Il Parasole">
+                <img src="/images/il-parasole.jpg" alt="Restaurant italien à Trouville sur Mer">
+                <div class="restaurant-content">
+                    <span class="category">🍕 Pizzeria</span>
+                    <h3>Il Parasole</h3>
+                    <p>An Italian address appreciated for its pizzas and gourmet specialties.</p>
+                    <a href="https://maps.app.goo.gl/7J25wkXvqMnRPo589" class="restaurant-link" target="_blank">Discover
+                        the address </a>
+                </div>
+            </article>
+
+        </div>
+
+        <button class="btn-see-more" id="seeMoreRestaurants">
+            See more restaurants
+        </button>
+
+    </section>
+
+    <section id="coups-de-coeur">
+
+        <div class="section-title">
+            <p>Favorites</p>
+            <h2>Our picks in Trouville</h2>
+            <span>
+                Discover our favorite spots to fully enjoy Trouville.
+            </span>
+        </div>
+
+        <div class="favorites">
+
+            <article class="favorite-card">
+                <img src="/images/casino-trouville.jpg" alt="Casino de Trouville sur Mer">
+                <div class="favorite-content">
+                    <span class="category">🏛️ Heritage</span>
+                    <h3>Casino Barrière</h3>
+                    <p>An iconic building on the seafront, recognizable for its original architecture.</p>
+                </div>
+            </article>
+
+            <article class="favorite-card">
+                <img src="/images/cures-marines.jpg" alt="Les Cures Marines de Trouville sur Mer">
+                <div class="favorite-content">
+                    <span class="category">Hotel et spa</span>
+                    <h3>Les Cures Marines</h3>
+                    <p>An historic site facing the sea, notable for its architecture and elegant facade.</p>
+                </div>
+            </article>
+
+            <article class="favorite-card">
+                <img src="/images/Trouville-sur-Mer_mairie.jpg" alt="Hôtel de Ville de Trouville sur Mer">
+                <div class="favorite-content">
+                    <span class="category">🏛️ Heritage</span>
+                    <h3>Hôtel de Ville</h3>
+                    <p>An iconic building in the heart of Trouville, a testament to the architectural elegance of the
+                        resort.
+                    </p>
+                </div>
+            </article>
+
+        </div>
+
+        <button class="btn-see-more" id="seeMoreFavorites">
+            See more favorites
+        </button>
+    </section>
+
+    <section id="carte">
+
+        <div class="section-title">
+            <p>Explore Trouville</p>
+            <h2>The main places on the map</h2>
+            <span>
+                Discover the key locations presented on our guide.
+            </span>
+        </div>
+
+        <div class="map-preview">
+            <div id="map"></div>
+        </div>
+
+    </section>
+
+    <footer id="footer"></footer>
+
+    <script src="/js/header.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
+    </script>
+    <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+    <script src="/js/villes.js"></script>
+    <script src="/js/footer.js"></script>
+    <script src="/js/langues.js"></script>
+</body>
+
+</html>

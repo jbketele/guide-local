@@ -1,0 +1,122 @@
+{
+  "ville": "Houlgate",
+  "lieux": [
+    {
+      "image": "/images/grand-hotel-houlgate.jpg",
+      "name": "L'Ancien Grand Hôtel",
+      "category": "🏛️ Heritage",
+      "description": "An iconic Belle Époque building, recognisable by its dome.",
+      "address": "Rue Baumier, 14510 Houlgate",
+      "lat": 49.30429,
+      "lng": -0.07415,
+      "type": "must-sees"
+    },
+    {
+      "image": "/images/promenade-roland-garros-eric-larrayadieu-18430-1.webp",
+      "name": "La Promenade Roland Garros",
+      "category": "🌊 Seafront",
+      "description": "A pleasant walk along the beach, lined with beach huts and villas.",
+      "address": "Promenade Roland Garros, 14510 Houlgate",
+      "lat": 49.30274,
+      "lng": -0.08045,
+      "type": "must-sees"
+    },
+    {
+      "image": "/images/falaises-vaches-noires.jpeg",
+      "name": "Falaises des Vaches Noires",
+      "category": "🌿 Nature",
+      "description": "A spectacular natural site featuring remarkable geological formations.",
+      "address": "Site des Vaches Noires, 14510 Houlgate",
+      "lat": 49.3052,
+      "lng": -0.0627,
+      "type": "must-sees"
+    },
+    {
+      "image": "/images/cent-marches-houlgate.jpeg",
+      "name": "L'escalier des 100 Marches",
+      "category": "🌅 Viewpoint",
+      "description": "Climb these steps to enjoy beautiful views of Houlgate and the sea.",
+      "address": "Escalier des 100 Marches, 14510 Houlgate",
+      "lat": 49.30521199535824,
+      "lng": -0.07097434907134437,
+      "type": "must-sees"
+    },
+    {
+      "image": "/images/plage-houlgate.avif",
+      "name": "Plage de Houlgate",
+      "category": "Beach",
+      "description": "A long sandy beach lined with villas, ideal for enjoying the coastline.",
+      "address": "Plage de Houlgate, 14510 Houlgate",
+      "lat": 49.30256652832031,
+      "lng": -0.08189299702644348,
+      "type": "favorites"
+    },
+    {
+      "name": "Table d'orientation",
+      "category": "Viewpoint",
+      "description": "A remarkable viewpoint overlooking Houlgate, the sea and the Côte Fleurie.",
+      "address": "Rue de la Corniche, 14510 Houlgate",
+      "lat": 49.304850893625506,
+      "lng": -0.06765862756438645,
+      "type": "favorites"
+    },
+    {
+      "image": "/images/butte-houlgate.webp",
+      "name": "La Butte de Houlgate",
+      "category": "Nature",
+      "description": "A wooded hill offering a different perspective on the seaside resort, away from the bustle of the seafront.",
+      "address": "La Butte de Houlgate, 14510 Houlgate",
+      "lat": 49.302303314208984,
+      "lng": -0.06159599870443344,
+      "type": "favorites"
+    },
+    {
+      "image": "/images/villa-la-brise.jpg",
+      "name": "Villa La Brise",
+      "category": "Heritage",
+      "description": "An elegant seaside villa reflecting Houlgate's Belle Époque charm.",
+      "address": "Houlgate, 14510",
+      "lat": 49.3025,
+      "lng": -0.0765,
+      "type": "favorites"
+    }
+  ],
+  "restaurants": [
+    {
+      "image": "/images/arbre-a-pin-houlgate.webp",
+      "name": "L'Arbre à Pin",
+      "category": "Brasserie",
+      "description": "A welcoming brasserie in the heart of Houlgate.",
+      "address": "70 rue des Bains, 14510 Houlgate",
+      "lat": 49.302818298339844,
+      "lng": -0.07938220351934433
+    },
+    {
+      "image": "/images/eden-houlgate.jpg",
+      "name": "L'Eden d'Houlgate",
+      "category": "Restaurant",
+      "description": "An elegant spot for enjoying carefully prepared cuisine.",
+      "address": "7 rue Henri Fouchard, 14510 Houlgate",
+      "lat": 49.30245590209961,
+      "lng": -0.07759889960289001
+    },
+    {
+      "image": "/images/les-passantes-houlgate.jpg",
+      "name": "Les Passantes",
+      "category": "Restaurant",
+      "description": "A welcoming restaurant in the heart of Rue des Bains.",
+      "address": "41 rue des Bains, 14510 Houlgate",
+      "lat": 49.30353927612305,
+      "lng": -0.07634910196065903
+    },
+    {
+      "image": "/images/maison-coquillage-houlgate.jpg",
+      "name": "La Maison du Coquillage",
+      "category": "Seafood",
+      "description": "A must-visit spot for seafood lovers.",
+      "address": "37 rue des Bains, 14510 Houlgate",
+      "lat": 49.30362319946289,
+      "lng": -0.07607729732990265
+    }
+  ]
+}

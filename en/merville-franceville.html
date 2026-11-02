@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guide local - Merville-Franceville</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/villes.css">
+    <link rel="icon" type="image/x-icon" href="/images/icon-guide.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css">
+</head>
+
+<style>
+    #hero::before {
+        background-image: url('/images/vue-merville.jpeg');
+    }
+</style>
+
+<body data-ville="merville">
+    <header id="header"></header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Merville-Franceville-Plage</h1>
+            <p>Between sea, nature and history</p>
+        </div>
+    </section>
+
+    <section id="presentation">
+        <div class="section-title">
+            <p>Presentation</p>
+        </div>
+        <div class="presentation-title">
+            <h2>Merville-Franceville, a resort between land and sea</h2>
+        </div>
+
+        <p>Situated on the Côte Fleurie, Merville-Franceville is a seaside resort that combines the charm of the sea
+            with the beauty of nature and a rich historical heritage.
+        </p>
+    </section>
+
+    <section id="incontournables">
+        <div class="section-title">
+            <p>Don't miss</p>
+            <h2>Must-sees</h2>
+        </div>
+
+        <div class="incontournables-list">
+            <article class="incontournable-card">
+                <img src="/images/plage-merville.jpg" alt="Plage de Merville-Franceville">
+                <div class="incontournable-content">
+                    <span class="category">Beach</span>
+                    <h3>Plage de Merville-Franceville</h3>
+                    <p>An immense sandy beach ideal for enjoying the coastline.</p>
+                </div>
+            </article>
+
+            <article class="incontournable-card">
+                <img src="/images/port-de-plaisance-de-merville-thomas-boivin-1920x1280-1-1920x1080-f50_50.webp"
+                    alt="Port de plaisance de Merville-Franceville">
+                <div class="incontournable-content">
+                    <span class="category">Nature</span>
+                    <h3>La Baie de l'Orne</h3>
+                    <p>A preserved natural area to discover on foot or by bike.</p>
+                </div>
+            </article>
+
+            <article class="incontournable-card">
+                <img src="/images/batterie-merville.jpg" alt="Batterie de Merville-Franceville">
+                <div class="incontournable-content">
+                    <span class="category">Heritage</span>
+                    <h3>La batterie de Merville</h3>
+                    <p>A major historical site of the D-Day landings in Normandy.</p>
+                </div>
+            </article>
+        </div>
+        </article>
+
+        </div>
+
+        <button class="btn-see-more" id="seeMoreIncontournables">
+            See more must-sees
+        </button>
+    </section>
+
+    <section id="restaurants">
+
+        <div class="section-title">
+            <p>Restaurants</p>
+            <h2>Where to eat in Merville-Franceville?</h2>
+            <span>
+                Discover some great places to eat in Merville-Franceville.
+            </span>
+        </div>
+
+        <div class="restaurants-list">
+
+            <article class="restaurant-card" data-name="Santa Fe">
+                <img src="/images/santa-fe-merville.webp" alt="Restaurant à Merville-Franceville">
+                <div class="restaurant-content">
+                    <span class="category">🍕 Pizzeria</span>
+                    <h3>Santa Fe</h3>
+                    <p> An inviting address just steps from the beach, offering pizzas, galettes, crêpes and mussels.
+                    </p>
+                    <a href="https://maps.app.goo.gl/DimZBRgGmFWsGVbt7" class="restaurant-link" target="_blank">Discover
+                        the address </a>
+                </div>
+            </article>
+
+            <article class="restaurant-card" data-name="La Réserve Péché Iodé">
+                <img src="/images/la-reserve-merville.webp" alt="Restaurant de fruits de mer à Merville-Franceville">
+                <div class="restaurant-content">
+                    <span class="category">🦪 Seafood</span>
+                    <h3>La Réserve Péché Iodé</h3>
+                    <p> An iconic address, with a particularly interesting setting by the bay. It
+                        regularly ranks among the most popular addresses in the commune.</p>
+                    <a href="https://maps.app.goo.gl/J3neZQnpDZmCD4VFA" class="restaurant-link" target="_blank">Discover
+                        the address </a>
+                </div>
+            </article>
+
+            <article class="restaurant-card" data-name="L'Atrium">
+                <img src="/images/l-atrium-franceville.jpg" alt="Restaurant à Merville-Franceville">
+                <div class="restaurant-content">
+                    <span class="category">🍽️ Restaurant</span>
+                    <h3>L'Atrium</h3>
+                    <p>To represent a more gourmet and local cuisine.</p>
+                    <a href="https://maps.app.goo.gl/pvXbuksweJhH9qf39" class="restaurant-link" target="_blank">Discover
+                        the address </a>
+                </div>
+            </article>
+
+            <article class="restaurant-card" data-name="Crêpit'roll">
+                <img src="/images/crepitroll-merville.webp" alt="Crêperie à Merville-Franceville">
+                <div class="restaurant-content">
+                    <span class="category">🥞 Crêperie</span>
+                    <h3>Crêpit'roll</h3>
+                    <p>An more relaxed option, facing the sea, which brings a real touch of "beach resort"
+                    </p>
+                    <a href="https://maps.app.goo.gl/uohws7qrCNoCdAHEA" class="restaurant-link" target="_blank">Discover
+                        the address </a>
+                </div>
+            </article>
+
+        </div>
+
+        <button class="btn-see-more" id="seeMoreRestaurants">
+            See more restaurants
+        </button>
+
+    </section>
+
+    <section id="coups-de-coeur">
+
+        <div class="section-title">
+            <p>Favorites</p>
+            <h2>Our picks in Merville-Franceville</h2>
+            <span>
+                Discover our favorite spots to fully enjoy Merville-Franceville.
+            </span>
+        </div>
+
+        <div class="favorites">
+
+            <article class="favorite-card">
+                <img src="/images/dunes-merville.webp" alt="Dunes de Merville-Franceville">
+                <div class="favorite-content">
+                    <span class="category">🌳 Nature</span>
+                    <h3>Dunes de Merville-Franceville</h3>
+                    <p>Discover the natural beauty of the dunes that border the Norman coast.</p>
+                </div>
+            </article>
+
+            <article class="favorite-card">
+                <img src="/images/reserve-gros-banc.webp" alt="Réserve ornithologique du Gros-Banc">
+                <div class="favorite-content">
+                    <span class="category">🌳 Nature</span>
+                    <h3>Réserve ornithologique du Gros-Banc</h3>
+                    <p>A peaceful place to observe birds at the heart of the Orne estuary</p>
+                </div>
+            </article>
+
+            <article class="favorite-card">
+                <img src="/images/la-redoute-de-merville-eyes-of-gd-ncpa-toutrisme-41477-1920px-1920x1080-f50_50.webp"
+                    alt="La Redoute de Merville">
+                <div class="favorite-content">
+                    <span class="category">🏛️ Heritage</span>
+                    <h3>La Redoute de Merville</h3>
+                    <p>An amazing small fortress in the shape of a horseshoe, inherited from the old defenses of
+                        the estuary.</p>
+                </div>
+            </article>
+
+        </div>
+
+        <button class="btn-see-more" id="seeMoreFavorites">
+            See more favorites
+        </button>
+    </section>
+
+    <section id="carte">
+
+        <div class="section-title">
+            <p>Explore Merville-Franceville</p>
+            <h2>The main places on the map</h2>
+            <span>
+                Discover the key locations presented on our guide.
+            </span>
+        </div>
+
+        <div class="map-preview">
+            <div id="map"></div>
+        </div>
+
+    </section>
+
+    <footer id="footer"></footer>
+
+    <script src="/js/header.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
+    </script>
+    <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+    <script src="/js/villes.js"></script>
+    <script src="/js/footer.js"></script>
+    <script src="/js/langues.js"></script>
+</body>
+
+</html>

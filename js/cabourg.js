@@ -25,11 +25,29 @@ const markers = L.markerClusterGroup({
     maxClusterRadius: 50
 });
 
-// Chargement des données de Cabourg
+// =========================
+// LANGUE
+// =========================
 
-fetch("../data/cabourg.json")
+const isEnglish = document.documentElement.lang === "en";
 
-    .then(response => response.json())
+// Fichier JSON selon la langue
+const dataFile = isEnglish
+    ? "../data/cabourg-en.json"
+    : "../data/cabourg.json";
+
+// =========================
+// CHARGEMENT DES DONNÉES
+// =========================
+
+fetch(dataFile)
+
+    .then(response => {
+        if (!response.ok) {
+            throw new Error(`Erreur HTTP : ${response.status}`);
+        }
+        return response.json();
+    })
 
     .then(data => {
 
@@ -74,17 +92,20 @@ fetch("../data/cabourg.json")
 
         data.restaurants.forEach(restaurant => {
 
-            const exists = [...restaurantsContainer.querySelectorAll(".restaurant-card")]
-                .some(card => card.dataset.name === restaurant.name);
+            const exists = [
+                ...restaurantsContainer.querySelectorAll(".restaurant-card")
+            ].some(card => card.dataset.name === restaurant.name);
 
             if (exists) return;
 
             const card = `
-                <article class="restaurant-card">
+                <article class="restaurant-card"
+                    data-name="${restaurant.name}">
 
                     <img
                         src="${restaurant.image}"
                         alt="${restaurant.name}"
+                        loading="lazy"
                     >
 
                     <div class="restaurant-content">
@@ -100,12 +121,14 @@ fetch("../data/cabourg.json")
                         </p>
 
                         <a
-                            href="${restaurant.link}"
+                            href="${restaurant.link || "#"}"
                             target="_blank"
                             rel="noopener noreferrer"
                             class="restaurant-link"
                         >
-                            Découvrir l'adresse
+                            ${isEnglish
+                    ? "Discover this place"
+                    : "Découvrir l'adresse"}
                         </a>
 
                     </div>
@@ -120,3 +143,7 @@ fetch("../data/cabourg.json")
         });
 
     })
+
+    .catch(error => {
+        console.error("Erreur lors du chargement des données :", error);
+    });

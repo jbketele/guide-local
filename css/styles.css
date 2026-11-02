@@ -25,10 +25,96 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     padding: 15px 20px;
+    background-color: #F5F0E7;
+}
+
+/* =========================
+   SÉLECTEUR DE LANGUE
+   MOBILE FIRST
+========================= */
+
+.language-switcher {
+    position: relative;
+}
+
+.language-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+
+    min-width: 44px;
+    min-height: 40px;
+    padding: 5px;
+
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.language-toggle .fi {
+    width: 26px;
+    height: 19px;
+    border-radius: 2px;
+}
+
+/* Liste déroulante */
+
+.language-menu {
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+
+    position: absolute;
+    top: calc(100% + 5px);
+    right: 0;
+    z-index: 1000;
+
+    min-width: 145px;
+    padding: 6px;
 
     background-color: #F5F0E7;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.language-menu.active {
+    display: flex;
+}
+
+.language-menu a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 10px;
+
+    color: #333;
+    font-size: 14px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.language-menu a .fi {
+    width: 24px;
+    height: 18px;
+    flex-shrink: 0;
+}
+
+.language-menu a:hover {
+    background-color: #E8DFD0;
+}
+
+/* =========================
+   DESKTOP
+========================= */
+
+@media (min-width: 768px) {
+    .language-switcher {
+        margin-left: 10px;
+    }
 }
 
 
@@ -43,6 +129,20 @@ body {
 .logo img {
     width: 100%;
     height: auto;
+}
+
+
+
+/* =========================
+   ACTIONS DU HEADER
+========================= */
+
+.header-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    flex-shrink: 0;
 }
 
 
@@ -219,6 +319,7 @@ header nav a.nav-avis {
     header nav {
         display: flex;
         align-items: center;
+        flex: 0 1 auto;
     }
 
     header nav a {
@@ -264,6 +365,16 @@ header nav a.nav-avis {
 
     .dropdown-menu a {
         padding: 10px;
+    }
+
+    .header-actions {
+        flex-direction: row;
+        align-items: center;
+        margin-left: auto;
+    }
+
+    .language-switcher {
+        margin-left: 10px;
     }
 }
 
